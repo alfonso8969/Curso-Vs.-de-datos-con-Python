@@ -440,6 +440,78 @@
     {
         "label": "df",
         "kind": 5,
+        "importPath": "multiline",
+        "description": "multiline",
+        "peekOfCode": "df = pd.read_csv(\"../../data/tienda_ventas.csv\", index_col=\"id\")\ndf\ndf[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby(\"mes\").agg({\"sales\": \"sum\"})\nsell_by_month\ndf[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))",
+        "detail": "multiline",
+        "documentation": {}
+    },
+    {
+        "label": "df[\"mes\"]",
+        "kind": 5,
+        "importPath": "multiline",
+        "description": "multiline",
+        "peekOfCode": "df[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby(\"mes\").agg({\"sales\": \"sum\"})\nsell_by_month\ndf[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015",
+        "detail": "multiline",
+        "documentation": {}
+    },
+    {
+        "label": "sell_by_month",
+        "kind": 5,
+        "importPath": "multiline",
+        "description": "multiline",
+        "peekOfCode": "sell_by_month = df.groupby(\"mes\").agg({\"sales\": \"sum\"})\nsell_by_month\ndf[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped",
+        "detail": "multiline",
+        "documentation": {}
+    },
+    {
+        "label": "df[\"year\"]",
+        "kind": 5,
+        "importPath": "multiline",
+        "description": "multiline",
+        "peekOfCode": "df[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")",
+        "detail": "multiline",
+        "documentation": {}
+    },
+    {
+        "label": "df_2015",
+        "kind": 5,
+        "importPath": "multiline",
+        "description": "multiline",
+        "peekOfCode": "df_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line(subplots=True)",
+        "detail": "multiline",
+        "documentation": {}
+    },
+    {
+        "label": "df_2015_grouped",
+        "kind": 5,
+        "importPath": "multiline",
+        "description": "multiline",
+        "peekOfCode": "df_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line(subplots=True)",
+        "detail": "multiline",
+        "documentation": {}
+    },
+    {
+        "label": "df_2015_pivot",
+        "kind": 5,
+        "importPath": "multiline",
+        "description": "multiline",
+        "peekOfCode": "df_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line(subplots=True)",
+        "detail": "multiline",
+        "documentation": {}
+    },
+    {
+        "label": "df_2015_pivot",
+        "kind": 5,
+        "importPath": "multiline",
+        "description": "multiline",
+        "peekOfCode": "df_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line(subplots=True)",
+        "detail": "multiline",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
         "importPath": "pie_graf",
         "description": "pie_graf",
         "peekOfCode": "df = pd.read_csv(\"../../data/titanic.csv\")\npassengers = df.groupby(\"Sex\").agg({\"PassengerId\": \"count\"})\npassengers\npassengers.plot.pie(\n    y=\"PassengerId\",\n    startangle=90,\n    autopct=\"%1.1f%%\",  # Format the percentages to show one decimal\n)\nimport plotly.express as px\npassengers_index = passengers.reset_index()",
