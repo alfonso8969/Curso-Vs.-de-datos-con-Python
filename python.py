@@ -82,6 +82,7 @@ d[2] = 40
 print(d)
 print(e)
 
+# flake8: noqa
 l = [10, 30, 50, 70]
 l += l[-1:-3]
 print(l)
