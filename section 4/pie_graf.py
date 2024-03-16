@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-df = pd.read_csv("../../data/titanic.csv")
+df = pd.read_csv("../../../data/titanic.csv")
 passengers = df.groupby("Sex").agg({"PassengerId": "count"})
 passengers
 passengers.plot.pie(

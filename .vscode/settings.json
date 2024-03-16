@@ -11,6 +11,7 @@
         "boxplot",
         "droplevel",
         "dropna",
+        "figsize",
         "fillna",
         "iloc",
         "linestyle",
