@@ -14,7 +14,7 @@ df.plot.line(
 
 import seaborn as sns
 
-plt.figure(figsize=(8, 5))
+plt.figure(figsize=(12, 5))
 
 sns.lineplot(
     data=df

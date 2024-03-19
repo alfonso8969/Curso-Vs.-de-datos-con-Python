@@ -27,15 +27,6 @@
         "documentation": {}
     },
     {
-        "label": "plotly.express",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "plotly.express",
-        "description": "plotly.express",
-        "detail": "plotly.express",
-        "documentation": {}
-    },
-    {
         "label": "random",
         "kind": 6,
         "isExtraImport": true,
@@ -61,6 +52,15 @@
         "documentation": {}
     },
     {
+        "label": "plotly.express",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly.express",
+        "description": "plotly.express",
+        "detail": "plotly.express",
+        "documentation": {}
+    },
+    {
         "label": "SentimentAnalysisSpanish",
         "importPath": "sentiment_analysis_spanish.sentiment_analysis",
         "description": "sentiment_analysis_spanish.sentiment_analysis",
@@ -71,217 +71,244 @@
     {
         "label": "df",
         "kind": 5,
-        "importPath": "section 5.pandasI",
-        "description": "section 5.pandasI",
-        "peekOfCode": "df = pd.read_csv(\"../../../data/tiendas_procesado.csv\", index_col='fecha')\ndf\nplt.rcParams['figure.figsize'] = (10, 5)\n# Temas https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html\nplt.style.use('bmh')\ndf.plot.line(\n    # figsize=(10, 5)\n)\nimport seaborn as sns\nplt.figure(figsize=(8, 5))",
-        "detail": "section 5.pandasI",
-        "documentation": {}
-    },
-    {
-        "label": "plt.rcParams['figure.figsize']",
-        "kind": 5,
-        "importPath": "section 5.pandasI",
-        "description": "section 5.pandasI",
-        "peekOfCode": "plt.rcParams['figure.figsize'] = (10, 5)\n# Temas https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html\nplt.style.use('bmh')\ndf.plot.line(\n    # figsize=(10, 5)\n)\nimport seaborn as sns\nplt.figure(figsize=(8, 5))\nsns.lineplot(\n    data=df",
-        "detail": "section 5.pandasI",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "section 4.violines_graf",
-        "description": "section 4.violines_graf",
-        "peekOfCode": "df = pd.read_csv(\"../../../data/titanic.csv\")\ndf = df.dropna(subset=[\"Age\"], axis=\"index\")  # remove rows with missing Age data\ndf\nimport seaborn as sns\nsns.violinplot(\n    data=df,\n    x=\"Sex\",\n    y=\"Age\",\n    inner=\"quartiles\"\n)",
-        "detail": "section 4.violines_graf",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "section 4.violines_graf",
-        "description": "section 4.violines_graf",
-        "peekOfCode": "df = df.dropna(subset=[\"Age\"], axis=\"index\")  # remove rows with missing Age data\ndf\nimport seaborn as sns\nsns.violinplot(\n    data=df,\n    x=\"Sex\",\n    y=\"Age\",\n    inner=\"quartiles\"\n)\nplt.show()",
-        "detail": "section 4.violines_graf",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "section 4.pie_graf",
-        "description": "section 4.pie_graf",
-        "peekOfCode": "df = pd.read_csv(\"../../../data/titanic.csv\")\npassengers = df.groupby(\"Sex\").agg({\"PassengerId\": \"count\"})\npassengers\npassengers.plot.pie(\n    y=\"PassengerId\",\n    startangle=90,\n    autopct=\"%1.1f%%\",  # Format the percentages to show one decimal\n)\nimport plotly.express as px\npassengers_index = passengers.reset_index()",
-        "detail": "section 4.pie_graf",
-        "documentation": {}
-    },
-    {
-        "label": "passengers",
-        "kind": 5,
-        "importPath": "section 4.pie_graf",
-        "description": "section 4.pie_graf",
-        "peekOfCode": "passengers = df.groupby(\"Sex\").agg({\"PassengerId\": \"count\"})\npassengers\npassengers.plot.pie(\n    y=\"PassengerId\",\n    startangle=90,\n    autopct=\"%1.1f%%\",  # Format the percentages to show one decimal\n)\nimport plotly.express as px\npassengers_index = passengers.reset_index()\npassengers_index",
-        "detail": "section 4.pie_graf",
-        "documentation": {}
-    },
-    {
-        "label": "passengers_index",
-        "kind": 5,
-        "importPath": "section 4.pie_graf",
-        "description": "section 4.pie_graf",
-        "peekOfCode": "passengers_index = passengers.reset_index()\npassengers_index\nfig = px.pie(\n    passengers_index,\n    values=\"PassengerId\",\n    names=\"Sex\",\n    title=\"Passengers per Sex\",\n    hole=0.3\n)\nfig.show()",
-        "detail": "section 4.pie_graf",
-        "documentation": {}
-    },
-    {
-        "label": "fig",
-        "kind": 5,
-        "importPath": "section 4.pie_graf",
-        "description": "section 4.pie_graf",
-        "peekOfCode": "fig = px.pie(\n    passengers_index,\n    values=\"PassengerId\",\n    names=\"Sex\",\n    title=\"Passengers per Sex\",\n    hole=0.3\n)\nfig.show()",
-        "detail": "section 4.pie_graf",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "section 4.multiline",
-        "description": "section 4.multiline",
-        "peekOfCode": "df = pd.read_csv(\"../../../data/tienda_ventas.csv\", index_col=\"id\")\ndf\ndf[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby(\"mes\").agg({\"sales\": \"sum\"})\nsell_by_month\ndf[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))",
-        "detail": "section 4.multiline",
+        "importPath": "section 4.areas_graf",
+        "description": "section 4.areas_graf",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/tienda_ventas.csv\", index_col='id')\ndf\ndf[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month.plot.line(\n    y='sales',\n    style='.-',",
+        "detail": "section 4.areas_graf",
         "documentation": {}
     },
     {
         "label": "df[\"mes\"]",
         "kind": 5,
-        "importPath": "section 4.multiline",
-        "description": "section 4.multiline",
-        "peekOfCode": "df[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby(\"mes\").agg({\"sales\": \"sum\"})\nsell_by_month\ndf[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015",
-        "detail": "section 4.multiline",
+        "importPath": "section 4.areas_graf",
+        "description": "section 4.areas_graf",
+        "peekOfCode": "df[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month.plot.line(\n    y='sales',\n    style='.-',\n    linestyle='dotted'\n)",
+        "detail": "section 4.areas_graf",
         "documentation": {}
     },
     {
         "label": "sell_by_month",
         "kind": 5,
-        "importPath": "section 4.multiline",
-        "description": "section 4.multiline",
-        "peekOfCode": "sell_by_month = df.groupby(\"mes\").agg({\"sales\": \"sum\"})\nsell_by_month\ndf[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped",
-        "detail": "section 4.multiline",
+        "importPath": "section 4.areas_graf",
+        "description": "section 4.areas_graf",
+        "peekOfCode": "sell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month.plot.line(\n    y='sales',\n    style='.-',\n    linestyle='dotted'\n)\nsell_by_month.plot.area(\n    y='sales'",
+        "detail": "section 4.areas_graf",
         "documentation": {}
     },
     {
-        "label": "df[\"year\"]",
+        "label": "df['year']",
         "kind": 5,
-        "importPath": "section 4.multiline",
-        "description": "section 4.multiline",
-        "peekOfCode": "df[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")",
-        "detail": "section 4.multiline",
+        "importPath": "section 4.areas_graf",
+        "description": "section 4.areas_graf",
+        "peekOfCode": "df['year'] = df['date'].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df['year'] == '2015') & \n    (df['family'].isin(['SEAFOOD', 'MEATS', 'DAIRY']))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby(['mes', 'family']).agg({\n    'sales': 'sum'\n})",
+        "detail": "section 4.areas_graf",
         "documentation": {}
     },
     {
         "label": "df_2015",
         "kind": 5,
-        "importPath": "section 4.multiline",
-        "description": "section 4.multiline",
-        "peekOfCode": "df_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line(subplots=True)",
-        "detail": "section 4.multiline",
+        "importPath": "section 4.areas_graf",
+        "description": "section 4.areas_graf",
+        "peekOfCode": "df_2015 = df[\n    (df['year'] == '2015') & \n    (df['family'].isin(['SEAFOOD', 'MEATS', 'DAIRY']))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby(['mes', 'family']).agg({\n    'sales': 'sum'\n})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()",
+        "detail": "section 4.areas_graf",
         "documentation": {}
     },
     {
         "label": "df_2015_grouped",
         "kind": 5,
-        "importPath": "section 4.multiline",
-        "description": "section 4.multiline",
-        "peekOfCode": "df_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line(subplots=True)",
-        "detail": "section 4.multiline",
+        "importPath": "section 4.areas_graf",
+        "description": "section 4.areas_graf",
+        "peekOfCode": "df_2015_grouped = df_2015.groupby(['mes', 'family']).agg({\n    'sales': 'sum'\n})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index='mes', columns='family', values='sales')\ndf_2015_pivot.plot.line()\ndf_2015_pivot.plot.area(\n    stacked=False\n)",
+        "detail": "section 4.areas_graf",
         "documentation": {}
     },
     {
         "label": "df_2015_pivot",
         "kind": 5,
-        "importPath": "section 4.multiline",
-        "description": "section 4.multiline",
-        "peekOfCode": "df_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line(subplots=True)",
-        "detail": "section 4.multiline",
+        "importPath": "section 4.areas_graf",
+        "description": "section 4.areas_graf",
+        "peekOfCode": "df_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index='mes', columns='family', values='sales')\ndf_2015_pivot.plot.line()\ndf_2015_pivot.plot.area(\n    stacked=False\n)",
+        "detail": "section 4.areas_graf",
         "documentation": {}
     },
     {
         "label": "df_2015_pivot",
         "kind": 5,
-        "importPath": "section 4.multiline",
-        "description": "section 4.multiline",
-        "peekOfCode": "df_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line(subplots=True)",
-        "detail": "section 4.multiline",
+        "importPath": "section 4.areas_graf",
+        "description": "section 4.areas_graf",
+        "peekOfCode": "df_2015_pivot = df_2015_pivot.pivot(index='mes', columns='family', values='sales')\ndf_2015_pivot.plot.line()\ndf_2015_pivot.plot.area(\n    stacked=False\n)",
+        "detail": "section 4.areas_graf",
         "documentation": {}
     },
     {
         "label": "df",
         "kind": 5,
-        "importPath": "section 4.line_graf",
-        "description": "section 4.line_graf",
-        "peekOfCode": "df = pd.read_csv(\"../../../data/tienda_ventas.csv\", index_col='id')\ndf\ndf['mes'] = df['date'].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month\nsell_by_month.plot.line(\n    y='sales',",
-        "detail": "section 4.line_graf",
-        "documentation": {}
-    },
-    {
-        "label": "df['mes']",
-        "kind": 5,
-        "importPath": "section 4.line_graf",
-        "description": "section 4.line_graf",
-        "peekOfCode": "df['mes'] = df['date'].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month\nsell_by_month.plot.line(\n    y='sales',\n    style='.-',\n    linestyle='dotted'",
-        "detail": "section 4.line_graf",
-        "documentation": {}
-    },
-    {
-        "label": "sell_by_month",
-        "kind": 5,
-        "importPath": "section 4.line_graf",
-        "description": "section 4.line_graf",
-        "peekOfCode": "sell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month\nsell_by_month.plot.line(\n    y='sales',\n    style='.-',\n    linestyle='dotted'\n)\nimport plotly.express as px",
-        "detail": "section 4.line_graf",
-        "documentation": {}
-    },
-    {
-        "label": "fig",
-        "kind": 5,
-        "importPath": "section 4.line_graf",
-        "description": "section 4.line_graf",
-        "peekOfCode": "fig = px.line(\n    sell_by_month,\n    x=sell_by_month.index.values,\n    y='sales'\n)\nfig.show()",
-        "detail": "section 4.line_graf",
+        "importPath": "section 4.cajas_graf",
+        "description": "section 4.cajas_graf",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/titanic.csv\")\ndf = df.dropna(subset=[\"Age\"], axis=\"index\")  # remove rows with missing Age data\ndf\ndf.boxplot(column=\"Age\")\ndf.boxplot(by=\"Sex\", column=[\"Age\"], grid=False)\nimport seaborn as sns\nsns.boxplot(data=df, x=\"Sex\", y=\"Age\")\nplt.show()",
+        "detail": "section 4.cajas_graf",
         "documentation": {}
     },
     {
         "label": "df",
         "kind": 5,
-        "importPath": "section 4.histio_graf",
-        "description": "section 4.histio_graf",
-        "peekOfCode": "df = pd.read_csv(\"../../../data/titanic.csv\")\ndf = df.dropna(subset=[\"Age\"], axis=\"index\")  # remove rows with missing Age data\ndf\ndf.hist(\n    column=\"Age\",\n    by='Sex',\n    bins=15\n)\nimport seaborn as sns\nsns.histplot(",
-        "detail": "section 4.histio_graf",
+        "importPath": "section 4.cajas_graf",
+        "description": "section 4.cajas_graf",
+        "peekOfCode": "df = df.dropna(subset=[\"Age\"], axis=\"index\")  # remove rows with missing Age data\ndf\ndf.boxplot(column=\"Age\")\ndf.boxplot(by=\"Sex\", column=[\"Age\"], grid=False)\nimport seaborn as sns\nsns.boxplot(data=df, x=\"Sex\", y=\"Age\")\nplt.show()",
+        "detail": "section 4.cajas_graf",
+        "documentation": {}
+    },
+    {
+        "label": "calculateWins",
+        "kind": 2,
+        "importPath": "section 4.ejer_pandas",
+        "description": "section 4.ejer_pandas",
+        "peekOfCode": "def calculateWins(retweets):\n    win = retweets * random.randint(3, 5)\n    return win\ndf[\"ganancias\"] = df[\"retweets\"].apply(calculateWins)\ndf.fillna(0).head()\ndef population(row):\n    return row[\"followees\"] / row[\"followers\"]\ndf[\"popularidad\"] = df.apply(population, axis=1)\ndf.fillna(0).head()\ndf = df.drop(columns=[\"full_text\"])",
+        "detail": "section 4.ejer_pandas",
+        "documentation": {}
+    },
+    {
+        "label": "population",
+        "kind": 2,
+        "importPath": "section 4.ejer_pandas",
+        "description": "section 4.ejer_pandas",
+        "peekOfCode": "def population(row):\n    return row[\"followees\"] / row[\"followers\"]\ndf[\"popularidad\"] = df.apply(population, axis=1)\ndf.fillna(0).head()\ndf = df.drop(columns=[\"full_text\"])\ndf.fillna(0).head()\ndf = df.drop(columns=[\"user\"])\ndf.fillna(0)\ndf.groupby(\"country\").mean()\nresult = df.groupby(\"country\").agg({",
+        "detail": "section 4.ejer_pandas",
         "documentation": {}
     },
     {
         "label": "df",
         "kind": 5,
-        "importPath": "section 4.histio_graf",
-        "description": "section 4.histio_graf",
-        "peekOfCode": "df = df.dropna(subset=[\"Age\"], axis=\"index\")  # remove rows with missing Age data\ndf\ndf.hist(\n    column=\"Age\",\n    by='Sex',\n    bins=15\n)\nimport seaborn as sns\nsns.histplot(\n    df,",
-        "detail": "section 4.histio_graf",
+        "importPath": "section 4.ejer_pandas",
+        "description": "section 4.ejer_pandas",
+        "peekOfCode": "df = pd.read_csv(\"../../../NIVEL0/dataset.csv\", index_col=\"id\")\ndf_filter = df.fillna(0)\ndf_filter.head()\ndf.iloc[0]\ndf.loc[[183721, 183722], [\"full_text\", \"favorites\"]]\ndf[df['favorites'] > 400]\ndf[(df['favorites'] > 400) & (df['mentions'] > 20)]\ndf[df['full_text'].str.contains(\"programming\")]\nimport random\ndef calculateWins(retweets):",
+        "detail": "section 4.ejer_pandas",
+        "documentation": {}
+    },
+    {
+        "label": "df_filter",
+        "kind": 5,
+        "importPath": "section 4.ejer_pandas",
+        "description": "section 4.ejer_pandas",
+        "peekOfCode": "df_filter = df.fillna(0)\ndf_filter.head()\ndf.iloc[0]\ndf.loc[[183721, 183722], [\"full_text\", \"favorites\"]]\ndf[df['favorites'] > 400]\ndf[(df['favorites'] > 400) & (df['mentions'] > 20)]\ndf[df['full_text'].str.contains(\"programming\")]\nimport random\ndef calculateWins(retweets):\n    win = retweets * random.randint(3, 5)",
+        "detail": "section 4.ejer_pandas",
+        "documentation": {}
+    },
+    {
+        "label": "df[\"ganancias\"]",
+        "kind": 5,
+        "importPath": "section 4.ejer_pandas",
+        "description": "section 4.ejer_pandas",
+        "peekOfCode": "df[\"ganancias\"] = df[\"retweets\"].apply(calculateWins)\ndf.fillna(0).head()\ndef population(row):\n    return row[\"followees\"] / row[\"followers\"]\ndf[\"popularidad\"] = df.apply(population, axis=1)\ndf.fillna(0).head()\ndf = df.drop(columns=[\"full_text\"])\ndf.fillna(0).head()\ndf = df.drop(columns=[\"user\"])\ndf.fillna(0)",
+        "detail": "section 4.ejer_pandas",
+        "documentation": {}
+    },
+    {
+        "label": "df[\"popularidad\"]",
+        "kind": 5,
+        "importPath": "section 4.ejer_pandas",
+        "description": "section 4.ejer_pandas",
+        "peekOfCode": "df[\"popularidad\"] = df.apply(population, axis=1)\ndf.fillna(0).head()\ndf = df.drop(columns=[\"full_text\"])\ndf.fillna(0).head()\ndf = df.drop(columns=[\"user\"])\ndf.fillna(0)\ndf.groupby(\"country\").mean()\nresult = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",",
+        "detail": "section 4.ejer_pandas",
         "documentation": {}
     },
     {
         "label": "df",
         "kind": 5,
-        "importPath": "section 4.graf_barras",
-        "description": "section 4.graf_barras",
-        "peekOfCode": "df = pd.read_csv(\"../../../data/titanic.csv\")\npassengers = df.groupby(\"Sex\").agg({\"PassengerId\": \"count\"})\nimport seaborn as sns\nsns.barplot(passengers, x=\"Sex\", y=\"PassengerId\")\nimport matplotlib.pyplot as plt\nplt.bar(passengers.index, passengers[\"PassengerId\"])",
-        "detail": "section 4.graf_barras",
+        "importPath": "section 4.ejer_pandas",
+        "description": "section 4.ejer_pandas",
+        "peekOfCode": "df = df.drop(columns=[\"full_text\"])\ndf.fillna(0).head()\ndf = df.drop(columns=[\"user\"])\ndf.fillna(0)\ndf.groupby(\"country\").mean()\nresult = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",\n    \"retweets\": \"max\",\n    \"favorites\": \"mean\"",
+        "detail": "section 4.ejer_pandas",
         "documentation": {}
     },
     {
-        "label": "passengers",
+        "label": "df",
         "kind": 5,
-        "importPath": "section 4.graf_barras",
-        "description": "section 4.graf_barras",
-        "peekOfCode": "passengers = df.groupby(\"Sex\").agg({\"PassengerId\": \"count\"})\nimport seaborn as sns\nsns.barplot(passengers, x=\"Sex\", y=\"PassengerId\")\nimport matplotlib.pyplot as plt\nplt.bar(passengers.index, passengers[\"PassengerId\"])",
-        "detail": "section 4.graf_barras",
+        "importPath": "section 4.ejer_pandas",
+        "description": "section 4.ejer_pandas",
+        "peekOfCode": "df = df.drop(columns=[\"user\"])\ndf.fillna(0)\ndf.groupby(\"country\").mean()\nresult = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",\n    \"retweets\": \"max\",\n    \"favorites\": \"mean\"\n})\nresult.to_csv(\"../../../NIVEL0/result.csv\")",
+        "detail": "section 4.ejer_pandas",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "section 4.ejer_pandas",
+        "description": "section 4.ejer_pandas",
+        "peekOfCode": "result = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",\n    \"retweets\": \"max\",\n    \"favorites\": \"mean\"\n})\nresult.to_csv(\"../../../NIVEL0/result.csv\")",
+        "detail": "section 4.ejer_pandas",
+        "documentation": {}
+    },
+    {
+        "label": "df1",
+        "kind": 5,
+        "importPath": "section 4.ejer_pandasII",
+        "description": "section 4.ejer_pandasII",
+        "peekOfCode": "df1 = pd.read_csv(\"../../../NIVEL0/dataset_2a.csv\", index_col=\"id\")\ndf2 = pd.read_csv(\"../../../NIVEL0/dataset_2b.csv\", index_col=\"user\")\ndf3 = pd.read_csv(\"../../../NIVEL0/dataset_2c.csv\", index_col=\"ciudad\")\ndf1\ndf2\ndf3\ndf_usuarios = df1.merge(df2, on=\"user\", how=\"left\")\ndf_usuarios\ndf_complete = df_usuarios.merge(df3, on=\"ciudad\", how=\"left\")\ndf_complete",
+        "detail": "section 4.ejer_pandasII",
+        "documentation": {}
+    },
+    {
+        "label": "df2",
+        "kind": 5,
+        "importPath": "section 4.ejer_pandasII",
+        "description": "section 4.ejer_pandasII",
+        "peekOfCode": "df2 = pd.read_csv(\"../../../NIVEL0/dataset_2b.csv\", index_col=\"user\")\ndf3 = pd.read_csv(\"../../../NIVEL0/dataset_2c.csv\", index_col=\"ciudad\")\ndf1\ndf2\ndf3\ndf_usuarios = df1.merge(df2, on=\"user\", how=\"left\")\ndf_usuarios\ndf_complete = df_usuarios.merge(df3, on=\"ciudad\", how=\"left\")\ndf_complete\ndf_complete['fecha'] = pd.to_datetime(df_complete['fecha_publicado'], format=\"%d/%m/%Y\")",
+        "detail": "section 4.ejer_pandasII",
+        "documentation": {}
+    },
+    {
+        "label": "df3",
+        "kind": 5,
+        "importPath": "section 4.ejer_pandasII",
+        "description": "section 4.ejer_pandasII",
+        "peekOfCode": "df3 = pd.read_csv(\"../../../NIVEL0/dataset_2c.csv\", index_col=\"ciudad\")\ndf1\ndf2\ndf3\ndf_usuarios = df1.merge(df2, on=\"user\", how=\"left\")\ndf_usuarios\ndf_complete = df_usuarios.merge(df3, on=\"ciudad\", how=\"left\")\ndf_complete\ndf_complete['fecha'] = pd.to_datetime(df_complete['fecha_publicado'], format=\"%d/%m/%Y\")\ndf_complete",
+        "detail": "section 4.ejer_pandasII",
+        "documentation": {}
+    },
+    {
+        "label": "df_usuarios",
+        "kind": 5,
+        "importPath": "section 4.ejer_pandasII",
+        "description": "section 4.ejer_pandasII",
+        "peekOfCode": "df_usuarios = df1.merge(df2, on=\"user\", how=\"left\")\ndf_usuarios\ndf_complete = df_usuarios.merge(df3, on=\"ciudad\", how=\"left\")\ndf_complete\ndf_complete['fecha'] = pd.to_datetime(df_complete['fecha_publicado'], format=\"%d/%m/%Y\")\ndf_complete\ndf_complete['dia_semana'] = df_complete['fecha'].apply(lambda x: x.strftime('%A'))\ndf_complete\ndf_complete['mes'] = df_complete['fecha_publicado'].apply(lambda x: x[3:])\ndf_complete",
+        "detail": "section 4.ejer_pandasII",
+        "documentation": {}
+    },
+    {
+        "label": "df_complete",
+        "kind": 5,
+        "importPath": "section 4.ejer_pandasII",
+        "description": "section 4.ejer_pandasII",
+        "peekOfCode": "df_complete = df_usuarios.merge(df3, on=\"ciudad\", how=\"left\")\ndf_complete\ndf_complete['fecha'] = pd.to_datetime(df_complete['fecha_publicado'], format=\"%d/%m/%Y\")\ndf_complete\ndf_complete['dia_semana'] = df_complete['fecha'].apply(lambda x: x.strftime('%A'))\ndf_complete\ndf_complete['mes'] = df_complete['fecha_publicado'].apply(lambda x: x[3:])\ndf_complete",
+        "detail": "section 4.ejer_pandasII",
+        "documentation": {}
+    },
+    {
+        "label": "df_complete['fecha']",
+        "kind": 5,
+        "importPath": "section 4.ejer_pandasII",
+        "description": "section 4.ejer_pandasII",
+        "peekOfCode": "df_complete['fecha'] = pd.to_datetime(df_complete['fecha_publicado'], format=\"%d/%m/%Y\")\ndf_complete\ndf_complete['dia_semana'] = df_complete['fecha'].apply(lambda x: x.strftime('%A'))\ndf_complete\ndf_complete['mes'] = df_complete['fecha_publicado'].apply(lambda x: x[3:])\ndf_complete",
+        "detail": "section 4.ejer_pandasII",
+        "documentation": {}
+    },
+    {
+        "label": "df_complete['dia_semana']",
+        "kind": 5,
+        "importPath": "section 4.ejer_pandasII",
+        "description": "section 4.ejer_pandasII",
+        "peekOfCode": "df_complete['dia_semana'] = df_complete['fecha'].apply(lambda x: x.strftime('%A'))\ndf_complete\ndf_complete['mes'] = df_complete['fecha_publicado'].apply(lambda x: x[3:])\ndf_complete",
+        "detail": "section 4.ejer_pandasII",
+        "documentation": {}
+    },
+    {
+        "label": "df_complete['mes']",
+        "kind": 5,
+        "importPath": "section 4.ejer_pandasII",
+        "description": "section 4.ejer_pandasII",
+        "peekOfCode": "df_complete['mes'] = df_complete['fecha_publicado'].apply(lambda x: x[3:])\ndf_complete",
+        "detail": "section 4.ejer_pandasII",
         "documentation": {}
     },
     {
@@ -393,246 +420,219 @@
         "documentation": {}
     },
     {
-        "label": "df1",
+        "label": "df",
         "kind": 5,
-        "importPath": "section 4.ejer_pandasII",
-        "description": "section 4.ejer_pandasII",
-        "peekOfCode": "df1 = pd.read_csv(\"../../../NIVEL0/dataset_2a.csv\", index_col=\"id\")\ndf2 = pd.read_csv(\"../../../NIVEL0/dataset_2b.csv\", index_col=\"user\")\ndf3 = pd.read_csv(\"../../../NIVEL0/dataset_2c.csv\", index_col=\"ciudad\")\ndf1\ndf2\ndf3\ndf_usuarios = df1.merge(df2, on=\"user\", how=\"left\")\ndf_usuarios\ndf_complete = df_usuarios.merge(df3, on=\"ciudad\", how=\"left\")\ndf_complete",
-        "detail": "section 4.ejer_pandasII",
+        "importPath": "section 4.graf_barras",
+        "description": "section 4.graf_barras",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/titanic.csv\")\npassengers = df.groupby(\"Sex\").agg({\"PassengerId\": \"count\"})\nimport seaborn as sns\nsns.barplot(passengers, x=\"Sex\", y=\"PassengerId\")\nimport matplotlib.pyplot as plt\nplt.bar(passengers.index, passengers[\"PassengerId\"])",
+        "detail": "section 4.graf_barras",
         "documentation": {}
     },
     {
-        "label": "df2",
+        "label": "passengers",
         "kind": 5,
-        "importPath": "section 4.ejer_pandasII",
-        "description": "section 4.ejer_pandasII",
-        "peekOfCode": "df2 = pd.read_csv(\"../../../NIVEL0/dataset_2b.csv\", index_col=\"user\")\ndf3 = pd.read_csv(\"../../../NIVEL0/dataset_2c.csv\", index_col=\"ciudad\")\ndf1\ndf2\ndf3\ndf_usuarios = df1.merge(df2, on=\"user\", how=\"left\")\ndf_usuarios\ndf_complete = df_usuarios.merge(df3, on=\"ciudad\", how=\"left\")\ndf_complete\ndf_complete['fecha'] = pd.to_datetime(df_complete['fecha_publicado'], format=\"%d/%m/%Y\")",
-        "detail": "section 4.ejer_pandasII",
-        "documentation": {}
-    },
-    {
-        "label": "df3",
-        "kind": 5,
-        "importPath": "section 4.ejer_pandasII",
-        "description": "section 4.ejer_pandasII",
-        "peekOfCode": "df3 = pd.read_csv(\"../../../NIVEL0/dataset_2c.csv\", index_col=\"ciudad\")\ndf1\ndf2\ndf3\ndf_usuarios = df1.merge(df2, on=\"user\", how=\"left\")\ndf_usuarios\ndf_complete = df_usuarios.merge(df3, on=\"ciudad\", how=\"left\")\ndf_complete\ndf_complete['fecha'] = pd.to_datetime(df_complete['fecha_publicado'], format=\"%d/%m/%Y\")\ndf_complete",
-        "detail": "section 4.ejer_pandasII",
-        "documentation": {}
-    },
-    {
-        "label": "df_usuarios",
-        "kind": 5,
-        "importPath": "section 4.ejer_pandasII",
-        "description": "section 4.ejer_pandasII",
-        "peekOfCode": "df_usuarios = df1.merge(df2, on=\"user\", how=\"left\")\ndf_usuarios\ndf_complete = df_usuarios.merge(df3, on=\"ciudad\", how=\"left\")\ndf_complete\ndf_complete['fecha'] = pd.to_datetime(df_complete['fecha_publicado'], format=\"%d/%m/%Y\")\ndf_complete\ndf_complete['dia_semana'] = df_complete['fecha'].apply(lambda x: x.strftime('%A'))\ndf_complete\ndf_complete['mes'] = df_complete['fecha_publicado'].apply(lambda x: x[3:])\ndf_complete",
-        "detail": "section 4.ejer_pandasII",
-        "documentation": {}
-    },
-    {
-        "label": "df_complete",
-        "kind": 5,
-        "importPath": "section 4.ejer_pandasII",
-        "description": "section 4.ejer_pandasII",
-        "peekOfCode": "df_complete = df_usuarios.merge(df3, on=\"ciudad\", how=\"left\")\ndf_complete\ndf_complete['fecha'] = pd.to_datetime(df_complete['fecha_publicado'], format=\"%d/%m/%Y\")\ndf_complete\ndf_complete['dia_semana'] = df_complete['fecha'].apply(lambda x: x.strftime('%A'))\ndf_complete\ndf_complete['mes'] = df_complete['fecha_publicado'].apply(lambda x: x[3:])\ndf_complete",
-        "detail": "section 4.ejer_pandasII",
-        "documentation": {}
-    },
-    {
-        "label": "df_complete['fecha']",
-        "kind": 5,
-        "importPath": "section 4.ejer_pandasII",
-        "description": "section 4.ejer_pandasII",
-        "peekOfCode": "df_complete['fecha'] = pd.to_datetime(df_complete['fecha_publicado'], format=\"%d/%m/%Y\")\ndf_complete\ndf_complete['dia_semana'] = df_complete['fecha'].apply(lambda x: x.strftime('%A'))\ndf_complete\ndf_complete['mes'] = df_complete['fecha_publicado'].apply(lambda x: x[3:])\ndf_complete",
-        "detail": "section 4.ejer_pandasII",
-        "documentation": {}
-    },
-    {
-        "label": "df_complete['dia_semana']",
-        "kind": 5,
-        "importPath": "section 4.ejer_pandasII",
-        "description": "section 4.ejer_pandasII",
-        "peekOfCode": "df_complete['dia_semana'] = df_complete['fecha'].apply(lambda x: x.strftime('%A'))\ndf_complete\ndf_complete['mes'] = df_complete['fecha_publicado'].apply(lambda x: x[3:])\ndf_complete",
-        "detail": "section 4.ejer_pandasII",
-        "documentation": {}
-    },
-    {
-        "label": "df_complete['mes']",
-        "kind": 5,
-        "importPath": "section 4.ejer_pandasII",
-        "description": "section 4.ejer_pandasII",
-        "peekOfCode": "df_complete['mes'] = df_complete['fecha_publicado'].apply(lambda x: x[3:])\ndf_complete",
-        "detail": "section 4.ejer_pandasII",
-        "documentation": {}
-    },
-    {
-        "label": "calculateWins",
-        "kind": 2,
-        "importPath": "section 4.ejer_pandas",
-        "description": "section 4.ejer_pandas",
-        "peekOfCode": "def calculateWins(retweets):\n    win = retweets * random.randint(3, 5)\n    return win\ndf[\"ganancias\"] = df[\"retweets\"].apply(calculateWins)\ndf.fillna(0).head()\ndef population(row):\n    return row[\"followees\"] / row[\"followers\"]\ndf[\"popularidad\"] = df.apply(population, axis=1)\ndf.fillna(0).head()\ndf = df.drop(columns=[\"full_text\"])",
-        "detail": "section 4.ejer_pandas",
-        "documentation": {}
-    },
-    {
-        "label": "population",
-        "kind": 2,
-        "importPath": "section 4.ejer_pandas",
-        "description": "section 4.ejer_pandas",
-        "peekOfCode": "def population(row):\n    return row[\"followees\"] / row[\"followers\"]\ndf[\"popularidad\"] = df.apply(population, axis=1)\ndf.fillna(0).head()\ndf = df.drop(columns=[\"full_text\"])\ndf.fillna(0).head()\ndf = df.drop(columns=[\"user\"])\ndf.fillna(0)\ndf.groupby(\"country\").mean()\nresult = df.groupby(\"country\").agg({",
-        "detail": "section 4.ejer_pandas",
+        "importPath": "section 4.graf_barras",
+        "description": "section 4.graf_barras",
+        "peekOfCode": "passengers = df.groupby(\"Sex\").agg({\"PassengerId\": \"count\"})\nimport seaborn as sns\nsns.barplot(passengers, x=\"Sex\", y=\"PassengerId\")\nimport matplotlib.pyplot as plt\nplt.bar(passengers.index, passengers[\"PassengerId\"])",
+        "detail": "section 4.graf_barras",
         "documentation": {}
     },
     {
         "label": "df",
         "kind": 5,
-        "importPath": "section 4.ejer_pandas",
-        "description": "section 4.ejer_pandas",
-        "peekOfCode": "df = pd.read_csv(\"../../../NIVEL0/dataset.csv\", index_col=\"id\")\ndf_filter = df.fillna(0)\ndf_filter.head()\ndf.iloc[0]\ndf.loc[[183721, 183722], [\"full_text\", \"favorites\"]]\ndf[df['favorites'] > 400]\ndf[(df['favorites'] > 400) & (df['mentions'] > 20)]\ndf[df['full_text'].str.contains(\"programming\")]\nimport random\ndef calculateWins(retweets):",
-        "detail": "section 4.ejer_pandas",
-        "documentation": {}
-    },
-    {
-        "label": "df_filter",
-        "kind": 5,
-        "importPath": "section 4.ejer_pandas",
-        "description": "section 4.ejer_pandas",
-        "peekOfCode": "df_filter = df.fillna(0)\ndf_filter.head()\ndf.iloc[0]\ndf.loc[[183721, 183722], [\"full_text\", \"favorites\"]]\ndf[df['favorites'] > 400]\ndf[(df['favorites'] > 400) & (df['mentions'] > 20)]\ndf[df['full_text'].str.contains(\"programming\")]\nimport random\ndef calculateWins(retweets):\n    win = retweets * random.randint(3, 5)",
-        "detail": "section 4.ejer_pandas",
-        "documentation": {}
-    },
-    {
-        "label": "df[\"ganancias\"]",
-        "kind": 5,
-        "importPath": "section 4.ejer_pandas",
-        "description": "section 4.ejer_pandas",
-        "peekOfCode": "df[\"ganancias\"] = df[\"retweets\"].apply(calculateWins)\ndf.fillna(0).head()\ndef population(row):\n    return row[\"followees\"] / row[\"followers\"]\ndf[\"popularidad\"] = df.apply(population, axis=1)\ndf.fillna(0).head()\ndf = df.drop(columns=[\"full_text\"])\ndf.fillna(0).head()\ndf = df.drop(columns=[\"user\"])\ndf.fillna(0)",
-        "detail": "section 4.ejer_pandas",
-        "documentation": {}
-    },
-    {
-        "label": "df[\"popularidad\"]",
-        "kind": 5,
-        "importPath": "section 4.ejer_pandas",
-        "description": "section 4.ejer_pandas",
-        "peekOfCode": "df[\"popularidad\"] = df.apply(population, axis=1)\ndf.fillna(0).head()\ndf = df.drop(columns=[\"full_text\"])\ndf.fillna(0).head()\ndf = df.drop(columns=[\"user\"])\ndf.fillna(0)\ndf.groupby(\"country\").mean()\nresult = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",",
-        "detail": "section 4.ejer_pandas",
+        "importPath": "section 4.histio_graf",
+        "description": "section 4.histio_graf",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/titanic.csv\")\ndf = df.dropna(subset=[\"Age\"], axis=\"index\")  # remove rows with missing Age data\ndf\ndf.hist(\n    column=\"Age\",\n    by='Sex',\n    bins=15\n)\nimport seaborn as sns\nsns.histplot(",
+        "detail": "section 4.histio_graf",
         "documentation": {}
     },
     {
         "label": "df",
         "kind": 5,
-        "importPath": "section 4.ejer_pandas",
-        "description": "section 4.ejer_pandas",
-        "peekOfCode": "df = df.drop(columns=[\"full_text\"])\ndf.fillna(0).head()\ndf = df.drop(columns=[\"user\"])\ndf.fillna(0)\ndf.groupby(\"country\").mean()\nresult = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",\n    \"retweets\": \"max\",\n    \"favorites\": \"mean\"",
-        "detail": "section 4.ejer_pandas",
+        "importPath": "section 4.histio_graf",
+        "description": "section 4.histio_graf",
+        "peekOfCode": "df = df.dropna(subset=[\"Age\"], axis=\"index\")  # remove rows with missing Age data\ndf\ndf.hist(\n    column=\"Age\",\n    by='Sex',\n    bins=15\n)\nimport seaborn as sns\nsns.histplot(\n    df,",
+        "detail": "section 4.histio_graf",
         "documentation": {}
     },
     {
         "label": "df",
         "kind": 5,
-        "importPath": "section 4.ejer_pandas",
-        "description": "section 4.ejer_pandas",
-        "peekOfCode": "df = df.drop(columns=[\"user\"])\ndf.fillna(0)\ndf.groupby(\"country\").mean()\nresult = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",\n    \"retweets\": \"max\",\n    \"favorites\": \"mean\"\n})\nresult.to_csv(\"../../../NIVEL0/result.csv\")",
-        "detail": "section 4.ejer_pandas",
+        "importPath": "section 4.line_graf",
+        "description": "section 4.line_graf",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/tienda_ventas.csv\", index_col='id')\ndf\ndf['mes'] = df['date'].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month\n\"\"\" sell_by_month.plot.line(\n    y='sales',",
+        "detail": "section 4.line_graf",
         "documentation": {}
     },
     {
-        "label": "result",
+        "label": "df['mes']",
         "kind": 5,
-        "importPath": "section 4.ejer_pandas",
-        "description": "section 4.ejer_pandas",
-        "peekOfCode": "result = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",\n    \"retweets\": \"max\",\n    \"favorites\": \"mean\"\n})\nresult.to_csv(\"../../../NIVEL0/result.csv\")",
-        "detail": "section 4.ejer_pandas",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "section 4.cajas_graf",
-        "description": "section 4.cajas_graf",
-        "peekOfCode": "df = pd.read_csv(\"../../../data/titanic.csv\")\ndf = df.dropna(subset=[\"Age\"], axis=\"index\")  # remove rows with missing Age data\ndf\ndf.boxplot(column=\"Age\")\ndf.boxplot(by=\"Sex\", column=[\"Age\"], grid=False)\nimport seaborn as sns\nsns.boxplot(data=df, x=\"Sex\", y=\"Age\")\nplt.show()",
-        "detail": "section 4.cajas_graf",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "section 4.cajas_graf",
-        "description": "section 4.cajas_graf",
-        "peekOfCode": "df = df.dropna(subset=[\"Age\"], axis=\"index\")  # remove rows with missing Age data\ndf\ndf.boxplot(column=\"Age\")\ndf.boxplot(by=\"Sex\", column=[\"Age\"], grid=False)\nimport seaborn as sns\nsns.boxplot(data=df, x=\"Sex\", y=\"Age\")\nplt.show()",
-        "detail": "section 4.cajas_graf",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "section 4.areas_graf",
-        "description": "section 4.areas_graf",
-        "peekOfCode": "df = pd.read_csv(\"../../../data/tienda_ventas.csv\", index_col='id')\ndf\ndf[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month.plot.line(\n    y='sales',\n    style='.-',",
-        "detail": "section 4.areas_graf",
-        "documentation": {}
-    },
-    {
-        "label": "df[\"mes\"]",
-        "kind": 5,
-        "importPath": "section 4.areas_graf",
-        "description": "section 4.areas_graf",
-        "peekOfCode": "df[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month.plot.line(\n    y='sales',\n    style='.-',\n    linestyle='dotted'\n)",
-        "detail": "section 4.areas_graf",
+        "importPath": "section 4.line_graf",
+        "description": "section 4.line_graf",
+        "peekOfCode": "df['mes'] = df['date'].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month\n\"\"\" sell_by_month.plot.line(\n    y='sales',\n    style='.-',\n    linestyle='dotted'",
+        "detail": "section 4.line_graf",
         "documentation": {}
     },
     {
         "label": "sell_by_month",
         "kind": 5,
-        "importPath": "section 4.areas_graf",
-        "description": "section 4.areas_graf",
-        "peekOfCode": "sell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month.plot.line(\n    y='sales',\n    style='.-',\n    linestyle='dotted'\n)\nsell_by_month.plot.area(\n    y='sales'",
-        "detail": "section 4.areas_graf",
+        "importPath": "section 4.line_graf",
+        "description": "section 4.line_graf",
+        "peekOfCode": "sell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month\n\"\"\" sell_by_month.plot.line(\n    y='sales',\n    style='.-',\n    linestyle='dotted'\n) \"\"\"\nsell_by_month.reset_index()",
+        "detail": "section 4.line_graf",
         "documentation": {}
     },
     {
-        "label": "df['year']",
+        "label": "fig",
         "kind": 5,
-        "importPath": "section 4.areas_graf",
-        "description": "section 4.areas_graf",
-        "peekOfCode": "df['year'] = df['date'].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df['year'] == '2015') & \n    (df['family'].isin(['SEAFOOD', 'MEATS', 'DAIRY']))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby(['mes', 'family']).agg({\n    'sales': 'sum'\n})",
-        "detail": "section 4.areas_graf",
+        "importPath": "section 4.line_graf",
+        "description": "section 4.line_graf",
+        "peekOfCode": "fig = px.line(\n    sell_by_month,\n    x=sell_by_month.index.values,\n    y='sales'\n)\nfig",
+        "detail": "section 4.line_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 4.multiline",
+        "description": "section 4.multiline",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/tienda_ventas.csv\", index_col=\"id\")\ndf\ndf[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby(\"mes\").agg({\"sales\": \"sum\"})\nsell_by_month\ndf[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))",
+        "detail": "section 4.multiline",
+        "documentation": {}
+    },
+    {
+        "label": "df[\"mes\"]",
+        "kind": 5,
+        "importPath": "section 4.multiline",
+        "description": "section 4.multiline",
+        "peekOfCode": "df[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby(\"mes\").agg({\"sales\": \"sum\"})\nsell_by_month\ndf[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015",
+        "detail": "section 4.multiline",
+        "documentation": {}
+    },
+    {
+        "label": "sell_by_month",
+        "kind": 5,
+        "importPath": "section 4.multiline",
+        "description": "section 4.multiline",
+        "peekOfCode": "sell_by_month = df.groupby(\"mes\").agg({\"sales\": \"sum\"})\nsell_by_month\ndf[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped",
+        "detail": "section 4.multiline",
+        "documentation": {}
+    },
+    {
+        "label": "df[\"year\"]",
+        "kind": 5,
+        "importPath": "section 4.multiline",
+        "description": "section 4.multiline",
+        "peekOfCode": "df[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")",
+        "detail": "section 4.multiline",
         "documentation": {}
     },
     {
         "label": "df_2015",
         "kind": 5,
-        "importPath": "section 4.areas_graf",
-        "description": "section 4.areas_graf",
-        "peekOfCode": "df_2015 = df[\n    (df['year'] == '2015') & \n    (df['family'].isin(['SEAFOOD', 'MEATS', 'DAIRY']))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby(['mes', 'family']).agg({\n    'sales': 'sum'\n})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()",
-        "detail": "section 4.areas_graf",
+        "importPath": "section 4.multiline",
+        "description": "section 4.multiline",
+        "peekOfCode": "df_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line(subplots=True)",
+        "detail": "section 4.multiline",
         "documentation": {}
     },
     {
         "label": "df_2015_grouped",
         "kind": 5,
-        "importPath": "section 4.areas_graf",
-        "description": "section 4.areas_graf",
-        "peekOfCode": "df_2015_grouped = df_2015.groupby(['mes', 'family']).agg({\n    'sales': 'sum'\n})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index='mes', columns='family', values='sales')\ndf_2015_pivot.plot.line()\ndf_2015_pivot.plot.area(\n    stacked=False\n)",
-        "detail": "section 4.areas_graf",
+        "importPath": "section 4.multiline",
+        "description": "section 4.multiline",
+        "peekOfCode": "df_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line(subplots=True)",
+        "detail": "section 4.multiline",
         "documentation": {}
     },
     {
         "label": "df_2015_pivot",
         "kind": 5,
-        "importPath": "section 4.areas_graf",
-        "description": "section 4.areas_graf",
-        "peekOfCode": "df_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index='mes', columns='family', values='sales')\ndf_2015_pivot.plot.line()\ndf_2015_pivot.plot.area(\n    stacked=False\n)",
-        "detail": "section 4.areas_graf",
+        "importPath": "section 4.multiline",
+        "description": "section 4.multiline",
+        "peekOfCode": "df_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line(subplots=True)",
+        "detail": "section 4.multiline",
         "documentation": {}
     },
     {
         "label": "df_2015_pivot",
         "kind": 5,
-        "importPath": "section 4.areas_graf",
-        "description": "section 4.areas_graf",
-        "peekOfCode": "df_2015_pivot = df_2015_pivot.pivot(index='mes', columns='family', values='sales')\ndf_2015_pivot.plot.line()\ndf_2015_pivot.plot.area(\n    stacked=False\n)",
-        "detail": "section 4.areas_graf",
+        "importPath": "section 4.multiline",
+        "description": "section 4.multiline",
+        "peekOfCode": "df_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line(subplots=True)",
+        "detail": "section 4.multiline",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 4.pie_graf",
+        "description": "section 4.pie_graf",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/titanic.csv\")\npassengers = df.groupby(\"Sex\").agg({\"PassengerId\": \"count\"})\npassengers\npassengers.plot.pie(\n    y=\"PassengerId\",\n    startangle=90,\n    autopct=\"%1.1f%%\",  # Format the percentages to show one decimal\n)\nimport plotly.express as px\npassengers_index = passengers.reset_index()",
+        "detail": "section 4.pie_graf",
+        "documentation": {}
+    },
+    {
+        "label": "passengers",
+        "kind": 5,
+        "importPath": "section 4.pie_graf",
+        "description": "section 4.pie_graf",
+        "peekOfCode": "passengers = df.groupby(\"Sex\").agg({\"PassengerId\": \"count\"})\npassengers\npassengers.plot.pie(\n    y=\"PassengerId\",\n    startangle=90,\n    autopct=\"%1.1f%%\",  # Format the percentages to show one decimal\n)\nimport plotly.express as px\npassengers_index = passengers.reset_index()\npassengers_index",
+        "detail": "section 4.pie_graf",
+        "documentation": {}
+    },
+    {
+        "label": "passengers_index",
+        "kind": 5,
+        "importPath": "section 4.pie_graf",
+        "description": "section 4.pie_graf",
+        "peekOfCode": "passengers_index = passengers.reset_index()\npassengers_index\nfig = px.pie(\n    passengers_index,\n    values=\"PassengerId\",\n    names=\"Sex\",\n    title=\"Passengers per Sex\",\n    hole=0.3\n)\nfig.show()",
+        "detail": "section 4.pie_graf",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 4.pie_graf",
+        "description": "section 4.pie_graf",
+        "peekOfCode": "fig = px.pie(\n    passengers_index,\n    values=\"PassengerId\",\n    names=\"Sex\",\n    title=\"Passengers per Sex\",\n    hole=0.3\n)\nfig.show()",
+        "detail": "section 4.pie_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 4.violines_graf",
+        "description": "section 4.violines_graf",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/titanic.csv\")\ndf = df.dropna(subset=[\"Age\"], axis=\"index\")  # remove rows with missing Age data\ndf\nimport seaborn as sns\nsns.violinplot(\n    data=df,\n    x=\"Sex\",\n    y=\"Age\",\n    inner=\"quartiles\"\n)",
+        "detail": "section 4.violines_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 4.violines_graf",
+        "description": "section 4.violines_graf",
+        "peekOfCode": "df = df.dropna(subset=[\"Age\"], axis=\"index\")  # remove rows with missing Age data\ndf\nimport seaborn as sns\nsns.violinplot(\n    data=df,\n    x=\"Sex\",\n    y=\"Age\",\n    inner=\"quartiles\"\n)\nplt.show()",
+        "detail": "section 4.violines_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 5.pandasI",
+        "description": "section 5.pandasI",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/tiendas_procesado.csv\", index_col='fecha')\ndf\nplt.rcParams['figure.figsize'] = (10, 5)\n# Temas https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html\nplt.style.use('bmh')\ndf.plot.line(\n    # figsize=(10, 5)\n)\nimport seaborn as sns\nplt.figure(figsize=(12, 5))",
+        "detail": "section 5.pandasI",
+        "documentation": {}
+    },
+    {
+        "label": "plt.rcParams['figure.figsize']",
+        "kind": 5,
+        "importPath": "section 5.pandasI",
+        "description": "section 5.pandasI",
+        "peekOfCode": "plt.rcParams['figure.figsize'] = (10, 5)\n# Temas https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html\nplt.style.use('bmh')\ndf.plot.line(\n    # figsize=(10, 5)\n)\nimport seaborn as sns\nplt.figure(figsize=(12, 5))\nsns.lineplot(\n    data=df",
+        "detail": "section 5.pandasI",
         "documentation": {}
     },
     {
@@ -825,29 +825,11 @@
         "documentation": {}
     },
     {
-        "label": "new_func",
-        "kind": 2,
-        "importPath": "sentiments",
-        "description": "sentiments",
-        "peekOfCode": "def new_func(sentiment: SentimentAnalysisSpanish, x):\n    try:\n        sentiment.sentiment(\"x: \" + x)\n    except Exception as e:\n        print(\"Error:\", e)\nnew_func(sentiment, x)\ndef submit_sentiment(sentiment: SentimentAnalysisSpanish, y):\n    try:\n        sentiment.sentiment(\"y: \" + y)\n    except Exception as e:",
-        "detail": "sentiments",
-        "documentation": {}
-    },
-    {
-        "label": "submit_sentiment",
-        "kind": 2,
-        "importPath": "sentiments",
-        "description": "sentiments",
-        "peekOfCode": "def submit_sentiment(sentiment: SentimentAnalysisSpanish, y):\n    try:\n        sentiment.sentiment(\"y: \" + y)\n    except Exception as e:\n        print(\"Error:\", e)\nsubmit_sentiment(sentiment, y)\ndef analyze_sentiment(sentiment: SentimentAnalysisSpanish, text):\n    try:\n        sentiment.sentiment(text)\n    except Exception as e:",
-        "detail": "sentiments",
-        "documentation": {}
-    },
-    {
         "label": "analyze_sentiment",
         "kind": 2,
         "importPath": "sentiments",
         "description": "sentiments",
-        "peekOfCode": "def analyze_sentiment(sentiment: SentimentAnalysisSpanish, text):\n    try:\n        sentiment.sentiment(text)\n    except Exception as e:\n        print(\"Error:\", e)\nanalyze_sentiment(sentiment, z)",
+        "peekOfCode": "def analyze_sentiment(sentiment: SentimentAnalysisSpanish, text):\n    try:\n        sentiment.sentiment(text)\n    except Exception as e:\n        print(\"Error:\", e)\nanalyze_sentiment(sentiment, x)\nanalyze_sentiment(sentiment, y)\nanalyze_sentiment(sentiment, z)",
         "detail": "sentiments",
         "documentation": {}
     },
@@ -856,7 +838,7 @@
         "kind": 5,
         "importPath": "sentiments",
         "description": "sentiments",
-        "peekOfCode": "sentiment = SentimentAnalysisSpanish()\nx = \"Esta muy buena esa película\"\ny = \"Que horrible comida!!!\"\nz = \"Tuve una experiencia natural\"\ndef new_func(sentiment: SentimentAnalysisSpanish, x):\n    try:\n        sentiment.sentiment(\"x: \" + x)\n    except Exception as e:\n        print(\"Error:\", e)\nnew_func(sentiment, x)",
+        "peekOfCode": "sentiment = SentimentAnalysisSpanish()\nx = \"Esta muy buena esa película\"\ny = \"Que horrible comida!!!\"\nz = \"Tuve una experiencia natural\"\ndef analyze_sentiment(sentiment: SentimentAnalysisSpanish, text):\n    try:\n        sentiment.sentiment(text)\n    except Exception as e:\n        print(\"Error:\", e)\nanalyze_sentiment(sentiment, x)",
         "detail": "sentiments",
         "documentation": {}
     },
@@ -865,7 +847,7 @@
         "kind": 5,
         "importPath": "sentiments",
         "description": "sentiments",
-        "peekOfCode": "x = \"Esta muy buena esa película\"\ny = \"Que horrible comida!!!\"\nz = \"Tuve una experiencia natural\"\ndef new_func(sentiment: SentimentAnalysisSpanish, x):\n    try:\n        sentiment.sentiment(\"x: \" + x)\n    except Exception as e:\n        print(\"Error:\", e)\nnew_func(sentiment, x)\ndef submit_sentiment(sentiment: SentimentAnalysisSpanish, y):",
+        "peekOfCode": "x = \"Esta muy buena esa película\"\ny = \"Que horrible comida!!!\"\nz = \"Tuve una experiencia natural\"\ndef analyze_sentiment(sentiment: SentimentAnalysisSpanish, text):\n    try:\n        sentiment.sentiment(text)\n    except Exception as e:\n        print(\"Error:\", e)\nanalyze_sentiment(sentiment, x)\nanalyze_sentiment(sentiment, y)",
         "detail": "sentiments",
         "documentation": {}
     },
@@ -874,7 +856,7 @@
         "kind": 5,
         "importPath": "sentiments",
         "description": "sentiments",
-        "peekOfCode": "y = \"Que horrible comida!!!\"\nz = \"Tuve una experiencia natural\"\ndef new_func(sentiment: SentimentAnalysisSpanish, x):\n    try:\n        sentiment.sentiment(\"x: \" + x)\n    except Exception as e:\n        print(\"Error:\", e)\nnew_func(sentiment, x)\ndef submit_sentiment(sentiment: SentimentAnalysisSpanish, y):\n    try:",
+        "peekOfCode": "y = \"Que horrible comida!!!\"\nz = \"Tuve una experiencia natural\"\ndef analyze_sentiment(sentiment: SentimentAnalysisSpanish, text):\n    try:\n        sentiment.sentiment(text)\n    except Exception as e:\n        print(\"Error:\", e)\nanalyze_sentiment(sentiment, x)\nanalyze_sentiment(sentiment, y)\nanalyze_sentiment(sentiment, z)",
         "detail": "sentiments",
         "documentation": {}
     },
@@ -883,7 +865,7 @@
         "kind": 5,
         "importPath": "sentiments",
         "description": "sentiments",
-        "peekOfCode": "z = \"Tuve una experiencia natural\"\ndef new_func(sentiment: SentimentAnalysisSpanish, x):\n    try:\n        sentiment.sentiment(\"x: \" + x)\n    except Exception as e:\n        print(\"Error:\", e)\nnew_func(sentiment, x)\ndef submit_sentiment(sentiment: SentimentAnalysisSpanish, y):\n    try:\n        sentiment.sentiment(\"y: \" + y)",
+        "peekOfCode": "z = \"Tuve una experiencia natural\"\ndef analyze_sentiment(sentiment: SentimentAnalysisSpanish, text):\n    try:\n        sentiment.sentiment(text)\n    except Exception as e:\n        print(\"Error:\", e)\nanalyze_sentiment(sentiment, x)\nanalyze_sentiment(sentiment, y)\nanalyze_sentiment(sentiment, z)",
         "detail": "sentiments",
         "documentation": {}
     }

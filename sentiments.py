@@ -2,31 +2,9 @@ from sentiment_analysis_spanish.sentiment_analysis import SentimentAnalysisSpani
 
 
 sentiment = SentimentAnalysisSpanish()
-
-
 x = "Esta muy buena esa película"
 y = "Que horrible comida!!!"
 z = "Tuve una experiencia natural"
-
-
-def new_func(sentiment: SentimentAnalysisSpanish, x):
-    try:
-        sentiment.sentiment("x: " + x)
-    except Exception as e:
-        print("Error:", e)
-
-
-new_func(sentiment, x)
-
-
-def submit_sentiment(sentiment: SentimentAnalysisSpanish, y):
-    try:
-        sentiment.sentiment("y: " + y)
-    except Exception as e:
-        print("Error:", e)
-
-
-submit_sentiment(sentiment, y)
 
 
 def analyze_sentiment(sentiment: SentimentAnalysisSpanish, text):
@@ -36,4 +14,6 @@ def analyze_sentiment(sentiment: SentimentAnalysisSpanish, text):
         print("Error:", e)
 
 
+analyze_sentiment(sentiment, x)
+analyze_sentiment(sentiment, y)
 analyze_sentiment(sentiment, z)

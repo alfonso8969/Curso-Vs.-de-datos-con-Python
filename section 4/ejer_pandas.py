@@ -6,7 +6,6 @@ df = pd.read_csv("../../../NIVEL0/dataset.csv", index_col="id")
 df_filter = df.fillna(0)
 df_filter.head()
 
-
 df.iloc[0]
 df.loc[[183721, 183722], ["full_text", "favorites"]]
 
