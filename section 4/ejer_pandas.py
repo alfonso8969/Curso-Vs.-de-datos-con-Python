@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-df = pd.read_csv("../../NIVEL0/dataset.csv", index_col="id")
+df = pd.read_csv("../../../NIVEL0/dataset.csv", index_col="id")
 
 df_filter = df.fillna(0)
 df_filter.head()
@@ -49,4 +49,4 @@ result = df.groupby("country").agg({
     "retweets": "max",
     "favorites": "mean"
 })
-result.to_csv("../../NIVEL0/result.csv")
+result.to_csv("../../../NIVEL0/result.csv")

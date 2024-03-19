@@ -1,9 +1,9 @@
 import pandas as pd
 
 
-df1 = pd.read_csv("../../NIVEL0/dataset_2a.csv", index_col="id")
-df2 = pd.read_csv("../../NIVEL0/dataset_2b.csv", index_col="user")
-df3 = pd.read_csv("../../NIVEL0/dataset_2c.csv", index_col="ciudad")
+df1 = pd.read_csv("../../../NIVEL0/dataset_2a.csv", index_col="id")
+df2 = pd.read_csv("../../../NIVEL0/dataset_2b.csv", index_col="user")
+df3 = pd.read_csv("../../../NIVEL0/dataset_2c.csv", index_col="ciudad")
 
 df1
 df2
