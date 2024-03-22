@@ -48,4 +48,5 @@ result = df.groupby("country").agg({
     "retweets": "max",
     "favorites": "mean"
 })
-result.to_csv("../../../NIVEL0/result.csv")
+result
+# result.to_csv("../../../NIVEL0/result.csv")

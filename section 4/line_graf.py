@@ -12,11 +12,11 @@ sell_by_month = df.groupby('mes').agg({
 
 sell_by_month
 
-""" sell_by_month.plot.line(
+sell_by_month.plot.line(
     y='sales',
     style='.-',
     linestyle='dotted'
-) """
+)
 
 sell_by_month.reset_index()
 

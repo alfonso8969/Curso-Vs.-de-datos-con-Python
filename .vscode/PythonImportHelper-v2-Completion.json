@@ -1,20 +1,69 @@
 [
     {
-        "label": "pandas",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "pandas",
-        "description": "pandas",
-        "detail": "pandas",
-        "documentation": {}
-    },
-    {
         "label": "matplotlib.pyplot",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "matplotlib.pyplot",
         "description": "matplotlib.pyplot",
         "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "pyplot",
+        "importPath": "matplotlib",
+        "description": "matplotlib",
+        "isExtraImport": true,
+        "detail": "matplotlib",
+        "documentation": {}
+    },
+    {
+        "label": "datasets",
+        "importPath": "sklearn",
+        "description": "sklearn",
+        "isExtraImport": true,
+        "detail": "sklearn",
+        "documentation": {}
+    },
+    {
+        "label": "svm",
+        "importPath": "sklearn",
+        "description": "sklearn",
+        "isExtraImport": true,
+        "detail": "sklearn",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
         "documentation": {}
     },
     {
@@ -32,6 +81,14 @@
         "isExtraImport": true,
         "importPath": "random",
         "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
         "detail": "random",
         "documentation": {}
     },
@@ -61,6 +118,14 @@
         "documentation": {}
     },
     {
+        "label": "Turtle",
+        "importPath": "turtle",
+        "description": "turtle",
+        "isExtraImport": true,
+        "detail": "turtle",
+        "documentation": {}
+    },
+    {
         "label": "SentimentAnalysisSpanish",
         "importPath": "sentiment_analysis_spanish.sentiment_analysis",
         "description": "sentiment_analysis_spanish.sentiment_analysis",
@@ -69,11 +134,218 @@
         "documentation": {}
     },
     {
+        "label": "x",
+        "kind": 5,
+        "importPath": "ejer_class.bar",
+        "description": "ejer_class.bar",
+        "peekOfCode": "x = 0.5 + np.arange(8)\ny = [4.8, 5.5, 3.5, 4.6, 6.5, 6.6, 2.6, 3.0]\n# plot\nfig, ax = plt.subplots()\nax.bar(x, y, width=1, edgecolor=\"white\", linewidth=0.7)\nax.set(xlim=(0, 8), xticks=np.arange(1, 8),\n       ylim=(0, 8), yticks=np.arange(1, 8))\nplt.show()",
+        "detail": "ejer_class.bar",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "ejer_class.bar",
+        "description": "ejer_class.bar",
+        "peekOfCode": "y = [4.8, 5.5, 3.5, 4.6, 6.5, 6.6, 2.6, 3.0]\n# plot\nfig, ax = plt.subplots()\nax.bar(x, y, width=1, edgecolor=\"white\", linewidth=0.7)\nax.set(xlim=(0, 8), xticks=np.arange(1, 8),\n       ylim=(0, 8), yticks=np.arange(1, 8))\nplt.show()",
+        "detail": "ejer_class.bar",
+        "documentation": {}
+    },
+    {
+        "label": "img",
+        "kind": 5,
+        "importPath": "ejer_class.images",
+        "description": "ejer_class.images",
+        "peekOfCode": "img = np.asarray(Image.open('../../../doc/_static/stinkbug.png'))\nprint(repr(img))\n# %%\n# Each inner list represents a pixel.  Here, with an RGB image, there\n# are 3 values.  Since it's a black and white image, R, G, and B are all\n# similar.  An RGBA (where A is alpha, or transparency) has 4 values\n# per inner list, and a simple luminance image just has one value (and\n# is thus only a 2-D array, not a 3-D array).  For RGB and RGBA images,\n# Matplotlib supports float32 and uint8 data types.  For grayscale,\n# Matplotlib supports only float32.  If your array data does not meet",
+        "detail": "ejer_class.images",
+        "documentation": {}
+    },
+    {
+        "label": "imgplot",
+        "kind": 5,
+        "importPath": "ejer_class.images",
+        "description": "ejer_class.images",
+        "peekOfCode": "imgplot = plt.imshow(img)\n# %%\n# You can also plot any numpy array.\n#\n# .. _Pseudocolor:\n#\n# Applying pseudocolor schemes to image plots\n# -------------------------------------------------\n#\n# Pseudocolor can be a useful tool for enhancing contrast and",
+        "detail": "ejer_class.images",
+        "documentation": {}
+    },
+    {
+        "label": "lum_img",
+        "kind": 5,
+        "importPath": "ejer_class.images",
+        "description": "ejer_class.images",
+        "peekOfCode": "lum_img = img[:, :, 0]\nplt.imshow(lum_img)\n# %%\n# Now, with a luminosity (2D, no color) image, the default colormap (aka lookup table,\n# LUT), is applied.  The default is called viridis.  There are plenty of\n# others to choose from.\nplt.imshow(lum_img, cmap=\"hot\")\n# %%\n# Note that you can also change colormaps on existing plot objects using the\n# :meth:`~matplotlib.cm.ScalarMappable.set_cmap` method:",
+        "detail": "ejer_class.images",
+        "documentation": {}
+    },
+    {
+        "label": "imgplot",
+        "kind": 5,
+        "importPath": "ejer_class.images",
+        "description": "ejer_class.images",
+        "peekOfCode": "imgplot = plt.imshow(lum_img)\nimgplot.set_cmap('nipy_spectral')\n# %%\n#\n# .. note::\n#\n#    However, remember that in the Jupyter Notebook with the inline backend,\n#    you can't make changes to plots that have already been rendered.  If you\n#    create imgplot here in one cell, you cannot call set_cmap() on it in a later\n#    cell and expect the earlier plot to change.  Make sure that you enter these",
+        "detail": "ejer_class.images",
+        "documentation": {}
+    },
+    {
+        "label": "imgplot",
+        "kind": 5,
+        "importPath": "ejer_class.images",
+        "description": "ejer_class.images",
+        "peekOfCode": "imgplot = plt.imshow(lum_img)\nplt.colorbar()\n# %%\n# .. _`Data ranges`:\n#\n# Examining a specific data range\n# ---------------------------------\n#\n# Sometimes you want to enhance the contrast in your image, or expand\n# the contrast in a particular region while sacrificing the detail in",
+        "detail": "ejer_class.images",
+        "documentation": {}
+    },
+    {
+        "label": "imgplot",
+        "kind": 5,
+        "importPath": "ejer_class.images",
+        "description": "ejer_class.images",
+        "peekOfCode": "imgplot = plt.imshow(lum_img)\nimgplot.set_clim(0, 175)\n# %%\n# .. _Interpolation:\n#\n# Array Interpolation schemes\n# ---------------------------\n#\n# Interpolation calculates what the color or value of a pixel \"should\"\n# be, according to different mathematical schemes.  One common place",
+        "detail": "ejer_class.images",
+        "documentation": {}
+    },
+    {
+        "label": "img",
+        "kind": 5,
+        "importPath": "ejer_class.images",
+        "description": "ejer_class.images",
+        "peekOfCode": "img = Image.open('../../doc/_static/stinkbug.png')\nimg.thumbnail((64, 64))  # resizes image in-place\nimgplot = plt.imshow(img)\n# %%\n# Here we use the default interpolation (\"nearest\"), since we did not\n# give :func:`~matplotlib.pyplot.imshow` any interpolation argument.\n#\n# Let's try some others. Here's \"bilinear\":\nimgplot = plt.imshow(img, interpolation=\"bilinear\")\n# %%",
+        "detail": "ejer_class.images",
+        "documentation": {}
+    },
+    {
+        "label": "imgplot",
+        "kind": 5,
+        "importPath": "ejer_class.images",
+        "description": "ejer_class.images",
+        "peekOfCode": "imgplot = plt.imshow(img)\n# %%\n# Here we use the default interpolation (\"nearest\"), since we did not\n# give :func:`~matplotlib.pyplot.imshow` any interpolation argument.\n#\n# Let's try some others. Here's \"bilinear\":\nimgplot = plt.imshow(img, interpolation=\"bilinear\")\n# %%\n# and bicubic:\nimgplot = plt.imshow(img, interpolation=\"bicubic\")",
+        "detail": "ejer_class.images",
+        "documentation": {}
+    },
+    {
+        "label": "imgplot",
+        "kind": 5,
+        "importPath": "ejer_class.images",
+        "description": "ejer_class.images",
+        "peekOfCode": "imgplot = plt.imshow(img, interpolation=\"bilinear\")\n# %%\n# and bicubic:\nimgplot = plt.imshow(img, interpolation=\"bicubic\")\n# %%\n# Bicubic interpolation is often used when blowing up photos - people\n# tend to prefer blurry over pixelated.",
+        "detail": "ejer_class.images",
+        "documentation": {}
+    },
+    {
+        "label": "imgplot",
+        "kind": 5,
+        "importPath": "ejer_class.images",
+        "description": "ejer_class.images",
+        "peekOfCode": "imgplot = plt.imshow(img, interpolation=\"bicubic\")\n# %%\n# Bicubic interpolation is often used when blowing up photos - people\n# tend to prefer blurry over pixelated.",
+        "detail": "ejer_class.images",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "ejer_class.matplotlib_subplots_test",
+        "description": "ejer_class.matplotlib_subplots_test",
+        "peekOfCode": "data = np.random.lognormal(size=(37, 4), mean=1.5, sigma=1.75)\nlabels = list('ABCD')\nfs = 10  # fontsize\nfig, axs = plt.subplots(nrows=2, ncols=3, figsize=(6, 6), sharey=True)\naxs[0, 0].boxplot(data, labels=labels)\naxs[0, 0].set_title('Default', fontsize=fs)\naxs[0, 1].boxplot(data, labels=labels, showmeans=True)\naxs[0, 1].set_title('showmeans=True', fontsize=fs)\naxs[0, 2].boxplot(data, labels=labels, showmeans=True, meanline=True)\naxs[0, 2].set_title('showmeans=True,\\nmeanline=True', fontsize=fs)",
+        "detail": "ejer_class.matplotlib_subplots_test",
+        "documentation": {}
+    },
+    {
+        "label": "labels",
+        "kind": 5,
+        "importPath": "ejer_class.matplotlib_subplots_test",
+        "description": "ejer_class.matplotlib_subplots_test",
+        "peekOfCode": "labels = list('ABCD')\nfs = 10  # fontsize\nfig, axs = plt.subplots(nrows=2, ncols=3, figsize=(6, 6), sharey=True)\naxs[0, 0].boxplot(data, labels=labels)\naxs[0, 0].set_title('Default', fontsize=fs)\naxs[0, 1].boxplot(data, labels=labels, showmeans=True)\naxs[0, 1].set_title('showmeans=True', fontsize=fs)\naxs[0, 2].boxplot(data, labels=labels, showmeans=True, meanline=True)\naxs[0, 2].set_title('showmeans=True,\\nmeanline=True', fontsize=fs)\naxs[1, 0].boxplot(data, labels=labels, showbox=False, showcaps=False)",
+        "detail": "ejer_class.matplotlib_subplots_test",
+        "documentation": {}
+    },
+    {
+        "label": "fs",
+        "kind": 5,
+        "importPath": "ejer_class.matplotlib_subplots_test",
+        "description": "ejer_class.matplotlib_subplots_test",
+        "peekOfCode": "fs = 10  # fontsize\nfig, axs = plt.subplots(nrows=2, ncols=3, figsize=(6, 6), sharey=True)\naxs[0, 0].boxplot(data, labels=labels)\naxs[0, 0].set_title('Default', fontsize=fs)\naxs[0, 1].boxplot(data, labels=labels, showmeans=True)\naxs[0, 1].set_title('showmeans=True', fontsize=fs)\naxs[0, 2].boxplot(data, labels=labels, showmeans=True, meanline=True)\naxs[0, 2].set_title('showmeans=True,\\nmeanline=True', fontsize=fs)\naxs[1, 0].boxplot(data, labels=labels, showbox=False, showcaps=False)\ntufte_title = 'Tufte Style \\n(showbox=False,\\nshowcaps=False)'",
+        "detail": "ejer_class.matplotlib_subplots_test",
+        "documentation": {}
+    },
+    {
+        "label": "tufte_title",
+        "kind": 5,
+        "importPath": "ejer_class.matplotlib_subplots_test",
+        "description": "ejer_class.matplotlib_subplots_test",
+        "peekOfCode": "tufte_title = 'Tufte Style \\n(showbox=False,\\nshowcaps=False)'\naxs[1, 0].set_title(tufte_title, fontsize=fs)\naxs[1, 1].boxplot(data, labels=labels, notch=True, bootstrap=10000)\naxs[1, 1].set_title('notch=True,\\nbootstrap=10000', fontsize=fs)\naxs[1, 2].boxplot(data, labels=labels, showfliers=False)\naxs[1, 2].set_title('showfliers=False', fontsize=fs)\nfor ax in axs.flat:\n    ax.set_yscale('log')\n    ax.set_yticklabels([])\nfig.subplots_adjust(hspace=0.4)",
+        "detail": "ejer_class.matplotlib_subplots_test",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "ejer_class.plot",
+        "description": "ejer_class.plot",
+        "peekOfCode": "x = np.linspace(0, 10, 100)\ny = 4 + 2 * np.sin(2 * x)\n# plot\nfig, ax = plt.subplots()\nax.plot(x, y, linewidth=2.0)\nax.set(xlim=(0, 8), xticks=np.arange(1, 8),\n       ylim=(0, 8), yticks=np.arange(1, 8))\nplt.show()",
+        "detail": "ejer_class.plot",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "ejer_class.plot",
+        "description": "ejer_class.plot",
+        "peekOfCode": "y = 4 + 2 * np.sin(2 * x)\n# plot\nfig, ax = plt.subplots()\nax.plot(x, y, linewidth=2.0)\nax.set(xlim=(0, 8), xticks=np.arange(1, 8),\n       ylim=(0, 8), yticks=np.arange(1, 8))\nplt.show()",
+        "detail": "ejer_class.plot",
+        "documentation": {}
+    },
+    {
+        "label": "digits",
+        "kind": 5,
+        "importPath": "ejer_class.sklearn_test",
+        "description": "ejer_class.sklearn_test",
+        "peekOfCode": "digits = datasets.load_digits()\n_, axes = plt.subplots(nrows=1, ncols=4, figsize=(10, 3))\nfor ax, image, label in zip(axes, digits.images, digits.target):\n    ax.set_axis_off()\n    ax.imshow(image, cmap=plt.cm.gray_r, interpolation=\"nearest\")\n    ax.set_title(\"Training: %i\" % label)\nprint(digits.data.shape)\nplt.gray()\nplt.matshow(digits.images[0])\nplt.show()",
+        "detail": "ejer_class.sklearn_test",
+        "documentation": {}
+    },
+    {
+        "label": "n_samples",
+        "kind": 5,
+        "importPath": "ejer_class.sklearn_test",
+        "description": "ejer_class.sklearn_test",
+        "peekOfCode": "n_samples = len(digits.images)\ndata = digits.images.reshape((n_samples, -1))\n# Create a classifier: a support vector classifier\nclf = svm.SVC(gamma=0.001)\n# Split data into 50% train and 50% test subsets\nX_train, X_test, y_train, y_test = train_test_split(\n    data, digits.target, test_size=0.5, shuffle=False\n)\n# Learn the digits on the train subset\nclf.fit(X_train, y_train)",
+        "detail": "ejer_class.sklearn_test",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "ejer_class.sklearn_test",
+        "description": "ejer_class.sklearn_test",
+        "peekOfCode": "data = digits.images.reshape((n_samples, -1))\n# Create a classifier: a support vector classifier\nclf = svm.SVC(gamma=0.001)\n# Split data into 50% train and 50% test subsets\nX_train, X_test, y_train, y_test = train_test_split(\n    data, digits.target, test_size=0.5, shuffle=False\n)\n# Learn the digits on the train subset\nclf.fit(X_train, y_train)\n# Predict the value of the digit on the test subset",
+        "detail": "ejer_class.sklearn_test",
+        "documentation": {}
+    },
+    {
+        "label": "clf",
+        "kind": 5,
+        "importPath": "ejer_class.sklearn_test",
+        "description": "ejer_class.sklearn_test",
+        "peekOfCode": "clf = svm.SVC(gamma=0.001)\n# Split data into 50% train and 50% test subsets\nX_train, X_test, y_train, y_test = train_test_split(\n    data, digits.target, test_size=0.5, shuffle=False\n)\n# Learn the digits on the train subset\nclf.fit(X_train, y_train)\n# Predict the value of the digit on the test subset\npredicted = clf.predict(X_test)\n_, axes = plt.subplots(nrows=1, ncols=4, figsize=(10, 3))",
+        "detail": "ejer_class.sklearn_test",
+        "documentation": {}
+    },
+    {
+        "label": "predicted",
+        "kind": 5,
+        "importPath": "ejer_class.sklearn_test",
+        "description": "ejer_class.sklearn_test",
+        "peekOfCode": "predicted = clf.predict(X_test)\n_, axes = plt.subplots(nrows=1, ncols=4, figsize=(10, 3))\nfor ax, image, prediction in zip(axes, X_test, predicted):\n    ax.set_axis_off()\n    image = image.reshape(8, 8)\n    ax.imshow(image, cmap=plt.cm.gray_r, interpolation=\"nearest\")\n    ax.set_title(f\"Prediction: {prediction}\")",
+        "detail": "ejer_class.sklearn_test",
+        "documentation": {}
+    },
+    {
         "label": "df",
         "kind": 5,
         "importPath": "section 4.areas_graf",
         "description": "section 4.areas_graf",
-        "peekOfCode": "df = pd.read_csv(\"../../../data/tienda_ventas.csv\", index_col='id')\ndf\ndf[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month.plot.line(\n    y='sales',\n    style='.-',",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/tienda_ventas.csv\", index_col=\"id\")\ndf\ndf[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby(\"mes\").agg({\"sales\": \"sum\"})\nsell_by_month.plot.line(y=\"sales\", style=\".-\", linestyle=\"dotted\")\nsell_by_month.plot.area(y=\"sales\")\ndf[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[",
         "detail": "section 4.areas_graf",
         "documentation": {}
     },
@@ -82,7 +354,7 @@
         "kind": 5,
         "importPath": "section 4.areas_graf",
         "description": "section 4.areas_graf",
-        "peekOfCode": "df[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month.plot.line(\n    y='sales',\n    style='.-',\n    linestyle='dotted'\n)",
+        "peekOfCode": "df[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby(\"mes\").agg({\"sales\": \"sum\"})\nsell_by_month.plot.line(y=\"sales\", style=\".-\", linestyle=\"dotted\")\nsell_by_month.plot.area(y=\"sales\")\ndf[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]",
         "detail": "section 4.areas_graf",
         "documentation": {}
     },
@@ -91,16 +363,16 @@
         "kind": 5,
         "importPath": "section 4.areas_graf",
         "description": "section 4.areas_graf",
-        "peekOfCode": "sell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month.plot.line(\n    y='sales',\n    style='.-',\n    linestyle='dotted'\n)\nsell_by_month.plot.area(\n    y='sales'",
+        "peekOfCode": "sell_by_month = df.groupby(\"mes\").agg({\"sales\": \"sum\"})\nsell_by_month.plot.line(y=\"sales\", style=\".-\", linestyle=\"dotted\")\nsell_by_month.plot.area(y=\"sales\")\ndf[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})",
         "detail": "section 4.areas_graf",
         "documentation": {}
     },
     {
-        "label": "df['year']",
+        "label": "df[\"year\"]",
         "kind": 5,
         "importPath": "section 4.areas_graf",
         "description": "section 4.areas_graf",
-        "peekOfCode": "df['year'] = df['date'].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df['year'] == '2015') & \n    (df['family'].isin(['SEAFOOD', 'MEATS', 'DAIRY']))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby(['mes', 'family']).agg({\n    'sales': 'sum'\n})",
+        "peekOfCode": "df[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")",
         "detail": "section 4.areas_graf",
         "documentation": {}
     },
@@ -109,7 +381,7 @@
         "kind": 5,
         "importPath": "section 4.areas_graf",
         "description": "section 4.areas_graf",
-        "peekOfCode": "df_2015 = df[\n    (df['year'] == '2015') & \n    (df['family'].isin(['SEAFOOD', 'MEATS', 'DAIRY']))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby(['mes', 'family']).agg({\n    'sales': 'sum'\n})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()",
+        "peekOfCode": "df_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line()\ndf_2015_pivot.plot.area(stacked=False)",
         "detail": "section 4.areas_graf",
         "documentation": {}
     },
@@ -118,7 +390,7 @@
         "kind": 5,
         "importPath": "section 4.areas_graf",
         "description": "section 4.areas_graf",
-        "peekOfCode": "df_2015_grouped = df_2015.groupby(['mes', 'family']).agg({\n    'sales': 'sum'\n})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index='mes', columns='family', values='sales')\ndf_2015_pivot.plot.line()\ndf_2015_pivot.plot.area(\n    stacked=False\n)",
+        "peekOfCode": "df_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line()\ndf_2015_pivot.plot.area(stacked=False)",
         "detail": "section 4.areas_graf",
         "documentation": {}
     },
@@ -127,7 +399,7 @@
         "kind": 5,
         "importPath": "section 4.areas_graf",
         "description": "section 4.areas_graf",
-        "peekOfCode": "df_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index='mes', columns='family', values='sales')\ndf_2015_pivot.plot.line()\ndf_2015_pivot.plot.area(\n    stacked=False\n)",
+        "peekOfCode": "df_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line()\ndf_2015_pivot.plot.area(stacked=False)",
         "detail": "section 4.areas_graf",
         "documentation": {}
     },
@@ -136,7 +408,7 @@
         "kind": 5,
         "importPath": "section 4.areas_graf",
         "description": "section 4.areas_graf",
-        "peekOfCode": "df_2015_pivot = df_2015_pivot.pivot(index='mes', columns='family', values='sales')\ndf_2015_pivot.plot.line()\ndf_2015_pivot.plot.area(\n    stacked=False\n)",
+        "peekOfCode": "df_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line()\ndf_2015_pivot.plot.area(stacked=False)",
         "detail": "section 4.areas_graf",
         "documentation": {}
     },
@@ -226,7 +498,7 @@
         "kind": 5,
         "importPath": "section 4.ejer_pandas",
         "description": "section 4.ejer_pandas",
-        "peekOfCode": "df = df.drop(columns=[\"user\"])\ndf.fillna(0)\ndf.groupby(\"country\").mean()\nresult = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",\n    \"retweets\": \"max\",\n    \"favorites\": \"mean\"\n})\nresult.to_csv(\"../../../NIVEL0/result.csv\")",
+        "peekOfCode": "df = df.drop(columns=[\"user\"])\ndf.fillna(0)\ndf.groupby(\"country\").mean()\nresult = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",\n    \"retweets\": \"max\",\n    \"favorites\": \"mean\"\n})\nresult",
         "detail": "section 4.ejer_pandas",
         "documentation": {}
     },
@@ -235,7 +507,7 @@
         "kind": 5,
         "importPath": "section 4.ejer_pandas",
         "description": "section 4.ejer_pandas",
-        "peekOfCode": "result = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",\n    \"retweets\": \"max\",\n    \"favorites\": \"mean\"\n})\nresult.to_csv(\"../../../NIVEL0/result.csv\")",
+        "peekOfCode": "result = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",\n    \"retweets\": \"max\",\n    \"favorites\": \"mean\"\n})\nresult\n# result.to_csv(\"../../../NIVEL0/result.csv\")",
         "detail": "section 4.ejer_pandas",
         "documentation": {}
     },
@@ -460,7 +732,7 @@
         "kind": 5,
         "importPath": "section 4.line_graf",
         "description": "section 4.line_graf",
-        "peekOfCode": "df = pd.read_csv(\"../../../data/tienda_ventas.csv\", index_col='id')\ndf\ndf['mes'] = df['date'].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month\n\"\"\" sell_by_month.plot.line(\n    y='sales',",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/tienda_ventas.csv\", index_col='id')\ndf\ndf['mes'] = df['date'].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month\nsell_by_month.plot.line(\n    y='sales',",
         "detail": "section 4.line_graf",
         "documentation": {}
     },
@@ -469,7 +741,7 @@
         "kind": 5,
         "importPath": "section 4.line_graf",
         "description": "section 4.line_graf",
-        "peekOfCode": "df['mes'] = df['date'].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month\n\"\"\" sell_by_month.plot.line(\n    y='sales',\n    style='.-',\n    linestyle='dotted'",
+        "peekOfCode": "df['mes'] = df['date'].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month\nsell_by_month.plot.line(\n    y='sales',\n    style='.-',\n    linestyle='dotted'",
         "detail": "section 4.line_graf",
         "documentation": {}
     },
@@ -478,7 +750,7 @@
         "kind": 5,
         "importPath": "section 4.line_graf",
         "description": "section 4.line_graf",
-        "peekOfCode": "sell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month\n\"\"\" sell_by_month.plot.line(\n    y='sales',\n    style='.-',\n    linestyle='dotted'\n) \"\"\"\nsell_by_month.reset_index()",
+        "peekOfCode": "sell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month\nsell_by_month.plot.line(\n    y='sales',\n    style='.-',\n    linestyle='dotted'\n)\nsell_by_month.reset_index()",
         "detail": "section 4.line_graf",
         "documentation": {}
     },
@@ -620,9 +892,117 @@
     {
         "label": "df",
         "kind": 5,
+        "importPath": "section 5.2_grid",
+        "description": "section 5.2_grid",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/tiendas_procesado.csv\", index_col=\"fecha\")\ndf\nplt.rcParams[\"figure.figsize\"] = (15, 3)\nplt.style.use(\"bmh\")\n# ax = df.plot.line(figsize=(10, 5))\n# ax.xaxis.grid(color='g', linestyle='-', linewidth=0.5)\n# ax.yaxis.grid(color='b', linestyle='--', linewidth=0.5)\nimport seaborn as sns\nplt.figure(figsize=(10, 5))\nsns.set_style(\"ticks\")",
+        "detail": "section 5.2_grid",
+        "documentation": {}
+    },
+    {
+        "label": "plt.rcParams[\"figure.figsize\"]",
+        "kind": 5,
+        "importPath": "section 5.2_grid",
+        "description": "section 5.2_grid",
+        "peekOfCode": "plt.rcParams[\"figure.figsize\"] = (15, 3)\nplt.style.use(\"bmh\")\n# ax = df.plot.line(figsize=(10, 5))\n# ax.xaxis.grid(color='g', linestyle='-', linewidth=0.5)\n# ax.yaxis.grid(color='b', linestyle='--', linewidth=0.5)\nimport seaborn as sns\nplt.figure(figsize=(10, 5))\nsns.set_style(\"ticks\")\nsns.set_theme(\"paper\")\nplt.grid(",
+        "detail": "section 5.2_grid",
+        "documentation": {}
+    },
+    {
+        "label": "bx",
+        "kind": 5,
+        "importPath": "section 5.2_grid",
+        "description": "section 5.2_grid",
+        "peekOfCode": "bx = sns.lineplot(data=df)\nimport plotly.express as px\nfig = px.line(\n    df, width=800,\n    height=500,\n    template='plotly_dark'\n)\nfig.update_xaxes(showgrid=False)\nfig.update_yaxes(\n    showgrid=True,",
+        "detail": "section 5.2_grid",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 5.2_grid",
+        "description": "section 5.2_grid",
+        "peekOfCode": "fig = px.line(\n    df, width=800,\n    height=500,\n    template='plotly_dark'\n)\nfig.update_xaxes(showgrid=False)\nfig.update_yaxes(\n    showgrid=True,\n    secondary_y=True\n)",
+        "detail": "section 5.2_grid",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 5.anotations",
+        "description": "section 5.anotations",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/tiendas_procesado.csv\", index_col=\"fecha\")\nplt.style.use(\"ggplot\")\nax = df.plot.line(figsize=(10, 4))\nax.set_title(\n    \"Ventas de 3 Tipos de Productos por Año\",\n    fontdict={\"size\": 18, \"name\": \"Times new Roman\"},\n)\nax.set_xlabel(\n    \"Período\", fontdict={\"name\": \"Times new Roman\", \"color\": \"black\", \"size\": 12}\n)",
+        "detail": "section 5.anotations",
+        "documentation": {}
+    },
+    {
+        "label": "ax",
+        "kind": 5,
+        "importPath": "section 5.anotations",
+        "description": "section 5.anotations",
+        "peekOfCode": "ax = df.plot.line(figsize=(10, 4))\nax.set_title(\n    \"Ventas de 3 Tipos de Productos por Año\",\n    fontdict={\"size\": 18, \"name\": \"Times new Roman\"},\n)\nax.set_xlabel(\n    \"Período\", fontdict={\"name\": \"Times new Roman\", \"color\": \"black\", \"size\": 12}\n)\nax.set_ylabel(\n    \"Ventas (en Millones de Dólares)\",",
+        "detail": "section 5.anotations",
+        "documentation": {}
+    },
+    {
+        "label": "max_dairy",
+        "kind": 5,
+        "importPath": "section 5.anotations",
+        "description": "section 5.anotations",
+        "peekOfCode": "max_dairy = df[\"DAIRY\"].max()\nax.axhline(y=int(max_dairy), color=\"green\", linestyle=\"--\")\nax.annotate(\n    \"Umbral máximo de ventas de lácteos\",\n    fontstyle=\"italic\",\n    alpha=0.8,\n    size=8,\n    xy=(11, int(max_dairy) + 10000),\n    horizontalalignment=\"right\",\n    color=\"green\",",
+        "detail": "section 5.anotations",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 5.anotations",
+        "description": "section 5.anotations",
+        "peekOfCode": "fig = px.line(\n    df,\n    width=800,\n    height=500,\n    template=\"ggplot2\",\n    title=\"Ventas de 3 Tipos de Productos por Año\",\n    labels={\n        \"fecha\": \"Periodo\",\n        \"value\": \"Ventas por año (en millones de $)\",\n        \"variable\": \"Tipo de Producto\",",
+        "detail": "section 5.anotations",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 5.custom_labels",
+        "description": "section 5.custom_labels",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/tiendas_procesado.csv\", index_col=\"fecha\")\ndf\nplt.style.use(\"ggplot\")\nax = df.plot.line(\n    figsize=(10, 5)\n)\nax.set_title(\n    label=\"Tiendas Procesadas por tipos de producto y meses 2015\",\n    fontdict={\n        \"fontsize\": 16,",
+        "detail": "section 5.custom_labels",
+        "documentation": {}
+    },
+    {
+        "label": "ax",
+        "kind": 5,
+        "importPath": "section 5.custom_labels",
+        "description": "section 5.custom_labels",
+        "peekOfCode": "ax = df.plot.line(\n    figsize=(10, 5)\n)\nax.set_title(\n    label=\"Tiendas Procesadas por tipos de producto y meses 2015\",\n    fontdict={\n        \"fontsize\": 16,\n        \"fontweight\": \"bold\",\n        \"color\": \"green\"\n    }",
+        "detail": "section 5.custom_labels",
+        "documentation": {}
+    },
+    {
+        "label": "ticks_positions",
+        "kind": 5,
+        "importPath": "section 5.custom_labels",
+        "description": "section 5.custom_labels",
+        "peekOfCode": "ticks_positions = np.arange(0, len(df))\nax.set_xticks(ticks_positions)\nax.set_xticklabels(\n    df.index.values,\n    rotation=45,\n    fontdict={\n        \"fontsize\": 10,\n        \"fontweight\": \"bold\",\n        \"color\": \"red\"\n    })",
+        "detail": "section 5.custom_labels",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 5.custom_labels",
+        "description": "section 5.custom_labels",
+        "peekOfCode": "fig = px.line(\n    df,\n    width=800,\n    height=500,\n    template=\"ggplot2\",\n    title=\"Tiendas Procesadas para tres productos y meses 2015\",\n    labels={\n        \"fecha\": \"Período meses\",\n        \"value\": \"Ventas productos (en millones de $)\",\n        \"variable\": \"Tipo de producto\",",
+        "detail": "section 5.custom_labels",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
         "importPath": "section 5.pandasI",
         "description": "section 5.pandasI",
-        "peekOfCode": "df = pd.read_csv(\"../../../data/tiendas_procesado.csv\", index_col='fecha')\ndf\nplt.rcParams['figure.figsize'] = (10, 5)\n# Temas https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html\nplt.style.use('bmh')\ndf.plot.line(\n    # figsize=(10, 5)\n)\nimport seaborn as sns\nplt.figure(figsize=(12, 5))",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/tiendas_procesado.csv\", index_col='fecha')\ndf\nplt.rcParams['figure.figsize'] = (10, 5)\n# Temas https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html\nplt.style.use('bmh')\ndf.plot.line(\n    # figsize=(10, 5)\n)\nimport seaborn as sns\nplt.figure(figsize=(10, 5))",
         "detail": "section 5.pandasI",
         "documentation": {}
     },
@@ -631,8 +1011,62 @@
         "kind": 5,
         "importPath": "section 5.pandasI",
         "description": "section 5.pandasI",
-        "peekOfCode": "plt.rcParams['figure.figsize'] = (10, 5)\n# Temas https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html\nplt.style.use('bmh')\ndf.plot.line(\n    # figsize=(10, 5)\n)\nimport seaborn as sns\nplt.figure(figsize=(12, 5))\nsns.lineplot(\n    data=df",
+        "peekOfCode": "plt.rcParams['figure.figsize'] = (10, 5)\n# Temas https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html\nplt.style.use('bmh')\ndf.plot.line(\n    # figsize=(10, 5)\n)\nimport seaborn as sns\nplt.figure(figsize=(10, 5))\nsns.set_style(\"ticks\")\nsns.set_theme(\"paper\")",
         "detail": "section 5.pandasI",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 5.title_graf",
+        "description": "section 5.title_graf",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/tiendas_procesado.csv\", index_col=\"fecha\")\ndf\nplt.style.use(\"ggplot\")\nax = df.plot.line(\n    figsize=(10, 5), title=\"Tiendas Procesadas por 3 tipos de producto y meses 2015\"\n)\nticks_positions = np.arange(0, len(df))\nax.set_xticks(ticks_positions)\nax.set_xticklabels(df.index.values, rotation=45)\nax.set_xlabel(\"Período\", loc=\"left\")",
+        "detail": "section 5.title_graf",
+        "documentation": {}
+    },
+    {
+        "label": "ax",
+        "kind": 5,
+        "importPath": "section 5.title_graf",
+        "description": "section 5.title_graf",
+        "peekOfCode": "ax = df.plot.line(\n    figsize=(10, 5), title=\"Tiendas Procesadas por 3 tipos de producto y meses 2015\"\n)\nticks_positions = np.arange(0, len(df))\nax.set_xticks(ticks_positions)\nax.set_xticklabels(df.index.values, rotation=45)\nax.set_xlabel(\"Período\", loc=\"left\")\nax.set_ylabel(\"Ventas (en millones de dólares)\", loc=\"bottom\")\nimport seaborn as sns\nplt.figure(figsize=(10, 5))",
+        "detail": "section 5.title_graf",
+        "documentation": {}
+    },
+    {
+        "label": "ticks_positions",
+        "kind": 5,
+        "importPath": "section 5.title_graf",
+        "description": "section 5.title_graf",
+        "peekOfCode": "ticks_positions = np.arange(0, len(df))\nax.set_xticks(ticks_positions)\nax.set_xticklabels(df.index.values, rotation=45)\nax.set_xlabel(\"Período\", loc=\"left\")\nax.set_ylabel(\"Ventas (en millones de dólares)\", loc=\"bottom\")\nimport seaborn as sns\nplt.figure(figsize=(10, 5))\nplt.title(\"Tiendas Procesadas por tipos de producto y meses 2015\")\nplt.xlabel(\"Período\")\nplt.ylabel(\"Ventas (en millones de dólares)\")",
+        "detail": "section 5.title_graf",
+        "documentation": {}
+    },
+    {
+        "label": "bx",
+        "kind": 5,
+        "importPath": "section 5.title_graf",
+        "description": "section 5.title_graf",
+        "peekOfCode": "bx = sns.lineplot(data=df)\nbx.set(\n    xlabel=\"Período meses\",\n    ylabel=\"Ventas productos (en millones de dólares)\",\n    title=\"Tiendas Procesadas para tres productos y meses 2015\",\n)\nimport plotly.express as px\nfig = px.line(\n    df,\n    width=800,",
+        "detail": "section 5.title_graf",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 5.title_graf",
+        "description": "section 5.title_graf",
+        "peekOfCode": "fig = px.line(\n    df,\n    width=800,\n    height=500,\n    template=\"ggplot2\",\n    title=\"Tiendas Procesadas para tres productos y meses 2015\",\n    labels={\n        \"fecha\": \"Período meses\",\n        \"value\": \"Ventas productos (en millones de $)\",\n        \"variable\": \"Tipo de producto\",",
+        "detail": "section 5.title_graf",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "section 5.turtle_test",
+        "description": "section 5.turtle_test",
+        "peekOfCode": "t = Turtle()\nt.screen.title('Object-oriented turtle demo')\nt.screen.bgcolor(\"orange\")\nfor i in range(100):\n    steps = int(random() * 100)\n    angle = int(random() * 360)\n    t.right(angle)\n    t.fd(steps)\nt.screen.mainloop()",
+        "detail": "section 5.turtle_test",
         "documentation": {}
     },
     {
