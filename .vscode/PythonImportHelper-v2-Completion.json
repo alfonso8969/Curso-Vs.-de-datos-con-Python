@@ -26,6 +26,15 @@
         "documentation": {}
     },
     {
+        "label": "matplotlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib",
+        "description": "matplotlib",
+        "detail": "matplotlib",
+        "documentation": {}
+    },
+    {
         "label": "pyplot",
         "importPath": "matplotlib",
         "description": "matplotlib",
@@ -118,11 +127,71 @@
         "documentation": {}
     },
     {
+        "label": "plotly",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly",
+        "description": "plotly",
+        "detail": "plotly",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.font_manager",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.font_manager",
+        "description": "matplotlib.font_manager",
+        "detail": "matplotlib.font_manager",
+        "documentation": {}
+    },
+    {
+        "label": "ListedColormap",
+        "importPath": "matplotlib.colors",
+        "description": "matplotlib.colors",
+        "isExtraImport": true,
+        "detail": "matplotlib.colors",
+        "documentation": {}
+    },
+    {
+        "label": "make_subplots",
+        "importPath": "plotly.subplots",
+        "description": "plotly.subplots",
+        "isExtraImport": true,
+        "detail": "plotly.subplots",
+        "documentation": {}
+    },
+    {
+        "label": "plotly.graph_objects",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly.graph_objects",
+        "description": "plotly.graph_objects",
+        "detail": "plotly.graph_objects",
+        "documentation": {}
+    },
+    {
         "label": "Turtle",
         "importPath": "turtle",
         "description": "turtle",
         "isExtraImport": true,
         "detail": "turtle",
+        "documentation": {}
+    },
+    {
+        "label": "Figure",
+        "importPath": "matplotlib.figure",
+        "description": "matplotlib.figure",
+        "isExtraImport": true,
+        "detail": "matplotlib.figure",
+        "documentation": {}
+    },
+    {
+        "label": "scipy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "scipy",
+        "description": "scipy",
+        "detail": "scipy",
         "documentation": {}
     },
     {
@@ -998,6 +1067,114 @@
         "documentation": {}
     },
     {
+        "label": "raw",
+        "kind": 5,
+        "importPath": "section 5.guardado",
+        "description": "section 5.guardado",
+        "peekOfCode": "raw = pd.read_csv(\"../../../data/tienda_ventas.csv\")\nraw[\"fecha\"] = raw[\"date\"].apply(lambda x: x[:7])\nraw[\"anio\"] = raw[\"date\"].apply(lambda x: x[:4])\ndf_2015 = raw[\n    (raw[\"anio\"] == \"2015\") & (raw[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\nagrup = df_2015[[\"fecha\", \"family\", \"sales\"]].groupby([\"fecha\", \"family\"]).sum()\ndf2 = agrup.reset_index(1)  # Para seaborn y plotly\ndf = agrup.unstack()  # Para pandas\ndf.columns = df.columns.droplevel()",
+        "detail": "section 5.guardado",
+        "documentation": {}
+    },
+    {
+        "label": "raw[\"fecha\"]",
+        "kind": 5,
+        "importPath": "section 5.guardado",
+        "description": "section 5.guardado",
+        "peekOfCode": "raw[\"fecha\"] = raw[\"date\"].apply(lambda x: x[:7])\nraw[\"anio\"] = raw[\"date\"].apply(lambda x: x[:4])\ndf_2015 = raw[\n    (raw[\"anio\"] == \"2015\") & (raw[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\nagrup = df_2015[[\"fecha\", \"family\", \"sales\"]].groupby([\"fecha\", \"family\"]).sum()\ndf2 = agrup.reset_index(1)  # Para seaborn y plotly\ndf = agrup.unstack()  # Para pandas\ndf.columns = df.columns.droplevel()\nplt.style.use(\"ggplot\")",
+        "detail": "section 5.guardado",
+        "documentation": {}
+    },
+    {
+        "label": "raw[\"anio\"]",
+        "kind": 5,
+        "importPath": "section 5.guardado",
+        "description": "section 5.guardado",
+        "peekOfCode": "raw[\"anio\"] = raw[\"date\"].apply(lambda x: x[:4])\ndf_2015 = raw[\n    (raw[\"anio\"] == \"2015\") & (raw[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\nagrup = df_2015[[\"fecha\", \"family\", \"sales\"]].groupby([\"fecha\", \"family\"]).sum()\ndf2 = agrup.reset_index(1)  # Para seaborn y plotly\ndf = agrup.unstack()  # Para pandas\ndf.columns = df.columns.droplevel()\nplt.style.use(\"ggplot\")\nfig, ((ax1), (ax2), (ax3)) = plt.subplots(3, 1, constrained_layout=True)",
+        "detail": "section 5.guardado",
+        "documentation": {}
+    },
+    {
+        "label": "df_2015",
+        "kind": 5,
+        "importPath": "section 5.guardado",
+        "description": "section 5.guardado",
+        "peekOfCode": "df_2015 = raw[\n    (raw[\"anio\"] == \"2015\") & (raw[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\nagrup = df_2015[[\"fecha\", \"family\", \"sales\"]].groupby([\"fecha\", \"family\"]).sum()\ndf2 = agrup.reset_index(1)  # Para seaborn y plotly\ndf = agrup.unstack()  # Para pandas\ndf.columns = df.columns.droplevel()\nplt.style.use(\"ggplot\")\nfig, ((ax1), (ax2), (ax3)) = plt.subplots(3, 1, constrained_layout=True)\nfig.set_size_inches(8, 7)",
+        "detail": "section 5.guardado",
+        "documentation": {}
+    },
+    {
+        "label": "agrup",
+        "kind": 5,
+        "importPath": "section 5.guardado",
+        "description": "section 5.guardado",
+        "peekOfCode": "agrup = df_2015[[\"fecha\", \"family\", \"sales\"]].groupby([\"fecha\", \"family\"]).sum()\ndf2 = agrup.reset_index(1)  # Para seaborn y plotly\ndf = agrup.unstack()  # Para pandas\ndf.columns = df.columns.droplevel()\nplt.style.use(\"ggplot\")\nfig, ((ax1), (ax2), (ax3)) = plt.subplots(3, 1, constrained_layout=True)\nfig.set_size_inches(8, 7)\nfig.suptitle(\"Venta de 3 tipos de productos\")\nfig.supylabel(\"Ventas en Millones de Dólares\")\nfig.supxlabel(\"Periodo\")",
+        "detail": "section 5.guardado",
+        "documentation": {}
+    },
+    {
+        "label": "df2",
+        "kind": 5,
+        "importPath": "section 5.guardado",
+        "description": "section 5.guardado",
+        "peekOfCode": "df2 = agrup.reset_index(1)  # Para seaborn y plotly\ndf = agrup.unstack()  # Para pandas\ndf.columns = df.columns.droplevel()\nplt.style.use(\"ggplot\")\nfig, ((ax1), (ax2), (ax3)) = plt.subplots(3, 1, constrained_layout=True)\nfig.set_size_inches(8, 7)\nfig.suptitle(\"Venta de 3 tipos de productos\")\nfig.supylabel(\"Ventas en Millones de Dólares\")\nfig.supxlabel(\"Periodo\")\ndf.plot.line(y=\"DAIRY\", ax=ax1, color=\"blue\")",
+        "detail": "section 5.guardado",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 5.guardado",
+        "description": "section 5.guardado",
+        "peekOfCode": "df = agrup.unstack()  # Para pandas\ndf.columns = df.columns.droplevel()\nplt.style.use(\"ggplot\")\nfig, ((ax1), (ax2), (ax3)) = plt.subplots(3, 1, constrained_layout=True)\nfig.set_size_inches(8, 7)\nfig.suptitle(\"Venta de 3 tipos de productos\")\nfig.supylabel(\"Ventas en Millones de Dólares\")\nfig.supxlabel(\"Periodo\")\ndf.plot.line(y=\"DAIRY\", ax=ax1, color=\"blue\")\ndf.plot.line(y=\"MEATS\", ax=ax2, color=\"red\")",
+        "detail": "section 5.guardado",
+        "documentation": {}
+    },
+    {
+        "label": "df.columns",
+        "kind": 5,
+        "importPath": "section 5.guardado",
+        "description": "section 5.guardado",
+        "peekOfCode": "df.columns = df.columns.droplevel()\nplt.style.use(\"ggplot\")\nfig, ((ax1), (ax2), (ax3)) = plt.subplots(3, 1, constrained_layout=True)\nfig.set_size_inches(8, 7)\nfig.suptitle(\"Venta de 3 tipos de productos\")\nfig.supylabel(\"Ventas en Millones de Dólares\")\nfig.supxlabel(\"Periodo\")\ndf.plot.line(y=\"DAIRY\", ax=ax1, color=\"blue\")\ndf.plot.line(y=\"MEATS\", ax=ax2, color=\"red\")\ndf.plot.line(y=\"SEAFOOD\", ax=ax3, color=\"green\")",
+        "detail": "section 5.guardado",
+        "documentation": {}
+    },
+    {
+        "label": "title_font",
+        "kind": 5,
+        "importPath": "section 5.guardado",
+        "description": "section 5.guardado",
+        "peekOfCode": "title_font = {\"size\": 10, \"name\": \"Helvetica\"}\nax1.set_title(\"Lacteos\", fontdict=title_font)\nax2.set_title(\"Carnes\", fontdict=title_font)\nax3.set_title(\"Comida de Mar\", fontdict=title_font)\nax1.set_xticklabels([])\nax2.set_xticklabels([])\nax1.set_xlabel(\"\")\nax2.set_xlabel(\"\")\nax3.set_xlabel(\"\")\nax3.set_xticks(np.arange(0, len(df)))",
+        "detail": "section 5.guardado",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 5.legend_grad",
+        "description": "section 5.legend_grad",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/tiendas_procesado.csv\", index_col=\"fecha\")\nplt.style.use(\"ggplot\")\nax = df.plot.line(figsize=(10, 4))\nax.set_title(\n    \"Ventas de 3 Tipos de Productos por Año\",\n    fontdict={\"size\": 18, \"name\": \"Times new Roman\"},\n)\nax.set_xlabel(\n    \"Período\", fontdict={\"name\": \"Times new Roman\", \"color\": \"black\", \"size\": 12}\n)",
+        "detail": "section 5.legend_grad",
+        "documentation": {}
+    },
+    {
+        "label": "ax",
+        "kind": 5,
+        "importPath": "section 5.legend_grad",
+        "description": "section 5.legend_grad",
+        "peekOfCode": "ax = df.plot.line(figsize=(10, 4))\nax.set_title(\n    \"Ventas de 3 Tipos de Productos por Año\",\n    fontdict={\"size\": 18, \"name\": \"Times new Roman\"},\n)\nax.set_xlabel(\n    \"Período\", fontdict={\"name\": \"Times new Roman\", \"color\": \"black\", \"size\": 12}\n)\nax.set_ylabel(\n    \"Ventas (en Millones de Dólares)\",",
+        "detail": "section 5.legend_grad",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 5.legend_grad",
+        "description": "section 5.legend_grad",
+        "peekOfCode": "fig = px.line(\n    df,\n    width=800,\n    height=500,\n    template=\"ggplot2\",\n    title=\"Ventas de 3 Tipos de Productos por Año\",\n    labels={\n        \"x\": \"Periodo\",\n        \"sales\": \"Ventas por año (en millones de $)\",\n        \"family\": \"Tipo de Producto\",",
+        "detail": "section 5.legend_grad",
+        "documentation": {}
+    },
+    {
         "label": "df",
         "kind": 5,
         "importPath": "section 5.pandasI",
@@ -1013,6 +1190,132 @@
         "description": "section 5.pandasI",
         "peekOfCode": "plt.rcParams['figure.figsize'] = (10, 5)\n# Temas https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html\nplt.style.use('bmh')\ndf.plot.line(\n    # figsize=(10, 5)\n)\nimport seaborn as sns\nplt.figure(figsize=(10, 5))\nsns.set_style(\"ticks\")\nsns.set_theme(\"paper\")",
         "detail": "section 5.pandasI",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 5.personalizacion_avanzada",
+        "description": "section 5.personalizacion_avanzada",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/tienda_ventas.csv\")\ndf = df[df[\"family\"].isin([\"SEAFOOD\", \"MEATS\"])]\ndf[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\n# Dataframe para el gráfico de lineas\ndf = df.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"}).reset_index()\n# Dataframe para el pie chart\ndf_pie = df.groupby(\"family\").agg({\"sales\": \"sum\"})\ndf_pie\n# Si utilizamos Seaborn, podemos definir colores con un diccionario y las categorías que queremos que tenga cada color\ncolors = {\"MEATS\": \"#4b8bf5\", \"SEAFOOD\": \"#f6b26b\"}",
+        "detail": "section 5.personalizacion_avanzada",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 5.personalizacion_avanzada",
+        "description": "section 5.personalizacion_avanzada",
+        "peekOfCode": "df = df[df[\"family\"].isin([\"SEAFOOD\", \"MEATS\"])]\ndf[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\n# Dataframe para el gráfico de lineas\ndf = df.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"}).reset_index()\n# Dataframe para el pie chart\ndf_pie = df.groupby(\"family\").agg({\"sales\": \"sum\"})\ndf_pie\n# Si utilizamos Seaborn, podemos definir colores con un diccionario y las categorías que queremos que tenga cada color\ncolors = {\"MEATS\": \"#4b8bf5\", \"SEAFOOD\": \"#f6b26b\"}\n# Cuando utilicemos Pandas o Matplotlib tendremos que crear un ListedColorMap a partir de una lista de colores",
+        "detail": "section 5.personalizacion_avanzada",
+        "documentation": {}
+    },
+    {
+        "label": "df[\"mes\"]",
+        "kind": 5,
+        "importPath": "section 5.personalizacion_avanzada",
+        "description": "section 5.personalizacion_avanzada",
+        "peekOfCode": "df[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\n# Dataframe para el gráfico de lineas\ndf = df.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"}).reset_index()\n# Dataframe para el pie chart\ndf_pie = df.groupby(\"family\").agg({\"sales\": \"sum\"})\ndf_pie\n# Si utilizamos Seaborn, podemos definir colores con un diccionario y las categorías que queremos que tenga cada color\ncolors = {\"MEATS\": \"#4b8bf5\", \"SEAFOOD\": \"#f6b26b\"}\n# Cuando utilicemos Pandas o Matplotlib tendremos que crear un ListedColorMap a partir de una lista de colores\n# Aquí estamos cogiendo los valores de nuestro diccionario de colores como una lista ['#4b8bf5', '#f6b26b']",
+        "detail": "section 5.personalizacion_avanzada",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 5.personalizacion_avanzada",
+        "description": "section 5.personalizacion_avanzada",
+        "peekOfCode": "df = df.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"}).reset_index()\n# Dataframe para el pie chart\ndf_pie = df.groupby(\"family\").agg({\"sales\": \"sum\"})\ndf_pie\n# Si utilizamos Seaborn, podemos definir colores con un diccionario y las categorías que queremos que tenga cada color\ncolors = {\"MEATS\": \"#4b8bf5\", \"SEAFOOD\": \"#f6b26b\"}\n# Cuando utilicemos Pandas o Matplotlib tendremos que crear un ListedColorMap a partir de una lista de colores\n# Aquí estamos cogiendo los valores de nuestro diccionario de colores como una lista ['#4b8bf5', '#f6b26b']\nfrom matplotlib.colors import ListedColormap\ncmap = ListedColormap(colors.values())",
+        "detail": "section 5.personalizacion_avanzada",
+        "documentation": {}
+    },
+    {
+        "label": "df_pie",
+        "kind": 5,
+        "importPath": "section 5.personalizacion_avanzada",
+        "description": "section 5.personalizacion_avanzada",
+        "peekOfCode": "df_pie = df.groupby(\"family\").agg({\"sales\": \"sum\"})\ndf_pie\n# Si utilizamos Seaborn, podemos definir colores con un diccionario y las categorías que queremos que tenga cada color\ncolors = {\"MEATS\": \"#4b8bf5\", \"SEAFOOD\": \"#f6b26b\"}\n# Cuando utilicemos Pandas o Matplotlib tendremos que crear un ListedColorMap a partir de una lista de colores\n# Aquí estamos cogiendo los valores de nuestro diccionario de colores como una lista ['#4b8bf5', '#f6b26b']\nfrom matplotlib.colors import ListedColormap\ncmap = ListedColormap(colors.values())\n# Este ColorMap lo podemos utilizar para cualquier gráfico que hagamos en Pandas o Matplotlib\nfont = {\"size\": 8}",
+        "detail": "section 5.personalizacion_avanzada",
+        "documentation": {}
+    },
+    {
+        "label": "colors",
+        "kind": 5,
+        "importPath": "section 5.personalizacion_avanzada",
+        "description": "section 5.personalizacion_avanzada",
+        "peekOfCode": "colors = {\"MEATS\": \"#4b8bf5\", \"SEAFOOD\": \"#f6b26b\"}\n# Cuando utilicemos Pandas o Matplotlib tendremos que crear un ListedColorMap a partir de una lista de colores\n# Aquí estamos cogiendo los valores de nuestro diccionario de colores como una lista ['#4b8bf5', '#f6b26b']\nfrom matplotlib.colors import ListedColormap\ncmap = ListedColormap(colors.values())\n# Este ColorMap lo podemos utilizar para cualquier gráfico que hagamos en Pandas o Matplotlib\nfont = {\"size\": 8}\nmatplotlib.rc(\n    \"font\", **font\n)  # Esta es otra forma de configurar globalmente el tamaño de la fuente",
+        "detail": "section 5.personalizacion_avanzada",
+        "documentation": {}
+    },
+    {
+        "label": "cmap",
+        "kind": 5,
+        "importPath": "section 5.personalizacion_avanzada",
+        "description": "section 5.personalizacion_avanzada",
+        "peekOfCode": "cmap = ListedColormap(colors.values())\n# Este ColorMap lo podemos utilizar para cualquier gráfico que hagamos en Pandas o Matplotlib\nfont = {\"size\": 8}\nmatplotlib.rc(\n    \"font\", **font\n)  # Esta es otra forma de configurar globalmente el tamaño de la fuente\n# Podemos crear subplots que no tengan el mismo tamaño\nfig, (ax1, ax2) = plt.subplots(\n    1,\n    2,",
+        "detail": "section 5.personalizacion_avanzada",
+        "documentation": {}
+    },
+    {
+        "label": "font",
+        "kind": 5,
+        "importPath": "section 5.personalizacion_avanzada",
+        "description": "section 5.personalizacion_avanzada",
+        "peekOfCode": "font = {\"size\": 8}\nmatplotlib.rc(\n    \"font\", **font\n)  # Esta es otra forma de configurar globalmente el tamaño de la fuente\n# Podemos crear subplots que no tengan el mismo tamaño\nfig, (ax1, ax2) = plt.subplots(\n    1,\n    2,\n    constrained_layout=True,\n    gridspec_kw={",
+        "detail": "section 5.personalizacion_avanzada",
+        "documentation": {}
+    },
+    {
+        "label": "gs",
+        "kind": 5,
+        "importPath": "section 5.personalizacion_avanzada",
+        "description": "section 5.personalizacion_avanzada",
+        "peekOfCode": "gs = ax1u.get_gridspec()\npie1.remove()\npie2.remove()\naxpie = fig.add_subplot(gs[:, 1])\n# ======= Repetimos construcción de LinePlot con eje quebrado =======\nsns.lineplot(\n    data=df,\n    x=\"mes\",\n    y=\"sales\",\n    hue=\"family\",",
+        "detail": "section 5.personalizacion_avanzada",
+        "documentation": {}
+    },
+    {
+        "label": "axpie",
+        "kind": 5,
+        "importPath": "section 5.personalizacion_avanzada",
+        "description": "section 5.personalizacion_avanzada",
+        "peekOfCode": "axpie = fig.add_subplot(gs[:, 1])\n# ======= Repetimos construcción de LinePlot con eje quebrado =======\nsns.lineplot(\n    data=df,\n    x=\"mes\",\n    y=\"sales\",\n    hue=\"family\",\n    ax=ax1u,\n    linewidth=0.8,\n    marker=\"o\",",
+        "detail": "section 5.personalizacion_avanzada",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "section 5.personalizacion_avanzada",
+        "description": "section 5.personalizacion_avanzada",
+        "peekOfCode": "d = 0.008\nkwargs = dict(transform=ax1u.transAxes, color=\"k\", clip_on=False)\nax1u.plot((-d, +d), (-d, +d), **kwargs)  # top-left diagonal\nax1u.plot((1 - d, 1 + d), (-d, +d), **kwargs)  # top-right diagonal\nkwargs.update(transform=ax1d.transAxes)  # switch to the bottom axes\nax1d.plot((-d, +d), (1 - d, 1 + d), **kwargs)  # bottom-left diagonal\nax1d.plot((1 - d, 1 + d), (1 - d, 1 + d), **kwargs)  # bottom-right diagonal\n# === FIN DE LA MAGIA ===\nax1u.set_xlabel(\"\")\nax1u.set_ylabel(\"\")",
+        "detail": "section 5.personalizacion_avanzada",
+        "documentation": {}
+    },
+    {
+        "label": "kwargs",
+        "kind": 5,
+        "importPath": "section 5.personalizacion_avanzada",
+        "description": "section 5.personalizacion_avanzada",
+        "peekOfCode": "kwargs = dict(transform=ax1u.transAxes, color=\"k\", clip_on=False)\nax1u.plot((-d, +d), (-d, +d), **kwargs)  # top-left diagonal\nax1u.plot((1 - d, 1 + d), (-d, +d), **kwargs)  # top-right diagonal\nkwargs.update(transform=ax1d.transAxes)  # switch to the bottom axes\nax1d.plot((-d, +d), (1 - d, 1 + d), **kwargs)  # bottom-left diagonal\nax1d.plot((1 - d, 1 + d), (1 - d, 1 + d), **kwargs)  # bottom-right diagonal\n# === FIN DE LA MAGIA ===\nax1u.set_xlabel(\"\")\nax1u.set_ylabel(\"\")\nax1u.xaxis.grid(linewidth=0.5, color=\"#ededed\")",
+        "detail": "section 5.personalizacion_avanzada",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 5.subplots_graf",
+        "description": "section 5.subplots_graf",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/tiendas_procesado.csv\", index_col=\"fecha\")\nplt.style.use(\"ggplot\")\n# Subgráficos\n# https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplots.html\nfig, axes = plt.subplots(3, 1)\nfig, axes = plt.subplots(2, 2)\nfig, (ax1, ax2, ax3) = plt.subplots(3, 1, constrained_layout=True)  # Constrained Layout\ndf.plot.line(y=\"DAIRY\", ax=ax1, color=\"blue\")\ndf.plot.line(y=\"MEATS\", ax=ax2, color=\"red\")\ndf.plot.line(y=\"SEAFOOD\", ax=ax3, color=\"purple\")",
+        "detail": "section 5.subplots_graf",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 5.subplots_graf",
+        "description": "section 5.subplots_graf",
+        "peekOfCode": "fig = make_subplots(rows=3, cols=1, shared_xaxes=True)\nfig.append_trace(\n    go.Scatter(x=df.index.values, y=df[\"DAIRY\"], name=\"LACTEOS\"), row=1, col=1\n)\nfig.append_trace(\n    go.Scatter(x=df.index.values, y=df[\"MEATS\"], name=\"CARNES\"), row=2, col=1\n)\nfig.append_trace(\n    go.Scatter(x=df.index.values, y=df[\"SEAFOOD\"], name=\"COMIDA DE MAR\"), row=3, col=1\n)",
+        "detail": "section 5.subplots_graf",
         "documentation": {}
     },
     {
@@ -1067,6 +1370,303 @@
         "description": "section 5.turtle_test",
         "peekOfCode": "t = Turtle()\nt.screen.title('Object-oriented turtle demo')\nt.screen.bgcolor(\"orange\")\nfor i in range(100):\n    steps = int(random() * 100)\n    angle = int(random() * 360)\n    t.right(angle)\n    t.fd(steps)\nt.screen.mainloop()",
         "detail": "section 5.turtle_test",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 6.practicaI",
+        "description": "section 6.practicaI",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/algorithm_comparison.csv\", index_col=\"dataset\")\nfields = [\"algoritmo1\", \"algoritmo2\"]\nax = df.plot.bar(\n    figsize=(12, 6),\n    y=fields,  # type: ignore\n    title=\"Evaluación Algoritmo1 vs Algoritmo2\",\n)\nax.legend(\n    loc=\"upper left\", bbox_to_anchor=(0, 1), labels=[\"Algoritmo 1\", \"Algoritmo 2\"]\n)",
+        "detail": "section 6.practicaI",
+        "documentation": {}
+    },
+    {
+        "label": "fields",
+        "kind": 5,
+        "importPath": "section 6.practicaI",
+        "description": "section 6.practicaI",
+        "peekOfCode": "fields = [\"algoritmo1\", \"algoritmo2\"]\nax = df.plot.bar(\n    figsize=(12, 6),\n    y=fields,  # type: ignore\n    title=\"Evaluación Algoritmo1 vs Algoritmo2\",\n)\nax.legend(\n    loc=\"upper left\", bbox_to_anchor=(0, 1), labels=[\"Algoritmo 1\", \"Algoritmo 2\"]\n)\nax.set_xlabel(\"Dataset\", fontdict={\"color\": \"black\", \"size\": 12})",
+        "detail": "section 6.practicaI",
+        "documentation": {}
+    },
+    {
+        "label": "ax",
+        "kind": 5,
+        "importPath": "section 6.practicaI",
+        "description": "section 6.practicaI",
+        "peekOfCode": "ax = df.plot.bar(\n    figsize=(12, 6),\n    y=fields,  # type: ignore\n    title=\"Evaluación Algoritmo1 vs Algoritmo2\",\n)\nax.legend(\n    loc=\"upper left\", bbox_to_anchor=(0, 1), labels=[\"Algoritmo 1\", \"Algoritmo 2\"]\n)\nax.set_xlabel(\"Dataset\", fontdict={\"color\": \"black\", \"size\": 12})\nax.set_ylabel(\"Rendimiento\", fontdict={\"color\": \"black\", \"size\": 12})",
+        "detail": "section 6.practicaI",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 6.practicaII",
+        "description": "section 6.practicaII",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/datasets_top_4.csv\", index_col=\"dataset\")\ndf\nplt.style.use(\"ggplot\")\ndf1 = df.iloc[0:13:]\ndf2 = df.iloc[13:, :]\nfig, (ax1, ax2) = plt.subplots(\n    1,\n    2,\n    constrained_layout=True,\n)",
+        "detail": "section 6.practicaII",
+        "documentation": {}
+    },
+    {
+        "label": "df1",
+        "kind": 5,
+        "importPath": "section 6.practicaII",
+        "description": "section 6.practicaII",
+        "peekOfCode": "df1 = df.iloc[0:13:]\ndf2 = df.iloc[13:, :]\nfig, (ax1, ax2) = plt.subplots(\n    1,\n    2,\n    constrained_layout=True,\n)\ndf1.plot.barh(\n    stacked=True,\n    ax=ax1,",
+        "detail": "section 6.practicaII",
+        "documentation": {}
+    },
+    {
+        "label": "df2",
+        "kind": 5,
+        "importPath": "section 6.practicaII",
+        "description": "section 6.practicaII",
+        "peekOfCode": "df2 = df.iloc[13:, :]\nfig, (ax1, ax2) = plt.subplots(\n    1,\n    2,\n    constrained_layout=True,\n)\ndf1.plot.barh(\n    stacked=True,\n    ax=ax1,\n    width=0.4,",
+        "detail": "section 6.practicaII",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 6.practicaIII",
+        "description": "section 6.practicaIII",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/viajes_surfistas.csv\")\ndf\nlen(df[\"homecountry\"].unique())\ngrouped = df.groupby(\"homecountry\").agg({\"homename\": \"count\"})\nsort_grouped = grouped.sort_values(\"homename\", ascending=False)\ntop_4 = sort_grouped.head(4)\ndf_otros: pd.DataFrame = sort_grouped.drop(index=top_4.index.values)  # type: ignore\ndf_otros[\"país\"] = \"Otros\"\ndf_otros\ndf_otros_grouped: pd.DataFrame = df_otros.groupby(\"país\").agg({\"homename\": \"sum\"})",
+        "detail": "section 6.practicaIII",
+        "documentation": {}
+    },
+    {
+        "label": "grouped",
+        "kind": 5,
+        "importPath": "section 6.practicaIII",
+        "description": "section 6.practicaIII",
+        "peekOfCode": "grouped = df.groupby(\"homecountry\").agg({\"homename\": \"count\"})\nsort_grouped = grouped.sort_values(\"homename\", ascending=False)\ntop_4 = sort_grouped.head(4)\ndf_otros: pd.DataFrame = sort_grouped.drop(index=top_4.index.values)  # type: ignore\ndf_otros[\"país\"] = \"Otros\"\ndf_otros\ndf_otros_grouped: pd.DataFrame = df_otros.groupby(\"país\").agg({\"homename\": \"sum\"})\ndf_otros_grouped = df_otros_grouped.reset_index()\ndf_otros_grouped\ntop_4 = top_4.reset_index()",
+        "detail": "section 6.practicaIII",
+        "documentation": {}
+    },
+    {
+        "label": "sort_grouped",
+        "kind": 5,
+        "importPath": "section 6.practicaIII",
+        "description": "section 6.practicaIII",
+        "peekOfCode": "sort_grouped = grouped.sort_values(\"homename\", ascending=False)\ntop_4 = sort_grouped.head(4)\ndf_otros: pd.DataFrame = sort_grouped.drop(index=top_4.index.values)  # type: ignore\ndf_otros[\"país\"] = \"Otros\"\ndf_otros\ndf_otros_grouped: pd.DataFrame = df_otros.groupby(\"país\").agg({\"homename\": \"sum\"})\ndf_otros_grouped = df_otros_grouped.reset_index()\ndf_otros_grouped\ntop_4 = top_4.reset_index()\ntop_4.columns = [\"país\", \"homename\"]",
+        "detail": "section 6.practicaIII",
+        "documentation": {}
+    },
+    {
+        "label": "top_4",
+        "kind": 5,
+        "importPath": "section 6.practicaIII",
+        "description": "section 6.practicaIII",
+        "peekOfCode": "top_4 = sort_grouped.head(4)\ndf_otros: pd.DataFrame = sort_grouped.drop(index=top_4.index.values)  # type: ignore\ndf_otros[\"país\"] = \"Otros\"\ndf_otros\ndf_otros_grouped: pd.DataFrame = df_otros.groupby(\"país\").agg({\"homename\": \"sum\"})\ndf_otros_grouped = df_otros_grouped.reset_index()\ndf_otros_grouped\ntop_4 = top_4.reset_index()\ntop_4.columns = [\"país\", \"homename\"]\ntop_4",
+        "detail": "section 6.practicaIII",
+        "documentation": {}
+    },
+    {
+        "label": "df_otros[\"país\"]",
+        "kind": 5,
+        "importPath": "section 6.practicaIII",
+        "description": "section 6.practicaIII",
+        "peekOfCode": "df_otros[\"país\"] = \"Otros\"\ndf_otros\ndf_otros_grouped: pd.DataFrame = df_otros.groupby(\"país\").agg({\"homename\": \"sum\"})\ndf_otros_grouped = df_otros_grouped.reset_index()\ndf_otros_grouped\ntop_4 = top_4.reset_index()\ntop_4.columns = [\"país\", \"homename\"]\ntop_4\ndf_final = pd.concat([top_4, df_otros_grouped])\ndf_final = df_final.set_index(\"país\")",
+        "detail": "section 6.practicaIII",
+        "documentation": {}
+    },
+    {
+        "label": "df_otros_grouped",
+        "kind": 5,
+        "importPath": "section 6.practicaIII",
+        "description": "section 6.practicaIII",
+        "peekOfCode": "df_otros_grouped = df_otros_grouped.reset_index()\ndf_otros_grouped\ntop_4 = top_4.reset_index()\ntop_4.columns = [\"país\", \"homename\"]\ntop_4\ndf_final = pd.concat([top_4, df_otros_grouped])\ndf_final = df_final.set_index(\"país\")\nax = df_final.plot.pie(\n    y=\"homename\",\n    autopct=\"%1.1f%%\",",
+        "detail": "section 6.practicaIII",
+        "documentation": {}
+    },
+    {
+        "label": "top_4",
+        "kind": 5,
+        "importPath": "section 6.practicaIII",
+        "description": "section 6.practicaIII",
+        "peekOfCode": "top_4 = top_4.reset_index()\ntop_4.columns = [\"país\", \"homename\"]\ntop_4\ndf_final = pd.concat([top_4, df_otros_grouped])\ndf_final = df_final.set_index(\"país\")\nax = df_final.plot.pie(\n    y=\"homename\",\n    autopct=\"%1.1f%%\",\n    startangle=90,\n    title=\"Porcentaje de Surfistas por País de Procedencia\",",
+        "detail": "section 6.practicaIII",
+        "documentation": {}
+    },
+    {
+        "label": "top_4.columns",
+        "kind": 5,
+        "importPath": "section 6.practicaIII",
+        "description": "section 6.practicaIII",
+        "peekOfCode": "top_4.columns = [\"país\", \"homename\"]\ntop_4\ndf_final = pd.concat([top_4, df_otros_grouped])\ndf_final = df_final.set_index(\"país\")\nax = df_final.plot.pie(\n    y=\"homename\",\n    autopct=\"%1.1f%%\",\n    startangle=90,\n    title=\"Porcentaje de Surfistas por País de Procedencia\",\n    figsize=(10, 10),",
+        "detail": "section 6.practicaIII",
+        "documentation": {}
+    },
+    {
+        "label": "df_final",
+        "kind": 5,
+        "importPath": "section 6.practicaIII",
+        "description": "section 6.practicaIII",
+        "peekOfCode": "df_final = pd.concat([top_4, df_otros_grouped])\ndf_final = df_final.set_index(\"país\")\nax = df_final.plot.pie(\n    y=\"homename\",\n    autopct=\"%1.1f%%\",\n    startangle=90,\n    title=\"Porcentaje de Surfistas por País de Procedencia\",\n    figsize=(10, 10),\n    fontsize=14,\n    explode=(0.1, 0, 0, 0, 0),",
+        "detail": "section 6.practicaIII",
+        "documentation": {}
+    },
+    {
+        "label": "df_final",
+        "kind": 5,
+        "importPath": "section 6.practicaIII",
+        "description": "section 6.practicaIII",
+        "peekOfCode": "df_final = df_final.set_index(\"país\")\nax = df_final.plot.pie(\n    y=\"homename\",\n    autopct=\"%1.1f%%\",\n    startangle=90,\n    title=\"Porcentaje de Surfistas por País de Procedencia\",\n    figsize=(10, 10),\n    fontsize=14,\n    explode=(0.1, 0, 0, 0, 0),\n    shadow=True,",
+        "detail": "section 6.practicaIII",
+        "documentation": {}
+    },
+    {
+        "label": "ax",
+        "kind": 5,
+        "importPath": "section 6.practicaIII",
+        "description": "section 6.practicaIII",
+        "peekOfCode": "ax = df_final.plot.pie(\n    y=\"homename\",\n    autopct=\"%1.1f%%\",\n    startangle=90,\n    title=\"Porcentaje de Surfistas por País de Procedencia\",\n    figsize=(10, 10),\n    fontsize=14,\n    explode=(0.1, 0, 0, 0, 0),\n    shadow=True,\n    colors=[\"#ff9999\", \"#66b3ff\", \"#99ff99\", \"#ffcc99\", \"#c2c2f0\"],",
+        "detail": "section 6.practicaIII",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 6.practicasIV",
+        "description": "section 6.practicasIV",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/tienda_ventas.csv\", index_col=\"id\")\nlen(df[\"store_nbr\"].unique())\nlen(df[\"date\"].unique())\ndf[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\ndf[\"mes\"].unique()\nsell_by_shop = df.groupby(\"store_nbr\").agg({\"sales\": \"sum\"})\nsell_by_shop.drop(sell_by_shop[(sell_by_shop[\"sales\"] <= 0)].index, inplace=True)\nsell_by_shop\nsell_by_shop.describe()\nsell_by_shop.plot.box()",
+        "detail": "section 6.practicasIV",
+        "documentation": {}
+    },
+    {
+        "label": "df[\"mes\"]",
+        "kind": 5,
+        "importPath": "section 6.practicasIV",
+        "description": "section 6.practicasIV",
+        "peekOfCode": "df[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\ndf[\"mes\"].unique()\nsell_by_shop = df.groupby(\"store_nbr\").agg({\"sales\": \"sum\"})\nsell_by_shop.drop(sell_by_shop[(sell_by_shop[\"sales\"] <= 0)].index, inplace=True)\nsell_by_shop\nsell_by_shop.describe()\nsell_by_shop.plot.box()\nsell_by_shop.plot.hist(bins=20)\nsell_by_shops_sorted = sell_by_shop.sort_values(\"sales\", ascending=False)\nsell_by_shops_sorted",
+        "detail": "section 6.practicasIV",
+        "documentation": {}
+    },
+    {
+        "label": "sell_by_shop",
+        "kind": 5,
+        "importPath": "section 6.practicasIV",
+        "description": "section 6.practicasIV",
+        "peekOfCode": "sell_by_shop = df.groupby(\"store_nbr\").agg({\"sales\": \"sum\"})\nsell_by_shop.drop(sell_by_shop[(sell_by_shop[\"sales\"] <= 0)].index, inplace=True)\nsell_by_shop\nsell_by_shop.describe()\nsell_by_shop.plot.box()\nsell_by_shop.plot.hist(bins=20)\nsell_by_shops_sorted = sell_by_shop.sort_values(\"sales\", ascending=False)\nsell_by_shops_sorted\nindex_top_5: list[int] = sell_by_shops_sorted.index[:5].to_list()\nindex_top_5",
+        "detail": "section 6.practicasIV",
+        "documentation": {}
+    },
+    {
+        "label": "sell_by_shops_sorted",
+        "kind": 5,
+        "importPath": "section 6.practicasIV",
+        "description": "section 6.practicasIV",
+        "peekOfCode": "sell_by_shops_sorted = sell_by_shop.sort_values(\"sales\", ascending=False)\nsell_by_shops_sorted\nindex_top_5: list[int] = sell_by_shops_sorted.index[:5].to_list()\nindex_top_5\ndf_top_5 = df[df[\"store_nbr\"].isin(index_top_5)]\ndf_top_5\ndf_top_5_by_month = df_top_5.groupby([\"store_nbr\", \"mes\"]).agg({\"sales\": \"sum\"})\ndf_top_5_by_month = df_top_5_by_month.reset_index()\ndf_top_5_by_month\nimport seaborn as sns",
+        "detail": "section 6.practicasIV",
+        "documentation": {}
+    },
+    {
+        "label": "df_top_5",
+        "kind": 5,
+        "importPath": "section 6.practicasIV",
+        "description": "section 6.practicasIV",
+        "peekOfCode": "df_top_5 = df[df[\"store_nbr\"].isin(index_top_5)]\ndf_top_5\ndf_top_5_by_month = df_top_5.groupby([\"store_nbr\", \"mes\"]).agg({\"sales\": \"sum\"})\ndf_top_5_by_month = df_top_5_by_month.reset_index()\ndf_top_5_by_month\nimport seaborn as sns\nax = sns.lineplot(\n    data=df_top_5_by_month,\n    x=\"mes\",\n    y=\"sales\",",
+        "detail": "section 6.practicasIV",
+        "documentation": {}
+    },
+    {
+        "label": "df_top_5_by_month",
+        "kind": 5,
+        "importPath": "section 6.practicasIV",
+        "description": "section 6.practicasIV",
+        "peekOfCode": "df_top_5_by_month = df_top_5.groupby([\"store_nbr\", \"mes\"]).agg({\"sales\": \"sum\"})\ndf_top_5_by_month = df_top_5_by_month.reset_index()\ndf_top_5_by_month\nimport seaborn as sns\nax = sns.lineplot(\n    data=df_top_5_by_month,\n    x=\"mes\",\n    y=\"sales\",\n    hue=\"store_nbr\",\n    style=\"store_nbr\",",
+        "detail": "section 6.practicasIV",
+        "documentation": {}
+    },
+    {
+        "label": "df_top_5_by_month",
+        "kind": 5,
+        "importPath": "section 6.practicasIV",
+        "description": "section 6.practicasIV",
+        "peekOfCode": "df_top_5_by_month = df_top_5_by_month.reset_index()\ndf_top_5_by_month\nimport seaborn as sns\nax = sns.lineplot(\n    data=df_top_5_by_month,\n    x=\"mes\",\n    y=\"sales\",\n    hue=\"store_nbr\",\n    style=\"store_nbr\",\n    markers=True,",
+        "detail": "section 6.practicasIV",
+        "documentation": {}
+    },
+    {
+        "label": "ax",
+        "kind": 5,
+        "importPath": "section 6.practicasIV",
+        "description": "section 6.practicasIV",
+        "peekOfCode": "ax = sns.lineplot(\n    data=df_top_5_by_month,\n    x=\"mes\",\n    y=\"sales\",\n    hue=\"store_nbr\",\n    style=\"store_nbr\",\n    markers=True,\n)\nax.tick_params(axis=\"x\", labelrotation=90, labelsize=8)\nax.tick_params(axis=\"y\", labelsize=8)",
+        "detail": "section 6.practicasIV",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 6.practicasIV",
+        "description": "section 6.practicasIV",
+        "peekOfCode": "fig = ax.get_figure()\nfig.set_size_inches(11, 3)\n# Puedo manejar los estilos en un diccionario que tenga como claves las categorías (tiendas) y como valor\n# los estilos de las líneas que quiero que tenga cada tienda en el siguiente orden:\n# [color, opacidad, marcador, estilo de linea, ancho de linea]\nestilos_por_tienda = {\n    44: [\"grey\", 0.4, \"+\", \"--\", 1],\n    45: [\"grey\", 0.4, \"s\", \"--\", 1],\n    47: [\"grey\", 0.4, \"x\", \"--\", 1],\n    3: [\"red\", 1, \"o\", \"-\", 1.5],",
+        "detail": "section 6.practicasIV",
+        "documentation": {}
+    },
+    {
+        "label": "estilos_por_tienda",
+        "kind": 5,
+        "importPath": "section 6.practicasIV",
+        "description": "section 6.practicasIV",
+        "peekOfCode": "estilos_por_tienda = {\n    44: [\"grey\", 0.4, \"+\", \"--\", 1],\n    45: [\"grey\", 0.4, \"s\", \"--\", 1],\n    47: [\"grey\", 0.4, \"x\", \"--\", 1],\n    3: [\"red\", 1, \"o\", \"-\", 1.5],\n    46: [\"grey\", 0.4, \"D\", \"--\", 1],\n}\n# Creo un canvas vacío\nfig2, ax2 = plt.subplots()\n# Itero sobre mis tiendas",
+        "detail": "section 6.practicasIV",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 7.1_scatter",
+        "description": "section 7.1_scatter",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/penguins.csv\")\ndf\ndf = df.dropna()\ndf\nplt.style.use(\"seaborn-v0_8-whitegrid\")\ndf.plot.scatter(\n    x=\"flipper_length_mm\",\n    y=\"culmen_length_mm\",\n    c=\"body_mass_g\",\n)",
+        "detail": "section 7.1_scatter",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 7.1_scatter",
+        "description": "section 7.1_scatter",
+        "peekOfCode": "df = df.dropna()\ndf\nplt.style.use(\"seaborn-v0_8-whitegrid\")\ndf.plot.scatter(\n    x=\"flipper_length_mm\",\n    y=\"culmen_length_mm\",\n    c=\"body_mass_g\",\n)\nimport plotly.express as px\nfig = px.scatter(df, x=\"flipper_length_mm\", y=\"culmen_length_mm\", color=\"species\")",
+        "detail": "section 7.1_scatter",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 7.1_scatter",
+        "description": "section 7.1_scatter",
+        "peekOfCode": "fig = px.scatter(df, x=\"flipper_length_mm\", y=\"culmen_length_mm\", color=\"species\")\nfig.show()\nimport seaborn as sns\nsns.set_style(\"whitegrid\")\nsns.catplot(\n    data=df,\n    x=\"flipper_length_mm\",\n    y=\"species\",\n    hue='island'\n)",
+        "detail": "section 7.1_scatter",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 7.regresion",
+        "description": "section 7.regresion",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/penguins.csv\")\ndf = df.dropna()\nsns.regplot(\n    data=df,\n    x=\"flipper_length_mm\",\n    y=\"culmen_length_mm\",\n    scatter_kws={\"s\": 10},\n)\nimport scipy as sp\nr, p = sp.stats.pearsonr(df[\"flipper_length_mm\"], df[\"culmen_length_mm\"])",
+        "detail": "section 7.regresion",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 7.regresion",
+        "description": "section 7.regresion",
+        "peekOfCode": "df = df.dropna()\nsns.regplot(\n    data=df,\n    x=\"flipper_length_mm\",\n    y=\"culmen_length_mm\",\n    scatter_kws={\"s\": 10},\n)\nimport scipy as sp\nr, p = sp.stats.pearsonr(df[\"flipper_length_mm\"], df[\"culmen_length_mm\"])\nr",
+        "detail": "section 7.regresion",
+        "documentation": {}
+    },
+    {
+        "label": "r",
+        "kind": 5,
+        "importPath": "section 7.regresion",
+        "description": "section 7.regresion",
+        "peekOfCode": "r = 'r=' + str(r)[0:4]  # radius of the circle in cm\nplt.text(220, 35, r, color='black')",
+        "detail": "section 7.regresion",
         "documentation": {}
     },
     {
