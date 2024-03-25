@@ -12,10 +12,23 @@ df.plot.line(
     # figsize=(10, 5)
 )
 
+
 import seaborn as sns
 
-plt.figure(figsize=(12, 5))
+plt.figure(figsize=(10, 5))
+
+sns.set_style("ticks")
+sns.set_theme("paper")
 
 sns.lineplot(
     data=df
+)
+
+import plotly.express as px
+
+px.line(
+    df,
+    width=800,
+    height=500,
+    template='plotly_dark'
 )
