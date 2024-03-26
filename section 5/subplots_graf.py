@@ -53,7 +53,7 @@ import plotly.graph_objects as go
 fig = make_subplots(rows=3, cols=1, shared_xaxes=True)
 
 fig.append_trace(
-    go.Scatter(x=df.index.values, y=df["DAIRY"], name="LACTEOS"), row=1, col=1
+    go.Scatter(x=df.index.values, y=df["DAIRY"], name="LÁCTEOS"), row=1, col=1
 )
 
 fig.append_trace(

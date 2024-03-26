@@ -14,10 +14,21 @@
         "figsize",
         "fillna",
         "iloc",
+        "labelcolor",
+        "lineplot",
         "linestyle",
+        "linewidth",
+        "paises",
+        "Percap",
         "plotly",
+        "scatterplot",
+        "skyblue",
         "startangle",
-        "violinplot"
+        "twinx",
+        "violinplot",
+        "whitegrid",
+        "xlabel",
+        "ylabel"
     ],
     "python.analysis.autoImportCompletions": true,
     "python.analysis.typeCheckingMode": "basic"
