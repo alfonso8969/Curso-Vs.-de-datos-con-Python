@@ -18,6 +18,8 @@
         "lineplot",
         "linestyle",
         "linewidth",
+        "mapbox",
+        "networkx",
         "paises",
         "Percap",
         "plotly",

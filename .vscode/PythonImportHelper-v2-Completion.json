@@ -18,21 +18,70 @@
         "documentation": {}
     },
     {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib",
+        "description": "matplotlib",
+        "detail": "matplotlib",
+        "documentation": {}
+    },
+    {
+        "label": "pyplot",
+        "importPath": "matplotlib",
+        "description": "matplotlib",
+        "isExtraImport": true,
+        "detail": "matplotlib",
+        "documentation": {}
+    },
+    {
+        "label": "datasets",
+        "importPath": "sklearn",
+        "description": "sklearn",
+        "isExtraImport": true,
+        "detail": "sklearn",
+        "documentation": {}
+    },
+    {
+        "label": "svm",
+        "importPath": "sklearn",
+        "description": "sklearn",
+        "isExtraImport": true,
+        "detail": "sklearn",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
         "label": "seaborn",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "seaborn",
         "description": "seaborn",
         "detail": "seaborn",
-        "documentation": {}
-    },
-    {
-        "label": "plotly.express",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "plotly.express",
-        "description": "plotly.express",
-        "detail": "plotly.express",
         "documentation": {}
     },
     {
@@ -69,12 +118,12 @@
         "documentation": {}
     },
     {
-        "label": "numpy",
+        "label": "plotly.express",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "numpy",
-        "description": "numpy",
-        "detail": "numpy",
+        "importPath": "plotly.express",
+        "description": "plotly.express",
+        "detail": "plotly.express",
         "documentation": {}
     },
     {
@@ -93,23 +142,6 @@
         "importPath": "matplotlib.font_manager",
         "description": "matplotlib.font_manager",
         "detail": "matplotlib.font_manager",
-        "documentation": {}
-    },
-    {
-        "label": "matplotlib",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "matplotlib",
-        "description": "matplotlib",
-        "detail": "matplotlib",
-        "documentation": {}
-    },
-    {
-        "label": "pyplot",
-        "importPath": "matplotlib",
-        "description": "matplotlib",
-        "isExtraImport": true,
-        "detail": "matplotlib",
         "documentation": {}
     },
     {
@@ -146,43 +178,19 @@
         "documentation": {}
     },
     {
-        "label": "Image",
-        "importPath": "PIL",
-        "description": "PIL",
-        "isExtraImport": true,
-        "detail": "PIL",
-        "documentation": {}
-    },
-    {
-        "label": "datasets",
-        "importPath": "sklearn",
-        "description": "sklearn",
-        "isExtraImport": true,
-        "detail": "sklearn",
-        "documentation": {}
-    },
-    {
-        "label": "svm",
-        "importPath": "sklearn",
-        "description": "sklearn",
-        "isExtraImport": true,
-        "detail": "sklearn",
-        "documentation": {}
-    },
-    {
-        "label": "train_test_split",
-        "importPath": "sklearn.model_selection",
-        "description": "sklearn.model_selection",
-        "isExtraImport": true,
-        "detail": "sklearn.model_selection",
-        "documentation": {}
-    },
-    {
         "label": "Figure",
         "importPath": "matplotlib.figure",
         "description": "matplotlib.figure",
         "isExtraImport": true,
         "detail": "matplotlib.figure",
+        "documentation": {}
+    },
+    {
+        "label": "host_subplot",
+        "importPath": "mpl_toolkits.axes_grid1",
+        "description": "mpl_toolkits.axes_grid1",
+        "isExtraImport": true,
+        "detail": "mpl_toolkits.axes_grid1",
         "documentation": {}
     },
     {
@@ -192,6 +200,49 @@
         "importPath": "scipy",
         "description": "scipy",
         "detail": "scipy",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "holoviews",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "holoviews",
+        "description": "holoviews",
+        "detail": "holoviews",
+        "documentation": {}
+    },
+    {
+        "label": "opts",
+        "importPath": "holoviews",
+        "description": "holoviews",
+        "isExtraImport": true,
+        "detail": "holoviews",
+        "documentation": {}
+    },
+    {
+        "label": "dim",
+        "importPath": "holoviews",
+        "description": "holoviews",
+        "isExtraImport": true,
+        "detail": "holoviews",
+        "documentation": {}
+    },
+    {
+        "label": "networkx",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "networkx",
+        "description": "networkx",
+        "detail": "networkx",
         "documentation": {}
     },
     {
@@ -221,6 +272,285 @@
         "documentation": {}
     },
     {
+        "label": "x",
+        "kind": 5,
+        "importPath": "ejer_class.bar",
+        "description": "ejer_class.bar",
+        "peekOfCode": "x = 0.5 + np.arange(8)\ny = [4.8, 5.5, 3.5, 4.6, 6.5, 6.6, 2.6, 3.0]\n# plot\nfig, ax = plt.subplots()\nax.bar(x, y, width=1, edgecolor=\"white\", linewidth=0.7)\nax.set(xlim=(0, 8), xticks=np.arange(1, 8),\n       ylim=(0, 8), yticks=np.arange(1, 8))\nplt.show()",
+        "detail": "ejer_class.bar",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "ejer_class.bar",
+        "description": "ejer_class.bar",
+        "peekOfCode": "y = [4.8, 5.5, 3.5, 4.6, 6.5, 6.6, 2.6, 3.0]\n# plot\nfig, ax = plt.subplots()\nax.bar(x, y, width=1, edgecolor=\"white\", linewidth=0.7)\nax.set(xlim=(0, 8), xticks=np.arange(1, 8),\n       ylim=(0, 8), yticks=np.arange(1, 8))\nplt.show()",
+        "detail": "ejer_class.bar",
+        "documentation": {}
+    },
+    {
+        "label": "img",
+        "kind": 5,
+        "importPath": "ejer_class.images",
+        "description": "ejer_class.images",
+        "peekOfCode": "img = np.asarray(Image.open('../../../doc/_static/stinkbug.png'))\nprint(repr(img))\n# %%\n# Each inner list represents a pixel.  Here, with an RGB image, there\n# are 3 values.  Since it's a black and white image, R, G, and B are all\n# similar.  An RGBA (where A is alpha, or transparency) has 4 values\n# per inner list, and a simple luminance image just has one value (and\n# is thus only a 2-D array, not a 3-D array).  For RGB and RGBA images,\n# Matplotlib supports float32 and uint8 data types.  For grayscale,\n# Matplotlib supports only float32.  If your array data does not meet",
+        "detail": "ejer_class.images",
+        "documentation": {}
+    },
+    {
+        "label": "imgplot",
+        "kind": 5,
+        "importPath": "ejer_class.images",
+        "description": "ejer_class.images",
+        "peekOfCode": "imgplot = plt.imshow(img)\n# %%\n# You can also plot any numpy array.\n#\n# .. _Pseudocolor:\n#\n# Applying pseudocolor schemes to image plots\n# -------------------------------------------------\n#\n# Pseudocolor can be a useful tool for enhancing contrast and",
+        "detail": "ejer_class.images",
+        "documentation": {}
+    },
+    {
+        "label": "lum_img",
+        "kind": 5,
+        "importPath": "ejer_class.images",
+        "description": "ejer_class.images",
+        "peekOfCode": "lum_img = img[:, :, 0]\nplt.imshow(lum_img)\n# %%\n# Now, with a luminosity (2D, no color) image, the default colormap (aka lookup table,\n# LUT), is applied.  The default is called viridis.  There are plenty of\n# others to choose from.\nplt.imshow(lum_img, cmap=\"hot\")\n# %%\n# Note that you can also change colormaps on existing plot objects using the\n# :meth:`~matplotlib.cm.ScalarMappable.set_cmap` method:",
+        "detail": "ejer_class.images",
+        "documentation": {}
+    },
+    {
+        "label": "imgplot",
+        "kind": 5,
+        "importPath": "ejer_class.images",
+        "description": "ejer_class.images",
+        "peekOfCode": "imgplot = plt.imshow(lum_img)\nimgplot.set_cmap('nipy_spectral')\n# %%\n#\n# .. note::\n#\n#    However, remember that in the Jupyter Notebook with the inline backend,\n#    you can't make changes to plots that have already been rendered.  If you\n#    create imgplot here in one cell, you cannot call set_cmap() on it in a later\n#    cell and expect the earlier plot to change.  Make sure that you enter these",
+        "detail": "ejer_class.images",
+        "documentation": {}
+    },
+    {
+        "label": "imgplot",
+        "kind": 5,
+        "importPath": "ejer_class.images",
+        "description": "ejer_class.images",
+        "peekOfCode": "imgplot = plt.imshow(lum_img)\nplt.colorbar()\n# %%\n# .. _`Data ranges`:\n#\n# Examining a specific data range\n# ---------------------------------\n#\n# Sometimes you want to enhance the contrast in your image, or expand\n# the contrast in a particular region while sacrificing the detail in",
+        "detail": "ejer_class.images",
+        "documentation": {}
+    },
+    {
+        "label": "imgplot",
+        "kind": 5,
+        "importPath": "ejer_class.images",
+        "description": "ejer_class.images",
+        "peekOfCode": "imgplot = plt.imshow(lum_img)\nimgplot.set_clim(0, 175)\n# %%\n# .. _Interpolation:\n#\n# Array Interpolation schemes\n# ---------------------------\n#\n# Interpolation calculates what the color or value of a pixel \"should\"\n# be, according to different mathematical schemes.  One common place",
+        "detail": "ejer_class.images",
+        "documentation": {}
+    },
+    {
+        "label": "img",
+        "kind": 5,
+        "importPath": "ejer_class.images",
+        "description": "ejer_class.images",
+        "peekOfCode": "img = Image.open('../../doc/_static/stinkbug.png')\nimg.thumbnail((64, 64))  # resizes image in-place\nimgplot = plt.imshow(img)\n# %%\n# Here we use the default interpolation (\"nearest\"), since we did not\n# give :func:`~matplotlib.pyplot.imshow` any interpolation argument.\n#\n# Let's try some others. Here's \"bilinear\":\nimgplot = plt.imshow(img, interpolation=\"bilinear\")\n# %%",
+        "detail": "ejer_class.images",
+        "documentation": {}
+    },
+    {
+        "label": "imgplot",
+        "kind": 5,
+        "importPath": "ejer_class.images",
+        "description": "ejer_class.images",
+        "peekOfCode": "imgplot = plt.imshow(img)\n# %%\n# Here we use the default interpolation (\"nearest\"), since we did not\n# give :func:`~matplotlib.pyplot.imshow` any interpolation argument.\n#\n# Let's try some others. Here's \"bilinear\":\nimgplot = plt.imshow(img, interpolation=\"bilinear\")\n# %%\n# and bicubic:\nimgplot = plt.imshow(img, interpolation=\"bicubic\")",
+        "detail": "ejer_class.images",
+        "documentation": {}
+    },
+    {
+        "label": "imgplot",
+        "kind": 5,
+        "importPath": "ejer_class.images",
+        "description": "ejer_class.images",
+        "peekOfCode": "imgplot = plt.imshow(img, interpolation=\"bilinear\")\n# %%\n# and bicubic:\nimgplot = plt.imshow(img, interpolation=\"bicubic\")\n# %%\n# Bicubic interpolation is often used when blowing up photos - people\n# tend to prefer blurry over pixelated.",
+        "detail": "ejer_class.images",
+        "documentation": {}
+    },
+    {
+        "label": "imgplot",
+        "kind": 5,
+        "importPath": "ejer_class.images",
+        "description": "ejer_class.images",
+        "peekOfCode": "imgplot = plt.imshow(img, interpolation=\"bicubic\")\n# %%\n# Bicubic interpolation is often used when blowing up photos - people\n# tend to prefer blurry over pixelated.",
+        "detail": "ejer_class.images",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "ejer_class.matplotlib_subplots_test",
+        "description": "ejer_class.matplotlib_subplots_test",
+        "peekOfCode": "data = np.random.lognormal(size=(37, 4), mean=1.5, sigma=1.75)\nlabels = list('ABCD')\nfs = 10  # fontsize\nfig, axs = plt.subplots(nrows=2, ncols=3, figsize=(6, 6), sharey=True)\naxs[0, 0].boxplot(data, labels=labels)\naxs[0, 0].set_title('Default', fontsize=fs)\naxs[0, 1].boxplot(data, labels=labels, showmeans=True)\naxs[0, 1].set_title('showmeans=True', fontsize=fs)\naxs[0, 2].boxplot(data, labels=labels, showmeans=True, meanline=True)\naxs[0, 2].set_title('showmeans=True,\\nmeanline=True', fontsize=fs)",
+        "detail": "ejer_class.matplotlib_subplots_test",
+        "documentation": {}
+    },
+    {
+        "label": "labels",
+        "kind": 5,
+        "importPath": "ejer_class.matplotlib_subplots_test",
+        "description": "ejer_class.matplotlib_subplots_test",
+        "peekOfCode": "labels = list('ABCD')\nfs = 10  # fontsize\nfig, axs = plt.subplots(nrows=2, ncols=3, figsize=(6, 6), sharey=True)\naxs[0, 0].boxplot(data, labels=labels)\naxs[0, 0].set_title('Default', fontsize=fs)\naxs[0, 1].boxplot(data, labels=labels, showmeans=True)\naxs[0, 1].set_title('showmeans=True', fontsize=fs)\naxs[0, 2].boxplot(data, labels=labels, showmeans=True, meanline=True)\naxs[0, 2].set_title('showmeans=True,\\nmeanline=True', fontsize=fs)\naxs[1, 0].boxplot(data, labels=labels, showbox=False, showcaps=False)",
+        "detail": "ejer_class.matplotlib_subplots_test",
+        "documentation": {}
+    },
+    {
+        "label": "fs",
+        "kind": 5,
+        "importPath": "ejer_class.matplotlib_subplots_test",
+        "description": "ejer_class.matplotlib_subplots_test",
+        "peekOfCode": "fs = 10  # fontsize\nfig, axs = plt.subplots(nrows=2, ncols=3, figsize=(6, 6), sharey=True)\naxs[0, 0].boxplot(data, labels=labels)\naxs[0, 0].set_title('Default', fontsize=fs)\naxs[0, 1].boxplot(data, labels=labels, showmeans=True)\naxs[0, 1].set_title('showmeans=True', fontsize=fs)\naxs[0, 2].boxplot(data, labels=labels, showmeans=True, meanline=True)\naxs[0, 2].set_title('showmeans=True,\\nmeanline=True', fontsize=fs)\naxs[1, 0].boxplot(data, labels=labels, showbox=False, showcaps=False)\ntufte_title = 'Tufte Style \\n(showbox=False,\\nshowcaps=False)'",
+        "detail": "ejer_class.matplotlib_subplots_test",
+        "documentation": {}
+    },
+    {
+        "label": "tufte_title",
+        "kind": 5,
+        "importPath": "ejer_class.matplotlib_subplots_test",
+        "description": "ejer_class.matplotlib_subplots_test",
+        "peekOfCode": "tufte_title = 'Tufte Style \\n(showbox=False,\\nshowcaps=False)'\naxs[1, 0].set_title(tufte_title, fontsize=fs)\naxs[1, 1].boxplot(data, labels=labels, notch=True, bootstrap=10000)\naxs[1, 1].set_title('notch=True,\\nbootstrap=10000', fontsize=fs)\naxs[1, 2].boxplot(data, labels=labels, showfliers=False)\naxs[1, 2].set_title('showfliers=False', fontsize=fs)\nfor ax in axs.flat:\n    ax.set_yscale('log')\n    ax.set_yticklabels([])\nfig.subplots_adjust(hspace=0.4)",
+        "detail": "ejer_class.matplotlib_subplots_test",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "ejer_class.plot",
+        "description": "ejer_class.plot",
+        "peekOfCode": "x = np.linspace(0, 10, 100)\ny = 4 + 2 * np.sin(2 * x)\n# plot\nfig, ax = plt.subplots()\nax.plot(x, y, linewidth=2.0)\nax.set(xlim=(0, 8), xticks=np.arange(1, 8),\n       ylim=(0, 8), yticks=np.arange(1, 8))\nplt.show()",
+        "detail": "ejer_class.plot",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "ejer_class.plot",
+        "description": "ejer_class.plot",
+        "peekOfCode": "y = 4 + 2 * np.sin(2 * x)\n# plot\nfig, ax = plt.subplots()\nax.plot(x, y, linewidth=2.0)\nax.set(xlim=(0, 8), xticks=np.arange(1, 8),\n       ylim=(0, 8), yticks=np.arange(1, 8))\nplt.show()",
+        "detail": "ejer_class.plot",
+        "documentation": {}
+    },
+    {
+        "label": "digits",
+        "kind": 5,
+        "importPath": "ejer_class.sklearn_test",
+        "description": "ejer_class.sklearn_test",
+        "peekOfCode": "digits = datasets.load_digits()\n_, axes = plt.subplots(nrows=1, ncols=4, figsize=(10, 3))\nfor ax, image, label in zip(axes, digits.images, digits.target):\n    ax.set_axis_off()\n    ax.imshow(image, cmap=plt.cm.gray_r, interpolation=\"nearest\")\n    ax.set_title(\"Training: %i\" % label)\nprint(digits.data.shape)\nplt.gray()\nplt.matshow(digits.images[0])\nplt.show()",
+        "detail": "ejer_class.sklearn_test",
+        "documentation": {}
+    },
+    {
+        "label": "n_samples",
+        "kind": 5,
+        "importPath": "ejer_class.sklearn_test",
+        "description": "ejer_class.sklearn_test",
+        "peekOfCode": "n_samples = len(digits.images)\ndata = digits.images.reshape((n_samples, -1))\n# Create a classifier: a support vector classifier\nclf = svm.SVC(gamma=0.001)\n# Split data into 50% train and 50% test subsets\nX_train, X_test, y_train, y_test = train_test_split(\n    data, digits.target, test_size=0.5, shuffle=False\n)\n# Learn the digits on the train subset\nclf.fit(X_train, y_train)",
+        "detail": "ejer_class.sklearn_test",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "ejer_class.sklearn_test",
+        "description": "ejer_class.sklearn_test",
+        "peekOfCode": "data = digits.images.reshape((n_samples, -1))\n# Create a classifier: a support vector classifier\nclf = svm.SVC(gamma=0.001)\n# Split data into 50% train and 50% test subsets\nX_train, X_test, y_train, y_test = train_test_split(\n    data, digits.target, test_size=0.5, shuffle=False\n)\n# Learn the digits on the train subset\nclf.fit(X_train, y_train)\n# Predict the value of the digit on the test subset",
+        "detail": "ejer_class.sklearn_test",
+        "documentation": {}
+    },
+    {
+        "label": "clf",
+        "kind": 5,
+        "importPath": "ejer_class.sklearn_test",
+        "description": "ejer_class.sklearn_test",
+        "peekOfCode": "clf = svm.SVC(gamma=0.001)\n# Split data into 50% train and 50% test subsets\nX_train, X_test, y_train, y_test = train_test_split(\n    data, digits.target, test_size=0.5, shuffle=False\n)\n# Learn the digits on the train subset\nclf.fit(X_train, y_train)\n# Predict the value of the digit on the test subset\npredicted = clf.predict(X_test)\n_, axes = plt.subplots(nrows=1, ncols=4, figsize=(10, 3))",
+        "detail": "ejer_class.sklearn_test",
+        "documentation": {}
+    },
+    {
+        "label": "predicted",
+        "kind": 5,
+        "importPath": "ejer_class.sklearn_test",
+        "description": "ejer_class.sklearn_test",
+        "peekOfCode": "predicted = clf.predict(X_test)\n_, axes = plt.subplots(nrows=1, ncols=4, figsize=(10, 3))\nfor ax, image, prediction in zip(axes, X_test, predicted):\n    ax.set_axis_off()\n    image = image.reshape(8, 8)\n    ax.imshow(image, cmap=plt.cm.gray_r, interpolation=\"nearest\")\n    ax.set_title(f\"Prediction: {prediction}\")",
+        "detail": "ejer_class.sklearn_test",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 4.areas_graf",
+        "description": "section 4.areas_graf",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/tienda_ventas.csv\", index_col=\"id\")\ndf\ndf[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby(\"mes\").agg({\"sales\": \"sum\"})\nsell_by_month.plot.line(y=\"sales\", style=\".-\", linestyle=\"dotted\")\nsell_by_month.plot.area(y=\"sales\")\ndf[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[",
+        "detail": "section 4.areas_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df[\"mes\"]",
+        "kind": 5,
+        "importPath": "section 4.areas_graf",
+        "description": "section 4.areas_graf",
+        "peekOfCode": "df[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby(\"mes\").agg({\"sales\": \"sum\"})\nsell_by_month.plot.line(y=\"sales\", style=\".-\", linestyle=\"dotted\")\nsell_by_month.plot.area(y=\"sales\")\ndf[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]",
+        "detail": "section 4.areas_graf",
+        "documentation": {}
+    },
+    {
+        "label": "sell_by_month",
+        "kind": 5,
+        "importPath": "section 4.areas_graf",
+        "description": "section 4.areas_graf",
+        "peekOfCode": "sell_by_month = df.groupby(\"mes\").agg({\"sales\": \"sum\"})\nsell_by_month.plot.line(y=\"sales\", style=\".-\", linestyle=\"dotted\")\nsell_by_month.plot.area(y=\"sales\")\ndf[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})",
+        "detail": "section 4.areas_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df[\"year\"]",
+        "kind": 5,
+        "importPath": "section 4.areas_graf",
+        "description": "section 4.areas_graf",
+        "peekOfCode": "df[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")",
+        "detail": "section 4.areas_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df_2015",
+        "kind": 5,
+        "importPath": "section 4.areas_graf",
+        "description": "section 4.areas_graf",
+        "peekOfCode": "df_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line()\ndf_2015_pivot.plot.area(stacked=False)",
+        "detail": "section 4.areas_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df_2015_grouped",
+        "kind": 5,
+        "importPath": "section 4.areas_graf",
+        "description": "section 4.areas_graf",
+        "peekOfCode": "df_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line()\ndf_2015_pivot.plot.area(stacked=False)",
+        "detail": "section 4.areas_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df_2015_pivot",
+        "kind": 5,
+        "importPath": "section 4.areas_graf",
+        "description": "section 4.areas_graf",
+        "peekOfCode": "df_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line()\ndf_2015_pivot.plot.area(stacked=False)",
+        "detail": "section 4.areas_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df_2015_pivot",
+        "kind": 5,
+        "importPath": "section 4.areas_graf",
+        "description": "section 4.areas_graf",
+        "peekOfCode": "df_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line()\ndf_2015_pivot.plot.area(stacked=False)",
+        "detail": "section 4.areas_graf",
+        "documentation": {}
+    },
+    {
         "label": "df",
         "kind": 5,
         "importPath": "section 4.cajas_graf",
@@ -236,6 +566,87 @@
         "description": "section 4.cajas_graf",
         "peekOfCode": "df = df.dropna(subset=[\"Age\"], axis=\"index\")  # remove rows with missing Age data\ndf\ndf.boxplot(column=\"Age\")\ndf.boxplot(by=\"Sex\", column=[\"Age\"], grid=False)\nimport seaborn as sns\nsns.boxplot(data=df, x=\"Sex\", y=\"Age\")\nplt.show()",
         "detail": "section 4.cajas_graf",
+        "documentation": {}
+    },
+    {
+        "label": "calculateWins",
+        "kind": 2,
+        "importPath": "section 4.ejer_pandas",
+        "description": "section 4.ejer_pandas",
+        "peekOfCode": "def calculateWins(retweets):\n    win = retweets * random.randint(3, 5)\n    return win\ndf[\"ganancias\"] = df[\"retweets\"].apply(calculateWins)\ndf.fillna(0).head()\ndef population(row):\n    return row[\"followees\"] / row[\"followers\"]\ndf[\"popularidad\"] = df.apply(population, axis=1)\ndf.fillna(0).head()\ndf = df.drop(columns=[\"full_text\"])",
+        "detail": "section 4.ejer_pandas",
+        "documentation": {}
+    },
+    {
+        "label": "population",
+        "kind": 2,
+        "importPath": "section 4.ejer_pandas",
+        "description": "section 4.ejer_pandas",
+        "peekOfCode": "def population(row):\n    return row[\"followees\"] / row[\"followers\"]\ndf[\"popularidad\"] = df.apply(population, axis=1)\ndf.fillna(0).head()\ndf = df.drop(columns=[\"full_text\"])\ndf.fillna(0).head()\ndf = df.drop(columns=[\"user\"])\ndf.fillna(0)\ndf.groupby(\"country\").mean()\nresult = df.groupby(\"country\").agg({",
+        "detail": "section 4.ejer_pandas",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 4.ejer_pandas",
+        "description": "section 4.ejer_pandas",
+        "peekOfCode": "df = pd.read_csv(\"../../../NIVEL0/dataset.csv\", index_col=\"id\")\ndf_filter = df.fillna(0)\ndf_filter.head()\ndf.iloc[0]\ndf.loc[[183721, 183722], [\"full_text\", \"favorites\"]]\ndf[df['favorites'] > 400]\ndf[(df['favorites'] > 400) & (df['mentions'] > 20)]\ndf[df['full_text'].str.contains(\"programming\")]\nimport random\ndef calculateWins(retweets):",
+        "detail": "section 4.ejer_pandas",
+        "documentation": {}
+    },
+    {
+        "label": "df_filter",
+        "kind": 5,
+        "importPath": "section 4.ejer_pandas",
+        "description": "section 4.ejer_pandas",
+        "peekOfCode": "df_filter = df.fillna(0)\ndf_filter.head()\ndf.iloc[0]\ndf.loc[[183721, 183722], [\"full_text\", \"favorites\"]]\ndf[df['favorites'] > 400]\ndf[(df['favorites'] > 400) & (df['mentions'] > 20)]\ndf[df['full_text'].str.contains(\"programming\")]\nimport random\ndef calculateWins(retweets):\n    win = retweets * random.randint(3, 5)",
+        "detail": "section 4.ejer_pandas",
+        "documentation": {}
+    },
+    {
+        "label": "df[\"ganancias\"]",
+        "kind": 5,
+        "importPath": "section 4.ejer_pandas",
+        "description": "section 4.ejer_pandas",
+        "peekOfCode": "df[\"ganancias\"] = df[\"retweets\"].apply(calculateWins)\ndf.fillna(0).head()\ndef population(row):\n    return row[\"followees\"] / row[\"followers\"]\ndf[\"popularidad\"] = df.apply(population, axis=1)\ndf.fillna(0).head()\ndf = df.drop(columns=[\"full_text\"])\ndf.fillna(0).head()\ndf = df.drop(columns=[\"user\"])\ndf.fillna(0)",
+        "detail": "section 4.ejer_pandas",
+        "documentation": {}
+    },
+    {
+        "label": "df[\"popularidad\"]",
+        "kind": 5,
+        "importPath": "section 4.ejer_pandas",
+        "description": "section 4.ejer_pandas",
+        "peekOfCode": "df[\"popularidad\"] = df.apply(population, axis=1)\ndf.fillna(0).head()\ndf = df.drop(columns=[\"full_text\"])\ndf.fillna(0).head()\ndf = df.drop(columns=[\"user\"])\ndf.fillna(0)\ndf.groupby(\"country\").mean()\nresult = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",",
+        "detail": "section 4.ejer_pandas",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 4.ejer_pandas",
+        "description": "section 4.ejer_pandas",
+        "peekOfCode": "df = df.drop(columns=[\"full_text\"])\ndf.fillna(0).head()\ndf = df.drop(columns=[\"user\"])\ndf.fillna(0)\ndf.groupby(\"country\").mean()\nresult = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",\n    \"retweets\": \"max\",\n    \"favorites\": \"mean\"",
+        "detail": "section 4.ejer_pandas",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 4.ejer_pandas",
+        "description": "section 4.ejer_pandas",
+        "peekOfCode": "df = df.drop(columns=[\"user\"])\ndf.fillna(0)\ndf.groupby(\"country\").mean()\nresult = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",\n    \"retweets\": \"max\",\n    \"favorites\": \"mean\"\n})\nresult",
+        "detail": "section 4.ejer_pandas",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "section 4.ejer_pandas",
+        "description": "section 4.ejer_pandas",
+        "peekOfCode": "result = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",\n    \"retweets\": \"max\",\n    \"favorites\": \"mean\"\n})\nresult\n# result.to_csv(\"../../../NIVEL0/result.csv\")",
+        "detail": "section 4.ejer_pandas",
         "documentation": {}
     },
     {
@@ -457,6 +868,42 @@
     {
         "label": "df",
         "kind": 5,
+        "importPath": "section 4.line_graf",
+        "description": "section 4.line_graf",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/tienda_ventas.csv\", index_col='id')\ndf\ndf['mes'] = df['date'].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month\nsell_by_month.plot.line(\n    y='sales',",
+        "detail": "section 4.line_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df['mes']",
+        "kind": 5,
+        "importPath": "section 4.line_graf",
+        "description": "section 4.line_graf",
+        "peekOfCode": "df['mes'] = df['date'].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month\nsell_by_month.plot.line(\n    y='sales',\n    style='.-',\n    linestyle='dotted'",
+        "detail": "section 4.line_graf",
+        "documentation": {}
+    },
+    {
+        "label": "sell_by_month",
+        "kind": 5,
+        "importPath": "section 4.line_graf",
+        "description": "section 4.line_graf",
+        "peekOfCode": "sell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month\nsell_by_month.plot.line(\n    y='sales',\n    style='.-',\n    linestyle='dotted'\n)\nsell_by_month.reset_index()",
+        "detail": "section 4.line_graf",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 4.line_graf",
+        "description": "section 4.line_graf",
+        "peekOfCode": "fig = px.line(\n    sell_by_month,\n    x=sell_by_month.index.values,\n    y='sales'\n)\nfig",
+        "detail": "section 4.line_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
         "importPath": "section 4.multiline",
         "description": "section 4.multiline",
         "peekOfCode": "df = pd.read_csv(\"../../../data/tienda_ventas.csv\", index_col=\"id\")\ndf\ndf[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby(\"mes\").agg({\"sales\": \"sum\"})\nsell_by_month\ndf[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))",
@@ -578,213 +1025,6 @@
         "description": "section 4.violines_graf",
         "peekOfCode": "df = df.dropna(subset=[\"Age\"], axis=\"index\")  # remove rows with missing Age data\ndf\nimport seaborn as sns\nsns.violinplot(\n    data=df,\n    x=\"Sex\",\n    y=\"Age\",\n    inner=\"quartiles\"\n)\nplt.show()",
         "detail": "section 4.violines_graf",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "section 4.areas_graf",
-        "description": "section 4.areas_graf",
-        "peekOfCode": "df = pd.read_csv(\"../../../data/tienda_ventas.csv\", index_col=\"id\")\ndf\ndf[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby(\"mes\").agg({\"sales\": \"sum\"})\nsell_by_month.plot.line(y=\"sales\", style=\".-\", linestyle=\"dotted\")\nsell_by_month.plot.area(y=\"sales\")\ndf[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[",
-        "detail": "section 4.areas_graf",
-        "documentation": {}
-    },
-    {
-        "label": "df[\"mes\"]",
-        "kind": 5,
-        "importPath": "section 4.areas_graf",
-        "description": "section 4.areas_graf",
-        "peekOfCode": "df[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby(\"mes\").agg({\"sales\": \"sum\"})\nsell_by_month.plot.line(y=\"sales\", style=\".-\", linestyle=\"dotted\")\nsell_by_month.plot.area(y=\"sales\")\ndf[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]",
-        "detail": "section 4.areas_graf",
-        "documentation": {}
-    },
-    {
-        "label": "sell_by_month",
-        "kind": 5,
-        "importPath": "section 4.areas_graf",
-        "description": "section 4.areas_graf",
-        "peekOfCode": "sell_by_month = df.groupby(\"mes\").agg({\"sales\": \"sum\"})\nsell_by_month.plot.line(y=\"sales\", style=\".-\", linestyle=\"dotted\")\nsell_by_month.plot.area(y=\"sales\")\ndf[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})",
-        "detail": "section 4.areas_graf",
-        "documentation": {}
-    },
-    {
-        "label": "df[\"year\"]",
-        "kind": 5,
-        "importPath": "section 4.areas_graf",
-        "description": "section 4.areas_graf",
-        "peekOfCode": "df[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")",
-        "detail": "section 4.areas_graf",
-        "documentation": {}
-    },
-    {
-        "label": "df_2015",
-        "kind": 5,
-        "importPath": "section 4.areas_graf",
-        "description": "section 4.areas_graf",
-        "peekOfCode": "df_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line()\ndf_2015_pivot.plot.area(stacked=False)",
-        "detail": "section 4.areas_graf",
-        "documentation": {}
-    },
-    {
-        "label": "df_2015_grouped",
-        "kind": 5,
-        "importPath": "section 4.areas_graf",
-        "description": "section 4.areas_graf",
-        "peekOfCode": "df_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line()\ndf_2015_pivot.plot.area(stacked=False)",
-        "detail": "section 4.areas_graf",
-        "documentation": {}
-    },
-    {
-        "label": "df_2015_pivot",
-        "kind": 5,
-        "importPath": "section 4.areas_graf",
-        "description": "section 4.areas_graf",
-        "peekOfCode": "df_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line()\ndf_2015_pivot.plot.area(stacked=False)",
-        "detail": "section 4.areas_graf",
-        "documentation": {}
-    },
-    {
-        "label": "df_2015_pivot",
-        "kind": 5,
-        "importPath": "section 4.areas_graf",
-        "description": "section 4.areas_graf",
-        "peekOfCode": "df_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line()\ndf_2015_pivot.plot.area(stacked=False)",
-        "detail": "section 4.areas_graf",
-        "documentation": {}
-    },
-    {
-        "label": "calculateWins",
-        "kind": 2,
-        "importPath": "section 4.ejer_pandas",
-        "description": "section 4.ejer_pandas",
-        "peekOfCode": "def calculateWins(retweets):\n    win = retweets * random.randint(3, 5)\n    return win\ndf[\"ganancias\"] = df[\"retweets\"].apply(calculateWins)\ndf.fillna(0).head()\ndef population(row):\n    return row[\"followees\"] / row[\"followers\"]\ndf[\"popularidad\"] = df.apply(population, axis=1)\ndf.fillna(0).head()\ndf = df.drop(columns=[\"full_text\"])",
-        "detail": "section 4.ejer_pandas",
-        "documentation": {}
-    },
-    {
-        "label": "population",
-        "kind": 2,
-        "importPath": "section 4.ejer_pandas",
-        "description": "section 4.ejer_pandas",
-        "peekOfCode": "def population(row):\n    return row[\"followees\"] / row[\"followers\"]\ndf[\"popularidad\"] = df.apply(population, axis=1)\ndf.fillna(0).head()\ndf = df.drop(columns=[\"full_text\"])\ndf.fillna(0).head()\ndf = df.drop(columns=[\"user\"])\ndf.fillna(0)\ndf.groupby(\"country\").mean()\nresult = df.groupby(\"country\").agg({",
-        "detail": "section 4.ejer_pandas",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "section 4.ejer_pandas",
-        "description": "section 4.ejer_pandas",
-        "peekOfCode": "df = pd.read_csv(\"../../../NIVEL0/dataset.csv\", index_col=\"id\")\ndf_filter = df.fillna(0)\ndf_filter.head()\ndf.iloc[0]\ndf.loc[[183721, 183722], [\"full_text\", \"favorites\"]]\ndf[df['favorites'] > 400]\ndf[(df['favorites'] > 400) & (df['mentions'] > 20)]\ndf[df['full_text'].str.contains(\"programming\")]\nimport random\ndef calculateWins(retweets):",
-        "detail": "section 4.ejer_pandas",
-        "documentation": {}
-    },
-    {
-        "label": "df_filter",
-        "kind": 5,
-        "importPath": "section 4.ejer_pandas",
-        "description": "section 4.ejer_pandas",
-        "peekOfCode": "df_filter = df.fillna(0)\ndf_filter.head()\ndf.iloc[0]\ndf.loc[[183721, 183722], [\"full_text\", \"favorites\"]]\ndf[df['favorites'] > 400]\ndf[(df['favorites'] > 400) & (df['mentions'] > 20)]\ndf[df['full_text'].str.contains(\"programming\")]\nimport random\ndef calculateWins(retweets):\n    win = retweets * random.randint(3, 5)",
-        "detail": "section 4.ejer_pandas",
-        "documentation": {}
-    },
-    {
-        "label": "df[\"ganancias\"]",
-        "kind": 5,
-        "importPath": "section 4.ejer_pandas",
-        "description": "section 4.ejer_pandas",
-        "peekOfCode": "df[\"ganancias\"] = df[\"retweets\"].apply(calculateWins)\ndf.fillna(0).head()\ndef population(row):\n    return row[\"followees\"] / row[\"followers\"]\ndf[\"popularidad\"] = df.apply(population, axis=1)\ndf.fillna(0).head()\ndf = df.drop(columns=[\"full_text\"])\ndf.fillna(0).head()\ndf = df.drop(columns=[\"user\"])\ndf.fillna(0)",
-        "detail": "section 4.ejer_pandas",
-        "documentation": {}
-    },
-    {
-        "label": "df[\"popularidad\"]",
-        "kind": 5,
-        "importPath": "section 4.ejer_pandas",
-        "description": "section 4.ejer_pandas",
-        "peekOfCode": "df[\"popularidad\"] = df.apply(population, axis=1)\ndf.fillna(0).head()\ndf = df.drop(columns=[\"full_text\"])\ndf.fillna(0).head()\ndf = df.drop(columns=[\"user\"])\ndf.fillna(0)\ndf.groupby(\"country\").mean()\nresult = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",",
-        "detail": "section 4.ejer_pandas",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "section 4.ejer_pandas",
-        "description": "section 4.ejer_pandas",
-        "peekOfCode": "df = df.drop(columns=[\"full_text\"])\ndf.fillna(0).head()\ndf = df.drop(columns=[\"user\"])\ndf.fillna(0)\ndf.groupby(\"country\").mean()\nresult = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",\n    \"retweets\": \"max\",\n    \"favorites\": \"mean\"",
-        "detail": "section 4.ejer_pandas",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "section 4.ejer_pandas",
-        "description": "section 4.ejer_pandas",
-        "peekOfCode": "df = df.drop(columns=[\"user\"])\ndf.fillna(0)\ndf.groupby(\"country\").mean()\nresult = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",\n    \"retweets\": \"max\",\n    \"favorites\": \"mean\"\n})\nresult",
-        "detail": "section 4.ejer_pandas",
-        "documentation": {}
-    },
-    {
-        "label": "result",
-        "kind": 5,
-        "importPath": "section 4.ejer_pandas",
-        "description": "section 4.ejer_pandas",
-        "peekOfCode": "result = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",\n    \"retweets\": \"max\",\n    \"favorites\": \"mean\"\n})\nresult\n# result.to_csv(\"../../../NIVEL0/result.csv\")",
-        "detail": "section 4.ejer_pandas",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "section 4.line_graf",
-        "description": "section 4.line_graf",
-        "peekOfCode": "df = pd.read_csv(\"../../../data/tienda_ventas.csv\", index_col='id')\ndf\ndf['mes'] = df['date'].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month\nsell_by_month.plot.line(\n    y='sales',",
-        "detail": "section 4.line_graf",
-        "documentation": {}
-    },
-    {
-        "label": "df['mes']",
-        "kind": 5,
-        "importPath": "section 4.line_graf",
-        "description": "section 4.line_graf",
-        "peekOfCode": "df['mes'] = df['date'].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month\nsell_by_month.plot.line(\n    y='sales',\n    style='.-',\n    linestyle='dotted'",
-        "detail": "section 4.line_graf",
-        "documentation": {}
-    },
-    {
-        "label": "sell_by_month",
-        "kind": 5,
-        "importPath": "section 4.line_graf",
-        "description": "section 4.line_graf",
-        "peekOfCode": "sell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month\nsell_by_month.plot.line(\n    y='sales',\n    style='.-',\n    linestyle='dotted'\n)\nsell_by_month.reset_index()",
-        "detail": "section 4.line_graf",
-        "documentation": {}
-    },
-    {
-        "label": "fig",
-        "kind": 5,
-        "importPath": "section 4.line_graf",
-        "description": "section 4.line_graf",
-        "peekOfCode": "fig = px.line(\n    sell_by_month,\n    x=sell_by_month.index.values,\n    y='sales'\n)\nfig",
-        "detail": "section 4.line_graf",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "section 5.pandasI",
-        "description": "section 5.pandasI",
-        "peekOfCode": "df = pd.read_csv(\"../../../data/tiendas_procesado.csv\", index_col='fecha')\ndf\nplt.rcParams['figure.figsize'] = (10, 5)\n# Temas https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html\nplt.style.use('bmh')\ndf.plot.line(\n    # figsize=(10, 5)\n)\nimport seaborn as sns\nplt.figure(figsize=(10, 5))",
-        "detail": "section 5.pandasI",
-        "documentation": {}
-    },
-    {
-        "label": "plt.rcParams['figure.figsize']",
-        "kind": 5,
-        "importPath": "section 5.pandasI",
-        "description": "section 5.pandasI",
-        "peekOfCode": "plt.rcParams['figure.figsize'] = (10, 5)\n# Temas https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html\nplt.style.use('bmh')\ndf.plot.line(\n    # figsize=(10, 5)\n)\nimport seaborn as sns\nplt.figure(figsize=(10, 5))\nsns.set_style(\"ticks\")\nsns.set_theme(\"paper\")",
-        "detail": "section 5.pandasI",
         "documentation": {}
     },
     {
@@ -1006,6 +1246,24 @@
     {
         "label": "df",
         "kind": 5,
+        "importPath": "section 5.pandasI",
+        "description": "section 5.pandasI",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/tiendas_procesado.csv\", index_col='fecha')\ndf\nplt.rcParams['figure.figsize'] = (10, 5)\n# Temas https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html\nplt.style.use('bmh')\ndf.plot.line(\n    # figsize=(10, 5)\n)\nimport seaborn as sns\nplt.figure(figsize=(10, 5))",
+        "detail": "section 5.pandasI",
+        "documentation": {}
+    },
+    {
+        "label": "plt.rcParams['figure.figsize']",
+        "kind": 5,
+        "importPath": "section 5.pandasI",
+        "description": "section 5.pandasI",
+        "peekOfCode": "plt.rcParams['figure.figsize'] = (10, 5)\n# Temas https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html\nplt.style.use('bmh')\ndf.plot.line(\n    # figsize=(10, 5)\n)\nimport seaborn as sns\nplt.figure(figsize=(10, 5))\nsns.set_style(\"ticks\")\nsns.set_theme(\"paper\")",
+        "detail": "section 5.pandasI",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
         "importPath": "section 5.personalizacion_avanzada",
         "description": "section 5.personalizacion_avanzada",
         "peekOfCode": "df = pd.read_csv(\"../../../data/tienda_ventas.csv\")\ndf = df[df[\"family\"].isin([\"SEAFOOD\", \"MEATS\"])]\ndf[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\n# Dataframe para el gráfico de lineas\ndf = df.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"}).reset_index()\n# Dataframe para el pie chart\ndf_pie = df.groupby(\"family\").agg({\"sales\": \"sum\"})\ndf_pie\n# Si utilizamos Seaborn, podemos definir colores con un diccionario y las categorías que queremos que tenga cada color\ncolors = {\"MEATS\": \"#4b8bf5\", \"SEAFOOD\": \"#f6b26b\"}",
@@ -1125,7 +1383,7 @@
         "kind": 5,
         "importPath": "section 5.subplots_graf",
         "description": "section 5.subplots_graf",
-        "peekOfCode": "fig = make_subplots(rows=3, cols=1, shared_xaxes=True)\nfig.append_trace(\n    go.Scatter(x=df.index.values, y=df[\"DAIRY\"], name=\"LACTEOS\"), row=1, col=1\n)\nfig.append_trace(\n    go.Scatter(x=df.index.values, y=df[\"MEATS\"], name=\"CARNES\"), row=2, col=1\n)\nfig.append_trace(\n    go.Scatter(x=df.index.values, y=df[\"SEAFOOD\"], name=\"COMIDA DE MAR\"), row=3, col=1\n)",
+        "peekOfCode": "fig = make_subplots(rows=3, cols=1, shared_xaxes=True)\nfig.append_trace(\n    go.Scatter(x=df.index.values, y=df[\"DAIRY\"], name=\"LÁCTEOS\"), row=1, col=1\n)\nfig.append_trace(\n    go.Scatter(x=df.index.values, y=df[\"MEATS\"], name=\"CARNES\"), row=2, col=1\n)\nfig.append_trace(\n    go.Scatter(x=df.index.values, y=df[\"SEAFOOD\"], name=\"COMIDA DE MAR\"), row=3, col=1\n)",
         "detail": "section 5.subplots_graf",
         "documentation": {}
     },
@@ -1181,213 +1439,6 @@
         "description": "section 5.turtle_test",
         "peekOfCode": "t = Turtle()\nt.screen.title('Object-oriented turtle demo')\nt.screen.bgcolor(\"orange\")\nfor i in range(100):\n    steps = int(random() * 100)\n    angle = int(random() * 360)\n    t.right(angle)\n    t.fd(steps)\nt.screen.mainloop()",
         "detail": "section 5.turtle_test",
-        "documentation": {}
-    },
-    {
-        "label": "x",
-        "kind": 5,
-        "importPath": "ejer_class.bar",
-        "description": "ejer_class.bar",
-        "peekOfCode": "x = 0.5 + np.arange(8)\ny = [4.8, 5.5, 3.5, 4.6, 6.5, 6.6, 2.6, 3.0]\n# plot\nfig, ax = plt.subplots()\nax.bar(x, y, width=1, edgecolor=\"white\", linewidth=0.7)\nax.set(xlim=(0, 8), xticks=np.arange(1, 8),\n       ylim=(0, 8), yticks=np.arange(1, 8))\nplt.show()",
-        "detail": "ejer_class.bar",
-        "documentation": {}
-    },
-    {
-        "label": "y",
-        "kind": 5,
-        "importPath": "ejer_class.bar",
-        "description": "ejer_class.bar",
-        "peekOfCode": "y = [4.8, 5.5, 3.5, 4.6, 6.5, 6.6, 2.6, 3.0]\n# plot\nfig, ax = plt.subplots()\nax.bar(x, y, width=1, edgecolor=\"white\", linewidth=0.7)\nax.set(xlim=(0, 8), xticks=np.arange(1, 8),\n       ylim=(0, 8), yticks=np.arange(1, 8))\nplt.show()",
-        "detail": "ejer_class.bar",
-        "documentation": {}
-    },
-    {
-        "label": "img",
-        "kind": 5,
-        "importPath": "ejer_class.images",
-        "description": "ejer_class.images",
-        "peekOfCode": "img = np.asarray(Image.open('../../../doc/_static/stinkbug.png'))\nprint(repr(img))\n# %%\n# Each inner list represents a pixel.  Here, with an RGB image, there\n# are 3 values.  Since it's a black and white image, R, G, and B are all\n# similar.  An RGBA (where A is alpha, or transparency) has 4 values\n# per inner list, and a simple luminance image just has one value (and\n# is thus only a 2-D array, not a 3-D array).  For RGB and RGBA images,\n# Matplotlib supports float32 and uint8 data types.  For grayscale,\n# Matplotlib supports only float32.  If your array data does not meet",
-        "detail": "ejer_class.images",
-        "documentation": {}
-    },
-    {
-        "label": "imgplot",
-        "kind": 5,
-        "importPath": "ejer_class.images",
-        "description": "ejer_class.images",
-        "peekOfCode": "imgplot = plt.imshow(img)\n# %%\n# You can also plot any numpy array.\n#\n# .. _Pseudocolor:\n#\n# Applying pseudocolor schemes to image plots\n# -------------------------------------------------\n#\n# Pseudocolor can be a useful tool for enhancing contrast and",
-        "detail": "ejer_class.images",
-        "documentation": {}
-    },
-    {
-        "label": "lum_img",
-        "kind": 5,
-        "importPath": "ejer_class.images",
-        "description": "ejer_class.images",
-        "peekOfCode": "lum_img = img[:, :, 0]\nplt.imshow(lum_img)\n# %%\n# Now, with a luminosity (2D, no color) image, the default colormap (aka lookup table,\n# LUT), is applied.  The default is called viridis.  There are plenty of\n# others to choose from.\nplt.imshow(lum_img, cmap=\"hot\")\n# %%\n# Note that you can also change colormaps on existing plot objects using the\n# :meth:`~matplotlib.cm.ScalarMappable.set_cmap` method:",
-        "detail": "ejer_class.images",
-        "documentation": {}
-    },
-    {
-        "label": "imgplot",
-        "kind": 5,
-        "importPath": "ejer_class.images",
-        "description": "ejer_class.images",
-        "peekOfCode": "imgplot = plt.imshow(lum_img)\nimgplot.set_cmap('nipy_spectral')\n# %%\n#\n# .. note::\n#\n#    However, remember that in the Jupyter Notebook with the inline backend,\n#    you can't make changes to plots that have already been rendered.  If you\n#    create imgplot here in one cell, you cannot call set_cmap() on it in a later\n#    cell and expect the earlier plot to change.  Make sure that you enter these",
-        "detail": "ejer_class.images",
-        "documentation": {}
-    },
-    {
-        "label": "imgplot",
-        "kind": 5,
-        "importPath": "ejer_class.images",
-        "description": "ejer_class.images",
-        "peekOfCode": "imgplot = plt.imshow(lum_img)\nplt.colorbar()\n# %%\n# .. _`Data ranges`:\n#\n# Examining a specific data range\n# ---------------------------------\n#\n# Sometimes you want to enhance the contrast in your image, or expand\n# the contrast in a particular region while sacrificing the detail in",
-        "detail": "ejer_class.images",
-        "documentation": {}
-    },
-    {
-        "label": "imgplot",
-        "kind": 5,
-        "importPath": "ejer_class.images",
-        "description": "ejer_class.images",
-        "peekOfCode": "imgplot = plt.imshow(lum_img)\nimgplot.set_clim(0, 175)\n# %%\n# .. _Interpolation:\n#\n# Array Interpolation schemes\n# ---------------------------\n#\n# Interpolation calculates what the color or value of a pixel \"should\"\n# be, according to different mathematical schemes.  One common place",
-        "detail": "ejer_class.images",
-        "documentation": {}
-    },
-    {
-        "label": "img",
-        "kind": 5,
-        "importPath": "ejer_class.images",
-        "description": "ejer_class.images",
-        "peekOfCode": "img = Image.open('../../doc/_static/stinkbug.png')\nimg.thumbnail((64, 64))  # resizes image in-place\nimgplot = plt.imshow(img)\n# %%\n# Here we use the default interpolation (\"nearest\"), since we did not\n# give :func:`~matplotlib.pyplot.imshow` any interpolation argument.\n#\n# Let's try some others. Here's \"bilinear\":\nimgplot = plt.imshow(img, interpolation=\"bilinear\")\n# %%",
-        "detail": "ejer_class.images",
-        "documentation": {}
-    },
-    {
-        "label": "imgplot",
-        "kind": 5,
-        "importPath": "ejer_class.images",
-        "description": "ejer_class.images",
-        "peekOfCode": "imgplot = plt.imshow(img)\n# %%\n# Here we use the default interpolation (\"nearest\"), since we did not\n# give :func:`~matplotlib.pyplot.imshow` any interpolation argument.\n#\n# Let's try some others. Here's \"bilinear\":\nimgplot = plt.imshow(img, interpolation=\"bilinear\")\n# %%\n# and bicubic:\nimgplot = plt.imshow(img, interpolation=\"bicubic\")",
-        "detail": "ejer_class.images",
-        "documentation": {}
-    },
-    {
-        "label": "imgplot",
-        "kind": 5,
-        "importPath": "ejer_class.images",
-        "description": "ejer_class.images",
-        "peekOfCode": "imgplot = plt.imshow(img, interpolation=\"bilinear\")\n# %%\n# and bicubic:\nimgplot = plt.imshow(img, interpolation=\"bicubic\")\n# %%\n# Bicubic interpolation is often used when blowing up photos - people\n# tend to prefer blurry over pixelated.",
-        "detail": "ejer_class.images",
-        "documentation": {}
-    },
-    {
-        "label": "imgplot",
-        "kind": 5,
-        "importPath": "ejer_class.images",
-        "description": "ejer_class.images",
-        "peekOfCode": "imgplot = plt.imshow(img, interpolation=\"bicubic\")\n# %%\n# Bicubic interpolation is often used when blowing up photos - people\n# tend to prefer blurry over pixelated.",
-        "detail": "ejer_class.images",
-        "documentation": {}
-    },
-    {
-        "label": "data",
-        "kind": 5,
-        "importPath": "ejer_class.matplotlib_subplots_test",
-        "description": "ejer_class.matplotlib_subplots_test",
-        "peekOfCode": "data = np.random.lognormal(size=(37, 4), mean=1.5, sigma=1.75)\nlabels = list('ABCD')\nfs = 10  # fontsize\nfig, axs = plt.subplots(nrows=2, ncols=3, figsize=(6, 6), sharey=True)\naxs[0, 0].boxplot(data, labels=labels)\naxs[0, 0].set_title('Default', fontsize=fs)\naxs[0, 1].boxplot(data, labels=labels, showmeans=True)\naxs[0, 1].set_title('showmeans=True', fontsize=fs)\naxs[0, 2].boxplot(data, labels=labels, showmeans=True, meanline=True)\naxs[0, 2].set_title('showmeans=True,\\nmeanline=True', fontsize=fs)",
-        "detail": "ejer_class.matplotlib_subplots_test",
-        "documentation": {}
-    },
-    {
-        "label": "labels",
-        "kind": 5,
-        "importPath": "ejer_class.matplotlib_subplots_test",
-        "description": "ejer_class.matplotlib_subplots_test",
-        "peekOfCode": "labels = list('ABCD')\nfs = 10  # fontsize\nfig, axs = plt.subplots(nrows=2, ncols=3, figsize=(6, 6), sharey=True)\naxs[0, 0].boxplot(data, labels=labels)\naxs[0, 0].set_title('Default', fontsize=fs)\naxs[0, 1].boxplot(data, labels=labels, showmeans=True)\naxs[0, 1].set_title('showmeans=True', fontsize=fs)\naxs[0, 2].boxplot(data, labels=labels, showmeans=True, meanline=True)\naxs[0, 2].set_title('showmeans=True,\\nmeanline=True', fontsize=fs)\naxs[1, 0].boxplot(data, labels=labels, showbox=False, showcaps=False)",
-        "detail": "ejer_class.matplotlib_subplots_test",
-        "documentation": {}
-    },
-    {
-        "label": "fs",
-        "kind": 5,
-        "importPath": "ejer_class.matplotlib_subplots_test",
-        "description": "ejer_class.matplotlib_subplots_test",
-        "peekOfCode": "fs = 10  # fontsize\nfig, axs = plt.subplots(nrows=2, ncols=3, figsize=(6, 6), sharey=True)\naxs[0, 0].boxplot(data, labels=labels)\naxs[0, 0].set_title('Default', fontsize=fs)\naxs[0, 1].boxplot(data, labels=labels, showmeans=True)\naxs[0, 1].set_title('showmeans=True', fontsize=fs)\naxs[0, 2].boxplot(data, labels=labels, showmeans=True, meanline=True)\naxs[0, 2].set_title('showmeans=True,\\nmeanline=True', fontsize=fs)\naxs[1, 0].boxplot(data, labels=labels, showbox=False, showcaps=False)\ntufte_title = 'Tufte Style \\n(showbox=False,\\nshowcaps=False)'",
-        "detail": "ejer_class.matplotlib_subplots_test",
-        "documentation": {}
-    },
-    {
-        "label": "tufte_title",
-        "kind": 5,
-        "importPath": "ejer_class.matplotlib_subplots_test",
-        "description": "ejer_class.matplotlib_subplots_test",
-        "peekOfCode": "tufte_title = 'Tufte Style \\n(showbox=False,\\nshowcaps=False)'\naxs[1, 0].set_title(tufte_title, fontsize=fs)\naxs[1, 1].boxplot(data, labels=labels, notch=True, bootstrap=10000)\naxs[1, 1].set_title('notch=True,\\nbootstrap=10000', fontsize=fs)\naxs[1, 2].boxplot(data, labels=labels, showfliers=False)\naxs[1, 2].set_title('showfliers=False', fontsize=fs)\nfor ax in axs.flat:\n    ax.set_yscale('log')\n    ax.set_yticklabels([])\nfig.subplots_adjust(hspace=0.4)",
-        "detail": "ejer_class.matplotlib_subplots_test",
-        "documentation": {}
-    },
-    {
-        "label": "x",
-        "kind": 5,
-        "importPath": "ejer_class.plot",
-        "description": "ejer_class.plot",
-        "peekOfCode": "x = np.linspace(0, 10, 100)\ny = 4 + 2 * np.sin(2 * x)\n# plot\nfig, ax = plt.subplots()\nax.plot(x, y, linewidth=2.0)\nax.set(xlim=(0, 8), xticks=np.arange(1, 8),\n       ylim=(0, 8), yticks=np.arange(1, 8))\nplt.show()",
-        "detail": "ejer_class.plot",
-        "documentation": {}
-    },
-    {
-        "label": "y",
-        "kind": 5,
-        "importPath": "ejer_class.plot",
-        "description": "ejer_class.plot",
-        "peekOfCode": "y = 4 + 2 * np.sin(2 * x)\n# plot\nfig, ax = plt.subplots()\nax.plot(x, y, linewidth=2.0)\nax.set(xlim=(0, 8), xticks=np.arange(1, 8),\n       ylim=(0, 8), yticks=np.arange(1, 8))\nplt.show()",
-        "detail": "ejer_class.plot",
-        "documentation": {}
-    },
-    {
-        "label": "digits",
-        "kind": 5,
-        "importPath": "ejer_class.sklearn_test",
-        "description": "ejer_class.sklearn_test",
-        "peekOfCode": "digits = datasets.load_digits()\n_, axes = plt.subplots(nrows=1, ncols=4, figsize=(10, 3))\nfor ax, image, label in zip(axes, digits.images, digits.target):\n    ax.set_axis_off()\n    ax.imshow(image, cmap=plt.cm.gray_r, interpolation=\"nearest\")\n    ax.set_title(\"Training: %i\" % label)\nprint(digits.data.shape)\nplt.gray()\nplt.matshow(digits.images[0])\nplt.show()",
-        "detail": "ejer_class.sklearn_test",
-        "documentation": {}
-    },
-    {
-        "label": "n_samples",
-        "kind": 5,
-        "importPath": "ejer_class.sklearn_test",
-        "description": "ejer_class.sklearn_test",
-        "peekOfCode": "n_samples = len(digits.images)\ndata = digits.images.reshape((n_samples, -1))\n# Create a classifier: a support vector classifier\nclf = svm.SVC(gamma=0.001)\n# Split data into 50% train and 50% test subsets\nX_train, X_test, y_train, y_test = train_test_split(\n    data, digits.target, test_size=0.5, shuffle=False\n)\n# Learn the digits on the train subset\nclf.fit(X_train, y_train)",
-        "detail": "ejer_class.sklearn_test",
-        "documentation": {}
-    },
-    {
-        "label": "data",
-        "kind": 5,
-        "importPath": "ejer_class.sklearn_test",
-        "description": "ejer_class.sklearn_test",
-        "peekOfCode": "data = digits.images.reshape((n_samples, -1))\n# Create a classifier: a support vector classifier\nclf = svm.SVC(gamma=0.001)\n# Split data into 50% train and 50% test subsets\nX_train, X_test, y_train, y_test = train_test_split(\n    data, digits.target, test_size=0.5, shuffle=False\n)\n# Learn the digits on the train subset\nclf.fit(X_train, y_train)\n# Predict the value of the digit on the test subset",
-        "detail": "ejer_class.sklearn_test",
-        "documentation": {}
-    },
-    {
-        "label": "clf",
-        "kind": 5,
-        "importPath": "ejer_class.sklearn_test",
-        "description": "ejer_class.sklearn_test",
-        "peekOfCode": "clf = svm.SVC(gamma=0.001)\n# Split data into 50% train and 50% test subsets\nX_train, X_test, y_train, y_test = train_test_split(\n    data, digits.target, test_size=0.5, shuffle=False\n)\n# Learn the digits on the train subset\nclf.fit(X_train, y_train)\n# Predict the value of the digit on the test subset\npredicted = clf.predict(X_test)\n_, axes = plt.subplots(nrows=1, ncols=4, figsize=(10, 3))",
-        "detail": "ejer_class.sklearn_test",
-        "documentation": {}
-    },
-    {
-        "label": "predicted",
-        "kind": 5,
-        "importPath": "ejer_class.sklearn_test",
-        "description": "ejer_class.sklearn_test",
-        "peekOfCode": "predicted = clf.predict(X_test)\n_, axes = plt.subplots(nrows=1, ncols=4, figsize=(10, 3))\nfor ax, image, prediction in zip(axes, X_test, predicted):\n    ax.set_axis_off()\n    image = image.reshape(8, 8)\n    ax.imshow(image, cmap=plt.cm.gray_r, interpolation=\"nearest\")\n    ax.set_title(f\"Prediction: {prediction}\")",
-        "detail": "ejer_class.sklearn_test",
         "documentation": {}
     },
     {
@@ -1663,6 +1714,537 @@
     {
         "label": "df",
         "kind": 5,
+        "importPath": "section 7.barras_lineas_comb_graf",
+        "description": "section 7.barras_lineas_comb_graf",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/paises_vida.csv\", index_col=0)\ndf = df.dropna()\ndf_africa = df[df[\"continent\"] == \"Africa\"]\ndf_africa = df_africa.sort_values(by=\"lifeExp\", ascending=False)\ndf_africa_grouped = df_africa.groupby(\"year\").agg(\n    {\"lifeExp\": \"mean\", \"pop\": \"sum\", \"gdpPercap\": \"mean\"}\n)\ndf_africa_grouped = df_africa_grouped.reset_index()\ndf_africa_grouped\nimport seaborn as sns",
+        "detail": "section 7.barras_lineas_comb_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 7.barras_lineas_comb_graf",
+        "description": "section 7.barras_lineas_comb_graf",
+        "peekOfCode": "df = df.dropna()\ndf_africa = df[df[\"continent\"] == \"Africa\"]\ndf_africa = df_africa.sort_values(by=\"lifeExp\", ascending=False)\ndf_africa_grouped = df_africa.groupby(\"year\").agg(\n    {\"lifeExp\": \"mean\", \"pop\": \"sum\", \"gdpPercap\": \"mean\"}\n)\ndf_africa_grouped = df_africa_grouped.reset_index()\ndf_africa_grouped\nimport seaborn as sns\nimport matplotlib.pyplot as plt",
+        "detail": "section 7.barras_lineas_comb_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df_africa",
+        "kind": 5,
+        "importPath": "section 7.barras_lineas_comb_graf",
+        "description": "section 7.barras_lineas_comb_graf",
+        "peekOfCode": "df_africa = df[df[\"continent\"] == \"Africa\"]\ndf_africa = df_africa.sort_values(by=\"lifeExp\", ascending=False)\ndf_africa_grouped = df_africa.groupby(\"year\").agg(\n    {\"lifeExp\": \"mean\", \"pop\": \"sum\", \"gdpPercap\": \"mean\"}\n)\ndf_africa_grouped = df_africa_grouped.reset_index()\ndf_africa_grouped\nimport seaborn as sns\nimport matplotlib.pyplot as plt\nfig, ax1 = plt.subplots(figsize=(8, 4))",
+        "detail": "section 7.barras_lineas_comb_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df_africa",
+        "kind": 5,
+        "importPath": "section 7.barras_lineas_comb_graf",
+        "description": "section 7.barras_lineas_comb_graf",
+        "peekOfCode": "df_africa = df_africa.sort_values(by=\"lifeExp\", ascending=False)\ndf_africa_grouped = df_africa.groupby(\"year\").agg(\n    {\"lifeExp\": \"mean\", \"pop\": \"sum\", \"gdpPercap\": \"mean\"}\n)\ndf_africa_grouped = df_africa_grouped.reset_index()\ndf_africa_grouped\nimport seaborn as sns\nimport matplotlib.pyplot as plt\nfig, ax1 = plt.subplots(figsize=(8, 4))\nsns.set_style(\"whitegrid\")",
+        "detail": "section 7.barras_lineas_comb_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df_africa_grouped",
+        "kind": 5,
+        "importPath": "section 7.barras_lineas_comb_graf",
+        "description": "section 7.barras_lineas_comb_graf",
+        "peekOfCode": "df_africa_grouped = df_africa.groupby(\"year\").agg(\n    {\"lifeExp\": \"mean\", \"pop\": \"sum\", \"gdpPercap\": \"mean\"}\n)\ndf_africa_grouped = df_africa_grouped.reset_index()\ndf_africa_grouped\nimport seaborn as sns\nimport matplotlib.pyplot as plt\nfig, ax1 = plt.subplots(figsize=(8, 4))\nsns.set_style(\"whitegrid\")\nax = sns.barplot(",
+        "detail": "section 7.barras_lineas_comb_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df_africa_grouped",
+        "kind": 5,
+        "importPath": "section 7.barras_lineas_comb_graf",
+        "description": "section 7.barras_lineas_comb_graf",
+        "peekOfCode": "df_africa_grouped = df_africa_grouped.reset_index()\ndf_africa_grouped\nimport seaborn as sns\nimport matplotlib.pyplot as plt\nfig, ax1 = plt.subplots(figsize=(8, 4))\nsns.set_style(\"whitegrid\")\nax = sns.barplot(\n    x=\"year\", y=\"lifeExp\", \n    data=df_africa_grouped, \n    color=\"skyblue\", ",
+        "detail": "section 7.barras_lineas_comb_graf",
+        "documentation": {}
+    },
+    {
+        "label": "ax",
+        "kind": 5,
+        "importPath": "section 7.barras_lineas_comb_graf",
+        "description": "section 7.barras_lineas_comb_graf",
+        "peekOfCode": "ax = sns.barplot(\n    x=\"year\", y=\"lifeExp\", \n    data=df_africa_grouped, \n    color=\"skyblue\", \n    alpha=0.8,\n    ax=ax1\n)\nplt.title(\"Life Expectancy in Africa\", loc='center', color='blue', fontsize=15)\nplt.suptitle(\"GPD per Capita in Africa\", color=\"red\", fontsize=15, y=1.05)\nax.tick_params(",
+        "detail": "section 7.barras_lineas_comb_graf",
+        "documentation": {}
+    },
+    {
+        "label": "ax2",
+        "kind": 5,
+        "importPath": "section 7.barras_lineas_comb_graf",
+        "description": "section 7.barras_lineas_comb_graf",
+        "peekOfCode": "ax2 = ax1.twinx()\nax2.tick_params(axis=\"y\", labelcolor=\"red\")\nax2.set_ylabel(\"GDP per Capita\", color=\"red\")\nax2.grid(visible=False)\nsns.lineplot(\n    data=df_africa_grouped[\"gdpPercap\"],  # type: ignore\n    color=\"red\",\n    linewidth=2,\n    marker=\"D\",\n    ax=ax2,",
+        "detail": "section 7.barras_lineas_comb_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 7.bubbles_graf",
+        "description": "section 7.bubbles_graf",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/paises_vida.csv\", index_col=0)\ndf = df.dropna()\ndf_2002 = df.loc[df[\"year\"] == 2002]\ndf_2002\nimport plotly.express as px\nfig = px.scatter(\n    df_2002,\n    x=\"gdpPercap\",\n    y=\"lifeExp\",\n    size=\"pop\",",
+        "detail": "section 7.bubbles_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 7.bubbles_graf",
+        "description": "section 7.bubbles_graf",
+        "peekOfCode": "df = df.dropna()\ndf_2002 = df.loc[df[\"year\"] == 2002]\ndf_2002\nimport plotly.express as px\nfig = px.scatter(\n    df_2002,\n    x=\"gdpPercap\",\n    y=\"lifeExp\",\n    size=\"pop\",\n    color=\"continent\",",
+        "detail": "section 7.bubbles_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df_2002",
+        "kind": 5,
+        "importPath": "section 7.bubbles_graf",
+        "description": "section 7.bubbles_graf",
+        "peekOfCode": "df_2002 = df.loc[df[\"year\"] == 2002]\ndf_2002\nimport plotly.express as px\nfig = px.scatter(\n    df_2002,\n    x=\"gdpPercap\",\n    y=\"lifeExp\",\n    size=\"pop\",\n    color=\"continent\",\n    hover_name=\"country\",",
+        "detail": "section 7.bubbles_graf",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 7.bubbles_graf",
+        "description": "section 7.bubbles_graf",
+        "peekOfCode": "fig = px.scatter(\n    df_2002,\n    x=\"gdpPercap\",\n    y=\"lifeExp\",\n    size=\"pop\",\n    color=\"continent\",\n    hover_name=\"country\",\n    log_x=True,\n    size_max=60,\n)",
+        "detail": "section 7.bubbles_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 7.diagrama_coor_pararelas",
+        "description": "section 7.diagrama_coor_pararelas",
+        "peekOfCode": "df = pd.read_csv('../../../data/penguins.csv')\ndf = df.dropna()\ndf\ndf['species_id'] = df['species'].astype('category').cat.codes\ndf\nimport plotly.express as px\nfig = px.parallel_coordinates(\n    df,\n    color='species_id',\n    dimensions=['culmen_length_mm', 'culmen_depth_mm', 'flipper_length_mm', 'body_mass_g'],",
+        "detail": "section 7.diagrama_coor_pararelas",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 7.diagrama_coor_pararelas",
+        "description": "section 7.diagrama_coor_pararelas",
+        "peekOfCode": "df = df.dropna()\ndf\ndf['species_id'] = df['species'].astype('category').cat.codes\ndf\nimport plotly.express as px\nfig = px.parallel_coordinates(\n    df,\n    color='species_id',\n    dimensions=['culmen_length_mm', 'culmen_depth_mm', 'flipper_length_mm', 'body_mass_g'],\n    color_continuous_scale=px.colors.diverging.Tealrose",
+        "detail": "section 7.diagrama_coor_pararelas",
+        "documentation": {}
+    },
+    {
+        "label": "df['species_id']",
+        "kind": 5,
+        "importPath": "section 7.diagrama_coor_pararelas",
+        "description": "section 7.diagrama_coor_pararelas",
+        "peekOfCode": "df['species_id'] = df['species'].astype('category').cat.codes\ndf\nimport plotly.express as px\nfig = px.parallel_coordinates(\n    df,\n    color='species_id',\n    dimensions=['culmen_length_mm', 'culmen_depth_mm', 'flipper_length_mm', 'body_mass_g'],\n    color_continuous_scale=px.colors.diverging.Tealrose\n)\nfig.show()",
+        "detail": "section 7.diagrama_coor_pararelas",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 7.diagrama_coor_pararelas",
+        "description": "section 7.diagrama_coor_pararelas",
+        "peekOfCode": "fig = px.parallel_coordinates(\n    df,\n    color='species_id',\n    dimensions=['culmen_length_mm', 'culmen_depth_mm', 'flipper_length_mm', 'body_mass_g'],\n    color_continuous_scale=px.colors.diverging.Tealrose\n)\nfig.show()",
+        "detail": "section 7.diagrama_coor_pararelas",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 7.double_lines_graf",
+        "description": "section 7.double_lines_graf",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/paises_vida.csv\", index_col=0)\ndf = df.dropna()\ndf_asia = df[df[\"continent\"] == \"Asia\"]\ndf_asia = df_asia.sort_values(by=\"lifeExp\")\ndf_asia_grouped = df_asia.groupby(\"year\").agg({\"lifeExp\": \"mean\", \"gdpPercap\": \"mean\"})\ndf_asia_grouped.plot.line(\n    y=[\"lifeExp\", \"gdpPercap\"],  # type: ignore\n    grid=True,\n)\nimport matplotlib.pyplot as plt",
+        "detail": "section 7.double_lines_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 7.double_lines_graf",
+        "description": "section 7.double_lines_graf",
+        "peekOfCode": "df = df.dropna()\ndf_asia = df[df[\"continent\"] == \"Asia\"]\ndf_asia = df_asia.sort_values(by=\"lifeExp\")\ndf_asia_grouped = df_asia.groupby(\"year\").agg({\"lifeExp\": \"mean\", \"gdpPercap\": \"mean\"})\ndf_asia_grouped.plot.line(\n    y=[\"lifeExp\", \"gdpPercap\"],  # type: ignore\n    grid=True,\n)\nimport matplotlib.pyplot as plt\nfig, ax = plt.subplots()",
+        "detail": "section 7.double_lines_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df_asia",
+        "kind": 5,
+        "importPath": "section 7.double_lines_graf",
+        "description": "section 7.double_lines_graf",
+        "peekOfCode": "df_asia = df[df[\"continent\"] == \"Asia\"]\ndf_asia = df_asia.sort_values(by=\"lifeExp\")\ndf_asia_grouped = df_asia.groupby(\"year\").agg({\"lifeExp\": \"mean\", \"gdpPercap\": \"mean\"})\ndf_asia_grouped.plot.line(\n    y=[\"lifeExp\", \"gdpPercap\"],  # type: ignore\n    grid=True,\n)\nimport matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nplt.style.use('ggplot')",
+        "detail": "section 7.double_lines_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df_asia",
+        "kind": 5,
+        "importPath": "section 7.double_lines_graf",
+        "description": "section 7.double_lines_graf",
+        "peekOfCode": "df_asia = df_asia.sort_values(by=\"lifeExp\")\ndf_asia_grouped = df_asia.groupby(\"year\").agg({\"lifeExp\": \"mean\", \"gdpPercap\": \"mean\"})\ndf_asia_grouped.plot.line(\n    y=[\"lifeExp\", \"gdpPercap\"],  # type: ignore\n    grid=True,\n)\nimport matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nplt.style.use('ggplot')\nax.plot(",
+        "detail": "section 7.double_lines_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df_asia_grouped",
+        "kind": 5,
+        "importPath": "section 7.double_lines_graf",
+        "description": "section 7.double_lines_graf",
+        "peekOfCode": "df_asia_grouped = df_asia.groupby(\"year\").agg({\"lifeExp\": \"mean\", \"gdpPercap\": \"mean\"})\ndf_asia_grouped.plot.line(\n    y=[\"lifeExp\", \"gdpPercap\"],  # type: ignore\n    grid=True,\n)\nimport matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nplt.style.use('ggplot')\nax.plot(\n    df_asia_grouped.index.values, ",
+        "detail": "section 7.double_lines_graf",
+        "documentation": {}
+    },
+    {
+        "label": "ax1",
+        "kind": 5,
+        "importPath": "section 7.double_lines_graf",
+        "description": "section 7.double_lines_graf",
+        "peekOfCode": "ax1 = ax.twinx()\nax1.plot(\n    df_asia_grouped.index.values, \n    df_asia_grouped[\"lifeExp\"],\n    color='blue', \n    marker='o',\n)\nplt.legend(['Life Expectancy'], loc='upper left')\nax1.set_ylabel('Life Expectancy', color='blue')\nax1.tick_params(axis='y', labelcolor='blue')",
+        "detail": "section 7.double_lines_graf",
+        "documentation": {}
+    },
+    {
+        "label": "host",
+        "kind": 5,
+        "importPath": "section 7.double_lines_graf",
+        "description": "section 7.double_lines_graf",
+        "peekOfCode": "host = host_subplot(111)\npar = host.twinx()\nhost.set_xlabel(\"Distance\")\nhost.set_ylabel(\"Density\")\npar.set_ylabel(\"Temperature\")\np1, = host.plot([0, 1, 2], [0, 1, 2], label=\"Density\")\np2, = par.plot([0, 1, 2], [0, 3, 2], label=\"Temperature\")\nhost.legend(labelcolor=\"linecolor\")\nhost.yaxis.get_label().set_color(p1.get_color())\npar.yaxis.get_label().set_color(p2.get_color())",
+        "detail": "section 7.double_lines_graf",
+        "documentation": {}
+    },
+    {
+        "label": "par",
+        "kind": 5,
+        "importPath": "section 7.double_lines_graf",
+        "description": "section 7.double_lines_graf",
+        "peekOfCode": "par = host.twinx()\nhost.set_xlabel(\"Distance\")\nhost.set_ylabel(\"Density\")\npar.set_ylabel(\"Temperature\")\np1, = host.plot([0, 1, 2], [0, 1, 2], label=\"Density\")\np2, = par.plot([0, 1, 2], [0, 3, 2], label=\"Temperature\")\nhost.legend(labelcolor=\"linecolor\")\nhost.yaxis.get_label().set_color(p1.get_color())\npar.yaxis.get_label().set_color(p2.get_color())\nplt.show()",
+        "detail": "section 7.double_lines_graf",
+        "documentation": {}
+    },
+    {
+        "label": "p1,",
+        "kind": 5,
+        "importPath": "section 7.double_lines_graf",
+        "description": "section 7.double_lines_graf",
+        "peekOfCode": "p1, = host.plot([0, 1, 2], [0, 1, 2], label=\"Density\")\np2, = par.plot([0, 1, 2], [0, 3, 2], label=\"Temperature\")\nhost.legend(labelcolor=\"linecolor\")\nhost.yaxis.get_label().set_color(p1.get_color())\npar.yaxis.get_label().set_color(p2.get_color())\nplt.show()",
+        "detail": "section 7.double_lines_graf",
+        "documentation": {}
+    },
+    {
+        "label": "p2,",
+        "kind": 5,
+        "importPath": "section 7.double_lines_graf",
+        "description": "section 7.double_lines_graf",
+        "peekOfCode": "p2, = par.plot([0, 1, 2], [0, 3, 2], label=\"Temperature\")\nhost.legend(labelcolor=\"linecolor\")\nhost.yaxis.get_label().set_color(p1.get_color())\npar.yaxis.get_label().set_color(p2.get_color())\nplt.show()",
+        "detail": "section 7.double_lines_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 7.heatmap_cat_graf",
+        "description": "section 7.heatmap_cat_graf",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/tienda_ventas.csv\", index_col=0)\ndf = df.dropna()\ndf[\"periodo\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\ntiendas_agrupadas = (\n    df[\n        (df[\"family\"] == \"BEVERAGES\")\n        & (df[\"store_nbr\"].isin([3, 44, 45, 46, 47, 48, 49, 50]))\n    ]\n    .groupby([\"periodo\", \"store_nbr\"])",
+        "detail": "section 7.heatmap_cat_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 7.heatmap_cat_graf",
+        "description": "section 7.heatmap_cat_graf",
+        "peekOfCode": "df = df.dropna()\ndf[\"periodo\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\ntiendas_agrupadas = (\n    df[\n        (df[\"family\"] == \"BEVERAGES\")\n        & (df[\"store_nbr\"].isin([3, 44, 45, 46, 47, 48, 49, 50]))\n    ]\n    .groupby([\"periodo\", \"store_nbr\"])\n    .agg({\"sales\": 'sum'})",
+        "detail": "section 7.heatmap_cat_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df[\"periodo\"]",
+        "kind": 5,
+        "importPath": "section 7.heatmap_cat_graf",
+        "description": "section 7.heatmap_cat_graf",
+        "peekOfCode": "df[\"periodo\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\ntiendas_agrupadas = (\n    df[\n        (df[\"family\"] == \"BEVERAGES\")\n        & (df[\"store_nbr\"].isin([3, 44, 45, 46, 47, 48, 49, 50]))\n    ]\n    .groupby([\"periodo\", \"store_nbr\"])\n    .agg({\"sales\": 'sum'})\n)",
+        "detail": "section 7.heatmap_cat_graf",
+        "documentation": {}
+    },
+    {
+        "label": "tiendas_agrupadas",
+        "kind": 5,
+        "importPath": "section 7.heatmap_cat_graf",
+        "description": "section 7.heatmap_cat_graf",
+        "peekOfCode": "tiendas_agrupadas = (\n    df[\n        (df[\"family\"] == \"BEVERAGES\")\n        & (df[\"store_nbr\"].isin([3, 44, 45, 46, 47, 48, 49, 50]))\n    ]\n    .groupby([\"periodo\", \"store_nbr\"])\n    .agg({\"sales\": 'sum'})\n)\ntiendas_agrupadas\npivote = tiendas_agrupadas.unstack().droplevel(0, axis=1).transpose()  # type: ignore",
+        "detail": "section 7.heatmap_cat_graf",
+        "documentation": {}
+    },
+    {
+        "label": "pivote",
+        "kind": 5,
+        "importPath": "section 7.heatmap_cat_graf",
+        "description": "section 7.heatmap_cat_graf",
+        "peekOfCode": "pivote = tiendas_agrupadas.unstack().droplevel(0, axis=1).transpose()  # type: ignore\npivote\nimport seaborn as sns\nimport matplotlib.pyplot as plt\nplt.figure(figsize=(15, 8))\nsns.heatmap(\n    pivote, \n    cmap=\"Blues\",\n    square=True, \n    linewidths=0.1,",
+        "detail": "section 7.heatmap_cat_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 7.heatmap_corre_graf",
+        "description": "section 7.heatmap_corre_graf",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/penguins.csv\", index_col=0)\ndf = df.dropna()\nagrupado = df.groupby([\"species\", \"island\"]).count()[[\"sex\"]]\nagrupado\npivote = agrupado.unstack().droplevel(0, axis=1)  # type: ignore\npivote\n# Heatmap de variables categóricas que codifican una variable numérica\n# https://seaborn.pydata.org/generated/seaborn.heatmap.html\nsns.heatmap(\n    pivote,",
+        "detail": "section 7.heatmap_corre_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 7.heatmap_corre_graf",
+        "description": "section 7.heatmap_corre_graf",
+        "peekOfCode": "df = df.dropna()\nagrupado = df.groupby([\"species\", \"island\"]).count()[[\"sex\"]]\nagrupado\npivote = agrupado.unstack().droplevel(0, axis=1)  # type: ignore\npivote\n# Heatmap de variables categóricas que codifican una variable numérica\n# https://seaborn.pydata.org/generated/seaborn.heatmap.html\nsns.heatmap(\n    pivote,\n    annot=True,",
+        "detail": "section 7.heatmap_corre_graf",
+        "documentation": {}
+    },
+    {
+        "label": "agrupado",
+        "kind": 5,
+        "importPath": "section 7.heatmap_corre_graf",
+        "description": "section 7.heatmap_corre_graf",
+        "peekOfCode": "agrupado = df.groupby([\"species\", \"island\"]).count()[[\"sex\"]]\nagrupado\npivote = agrupado.unstack().droplevel(0, axis=1)  # type: ignore\npivote\n# Heatmap de variables categóricas que codifican una variable numérica\n# https://seaborn.pydata.org/generated/seaborn.heatmap.html\nsns.heatmap(\n    pivote,\n    annot=True,\n    cmap=\"crest\",",
+        "detail": "section 7.heatmap_corre_graf",
+        "documentation": {}
+    },
+    {
+        "label": "pivote",
+        "kind": 5,
+        "importPath": "section 7.heatmap_corre_graf",
+        "description": "section 7.heatmap_corre_graf",
+        "peekOfCode": "pivote = agrupado.unstack().droplevel(0, axis=1)  # type: ignore\npivote\n# Heatmap de variables categóricas que codifican una variable numérica\n# https://seaborn.pydata.org/generated/seaborn.heatmap.html\nsns.heatmap(\n    pivote,\n    annot=True,\n    cmap=\"crest\",\n    linewidth=0.5,\n    fmt=\".1f\"",
+        "detail": "section 7.heatmap_corre_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df_cor",
+        "kind": 5,
+        "importPath": "section 7.heatmap_corre_graf",
+        "description": "section 7.heatmap_corre_graf",
+        "peekOfCode": "df_cor = df[\n    [\"culmen_length_mm\", \"culmen_depth_mm\", \"flipper_length_mm\", \"body_mass_g\"]\n].corr()\ndf_cor\npalette = sns.color_palette(\"rocket_r\", as_cmap=True)\nsns.heatmap(df_cor, annot=True, cmap=palette, square=True)",
+        "detail": "section 7.heatmap_corre_graf",
+        "documentation": {}
+    },
+    {
+        "label": "palette",
+        "kind": 5,
+        "importPath": "section 7.heatmap_corre_graf",
+        "description": "section 7.heatmap_corre_graf",
+        "peekOfCode": "palette = sns.color_palette(\"rocket_r\", as_cmap=True)\nsns.heatmap(df_cor, annot=True, cmap=palette, square=True)",
+        "detail": "section 7.heatmap_corre_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 7.heatmap_hexabin_graf",
+        "description": "section 7.heatmap_hexabin_graf",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/penguins.csv\", index_col=0)\ndf = df.dropna()\ndf.plot.scatter(\n    x=\"flipper_length_mm\", \n    y=\"culmen_length_mm\"\n)\nimport seaborn as sns\nsns.jointplot(\n    data=df,\n    x=\"flipper_length_mm\",",
+        "detail": "section 7.heatmap_hexabin_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 7.heatmap_hexabin_graf",
+        "description": "section 7.heatmap_hexabin_graf",
+        "peekOfCode": "df = df.dropna()\ndf.plot.scatter(\n    x=\"flipper_length_mm\", \n    y=\"culmen_length_mm\"\n)\nimport seaborn as sns\nsns.jointplot(\n    data=df,\n    x=\"flipper_length_mm\",\n    y=\"culmen_length_mm\",",
+        "detail": "section 7.heatmap_hexabin_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 7.join_plot",
+        "description": "section 7.join_plot",
+        "peekOfCode": "df = pd.read_csv('../../../data/penguins.csv')\ndf = df.dropna()\ng = sns.jointplot(\n    data=df,\n    x='flipper_length_mm',\n    y='culmen_length_mm',\n    hue='species',\n    kind='kde'\n)\nsns.move_legend(g.ax_joint, \"lower right\", title='Species', frameon=False)",
+        "detail": "section 7.join_plot",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 7.join_plot",
+        "description": "section 7.join_plot",
+        "peekOfCode": "df = df.dropna()\ng = sns.jointplot(\n    data=df,\n    x='flipper_length_mm',\n    y='culmen_length_mm',\n    hue='species',\n    kind='kde'\n)\nsns.move_legend(g.ax_joint, \"lower right\", title='Species', frameon=False)",
+        "detail": "section 7.join_plot",
+        "documentation": {}
+    },
+    {
+        "label": "g",
+        "kind": 5,
+        "importPath": "section 7.join_plot",
+        "description": "section 7.join_plot",
+        "peekOfCode": "g = sns.jointplot(\n    data=df,\n    x='flipper_length_mm',\n    y='culmen_length_mm',\n    hue='species',\n    kind='kde'\n)\nsns.move_legend(g.ax_joint, \"lower right\", title='Species', frameon=False)",
+        "detail": "section 7.join_plot",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 7.pair_plot",
+        "description": "section 7.pair_plot",
+        "peekOfCode": "df = pd.read_csv('../../../data/penguins.csv')\ndf = df.dropna()\n# Create a pair plot\nsns.pairplot(\n    data=df, \n    hue='species',\n    kind='hist'\n)",
+        "detail": "section 7.pair_plot",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 7.pair_plot",
+        "description": "section 7.pair_plot",
+        "peekOfCode": "df = df.dropna()\n# Create a pair plot\nsns.pairplot(\n    data=df, \n    hue='species',\n    kind='hist'\n)",
+        "detail": "section 7.pair_plot",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 7.radar_graf",
+        "description": "section 7.radar_graf",
+        "peekOfCode": "df = pd.read_csv('../../../data/restaurantes.csv')\ndf \ncategories = df.columns.values[1:]\nfig = go.Figure()\n# Add traces\nfig.add_trace(\n    go.Scatterpolar(\n        r=df.iloc[0, 1:],\n        theta=categories,\n        fill='toself',",
+        "detail": "section 7.radar_graf",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "section 7.radar_graf",
+        "description": "section 7.radar_graf",
+        "peekOfCode": "categories = df.columns.values[1:]\nfig = go.Figure()\n# Add traces\nfig.add_trace(\n    go.Scatterpolar(\n        r=df.iloc[0, 1:],\n        theta=categories,\n        fill='toself',\n        name='Restaurante 1'\n    )",
+        "detail": "section 7.radar_graf",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 7.radar_graf",
+        "description": "section 7.radar_graf",
+        "peekOfCode": "fig = go.Figure()\n# Add traces\nfig.add_trace(\n    go.Scatterpolar(\n        r=df.iloc[0, 1:],\n        theta=categories,\n        fill='toself',\n        name='Restaurante 1'\n    )\n)",
+        "detail": "section 7.radar_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df2",
+        "kind": 5,
+        "importPath": "section 7.radar_graf",
+        "description": "section 7.radar_graf",
+        "peekOfCode": "df2 = pd.read_csv('../../../data/penguins.csv')\ndf2 = df2.dropna()\ndf2\ngrouped = df2.groupby('species').mean(numeric_only=True)\ngrouped\ncategories = grouped.columns.values\nspecies = df2['species'].unique()\nfig2 = go.Figure()\n# Add traces\nfig2.add_trace(",
+        "detail": "section 7.radar_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df2",
+        "kind": 5,
+        "importPath": "section 7.radar_graf",
+        "description": "section 7.radar_graf",
+        "peekOfCode": "df2 = df2.dropna()\ndf2\ngrouped = df2.groupby('species').mean(numeric_only=True)\ngrouped\ncategories = grouped.columns.values\nspecies = df2['species'].unique()\nfig2 = go.Figure()\n# Add traces\nfig2.add_trace(\n    go.Scatterpolar(",
+        "detail": "section 7.radar_graf",
+        "documentation": {}
+    },
+    {
+        "label": "grouped",
+        "kind": 5,
+        "importPath": "section 7.radar_graf",
+        "description": "section 7.radar_graf",
+        "peekOfCode": "grouped = df2.groupby('species').mean(numeric_only=True)\ngrouped\ncategories = grouped.columns.values\nspecies = df2['species'].unique()\nfig2 = go.Figure()\n# Add traces\nfig2.add_trace(\n    go.Scatterpolar(\n        r=grouped.iloc[0, :],\n        theta=categories,",
+        "detail": "section 7.radar_graf",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "section 7.radar_graf",
+        "description": "section 7.radar_graf",
+        "peekOfCode": "categories = grouped.columns.values\nspecies = df2['species'].unique()\nfig2 = go.Figure()\n# Add traces\nfig2.add_trace(\n    go.Scatterpolar(\n        r=grouped.iloc[0, :],\n        theta=categories,\n        fill='toself',\n        name=species[0]",
+        "detail": "section 7.radar_graf",
+        "documentation": {}
+    },
+    {
+        "label": "species",
+        "kind": 5,
+        "importPath": "section 7.radar_graf",
+        "description": "section 7.radar_graf",
+        "peekOfCode": "species = df2['species'].unique()\nfig2 = go.Figure()\n# Add traces\nfig2.add_trace(\n    go.Scatterpolar(\n        r=grouped.iloc[0, :],\n        theta=categories,\n        fill='toself',\n        name=species[0]\n    )",
+        "detail": "section 7.radar_graf",
+        "documentation": {}
+    },
+    {
+        "label": "fig2",
+        "kind": 5,
+        "importPath": "section 7.radar_graf",
+        "description": "section 7.radar_graf",
+        "peekOfCode": "fig2 = go.Figure()\n# Add traces\nfig2.add_trace(\n    go.Scatterpolar(\n        r=grouped.iloc[0, :],\n        theta=categories,\n        fill='toself',\n        name=species[0]\n    )\n)",
+        "detail": "section 7.radar_graf",
+        "documentation": {}
+    },
+    {
+        "label": "grouped",
+        "kind": 5,
+        "importPath": "section 7.radar_graf",
+        "description": "section 7.radar_graf",
+        "peekOfCode": "grouped = df2.groupby('species').mean(numeric_only=True)\ndf_norm = df2[grouped.columns.values]\ndf_norm = (df_norm - df_norm.min()) / (df_norm.max() - df_norm.min())\ndf_norm['species'] = df2['species']\ndf_norm \ngrouped_norm = df_norm.groupby('species').mean(numeric_only=True)\nfig3 = go.Figure()\n# Add traces\nfig3.add_trace(\n    go.Scatterpolar(",
+        "detail": "section 7.radar_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df_norm",
+        "kind": 5,
+        "importPath": "section 7.radar_graf",
+        "description": "section 7.radar_graf",
+        "peekOfCode": "df_norm = df2[grouped.columns.values]\ndf_norm = (df_norm - df_norm.min()) / (df_norm.max() - df_norm.min())\ndf_norm['species'] = df2['species']\ndf_norm \ngrouped_norm = df_norm.groupby('species').mean(numeric_only=True)\nfig3 = go.Figure()\n# Add traces\nfig3.add_trace(\n    go.Scatterpolar(\n        r=grouped_norm.iloc[0, :],",
+        "detail": "section 7.radar_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df_norm",
+        "kind": 5,
+        "importPath": "section 7.radar_graf",
+        "description": "section 7.radar_graf",
+        "peekOfCode": "df_norm = (df_norm - df_norm.min()) / (df_norm.max() - df_norm.min())\ndf_norm['species'] = df2['species']\ndf_norm \ngrouped_norm = df_norm.groupby('species').mean(numeric_only=True)\nfig3 = go.Figure()\n# Add traces\nfig3.add_trace(\n    go.Scatterpolar(\n        r=grouped_norm.iloc[0, :],\n        theta=categories,",
+        "detail": "section 7.radar_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df_norm['species']",
+        "kind": 5,
+        "importPath": "section 7.radar_graf",
+        "description": "section 7.radar_graf",
+        "peekOfCode": "df_norm['species'] = df2['species']\ndf_norm \ngrouped_norm = df_norm.groupby('species').mean(numeric_only=True)\nfig3 = go.Figure()\n# Add traces\nfig3.add_trace(\n    go.Scatterpolar(\n        r=grouped_norm.iloc[0, :],\n        theta=categories,\n        fill='toself',",
+        "detail": "section 7.radar_graf",
+        "documentation": {}
+    },
+    {
+        "label": "grouped_norm",
+        "kind": 5,
+        "importPath": "section 7.radar_graf",
+        "description": "section 7.radar_graf",
+        "peekOfCode": "grouped_norm = df_norm.groupby('species').mean(numeric_only=True)\nfig3 = go.Figure()\n# Add traces\nfig3.add_trace(\n    go.Scatterpolar(\n        r=grouped_norm.iloc[0, :],\n        theta=categories,\n        fill='toself',\n        name=species[0]\n    )",
+        "detail": "section 7.radar_graf",
+        "documentation": {}
+    },
+    {
+        "label": "fig3",
+        "kind": 5,
+        "importPath": "section 7.radar_graf",
+        "description": "section 7.radar_graf",
+        "peekOfCode": "fig3 = go.Figure()\n# Add traces\nfig3.add_trace(\n    go.Scatterpolar(\n        r=grouped_norm.iloc[0, :],\n        theta=categories,\n        fill='toself',\n        name=species[0]\n    )\n)",
+        "detail": "section 7.radar_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
         "importPath": "section 7.regresion",
         "description": "section 7.regresion",
         "peekOfCode": "df = pd.read_csv(\"../../../data/penguins.csv\")\ndf = df.dropna()\nsns.regplot(\n    data=df,\n    x=\"flipper_length_mm\",\n    y=\"culmen_length_mm\",\n    scatter_kws={\"s\": 10},\n)\nimport scipy as sp\nr, p = sp.stats.pearsonr(df[\"flipper_length_mm\"], df[\"culmen_length_mm\"])",
@@ -1690,460 +2272,415 @@
     {
         "label": "df",
         "kind": 5,
-        "importPath": "cajas_graf",
-        "description": "cajas_graf",
-        "peekOfCode": "df = pd.read_csv(\"../../data/titanic.csv\")\ndf = df.dropna(subset=[\"Age\"], axis=\"index\")  # remove rows with missing Age data\ndf\ndf.boxplot(column=\"Age\")\ndf.boxplot(by=\"Sex\", column=[\"Age\"], grid=False)\nimport seaborn as sns\nsns.boxplot(data=df, x=\"Sex\", y=\"Age\")\nplt.show()",
-        "detail": "cajas_graf",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "cajas_graf",
-        "description": "cajas_graf",
-        "peekOfCode": "df = df.dropna(subset=[\"Age\"], axis=\"index\")  # remove rows with missing Age data\ndf\ndf.boxplot(column=\"Age\")\ndf.boxplot(by=\"Sex\", column=[\"Age\"], grid=False)\nimport seaborn as sns\nsns.boxplot(data=df, x=\"Sex\", y=\"Age\")\nplt.show()",
-        "detail": "cajas_graf",
-        "documentation": {}
-    },
-    {
-        "label": "calculateWins",
-        "kind": 2,
-        "importPath": "ejer_pandas",
-        "description": "ejer_pandas",
-        "peekOfCode": "def calculateWins(retweets):\n    win = retweets * random.randint(3, 5)\n    return win\ndf[\"ganancias\"] = df[\"retweets\"].apply(calculateWins)\ndf.fillna(0).head()\ndef population(row):\n    return row[\"followees\"] / row[\"followers\"]\ndf[\"popularidad\"] = df.apply(population, axis=1)\ndf.fillna(0).head()\ndf = df.drop(columns=[\"full_text\"])",
-        "detail": "ejer_pandas",
-        "documentation": {}
-    },
-    {
-        "label": "population",
-        "kind": 2,
-        "importPath": "ejer_pandas",
-        "description": "ejer_pandas",
-        "peekOfCode": "def population(row):\n    return row[\"followees\"] / row[\"followers\"]\ndf[\"popularidad\"] = df.apply(population, axis=1)\ndf.fillna(0).head()\ndf = df.drop(columns=[\"full_text\"])\ndf.fillna(0).head()\ndf = df.drop(columns=[\"user\"])\ndf.fillna(0)\ndf.groupby(\"country\").mean()\nresult = df.groupby(\"country\").agg({",
-        "detail": "ejer_pandas",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "ejer_pandas",
-        "description": "ejer_pandas",
-        "peekOfCode": "df = pd.read_csv(\"../../NIVEL0/dataset.csv\", index_col=\"id\")\ndf_filter = df.fillna(0)\ndf_filter.head()\ndf.iloc[0]\ndf.loc[[183721, 183722], [\"full_text\", \"favorites\"]]\ndf[df['favorites'] > 400]\ndf[(df['favorites'] > 400) & (df['mentions'] > 20)]\ndf[df['full_text'].str.contains(\"programming\")]\nimport random\ndef calculateWins(retweets):",
-        "detail": "ejer_pandas",
-        "documentation": {}
-    },
-    {
-        "label": "df_filter",
-        "kind": 5,
-        "importPath": "ejer_pandas",
-        "description": "ejer_pandas",
-        "peekOfCode": "df_filter = df.fillna(0)\ndf_filter.head()\ndf.iloc[0]\ndf.loc[[183721, 183722], [\"full_text\", \"favorites\"]]\ndf[df['favorites'] > 400]\ndf[(df['favorites'] > 400) & (df['mentions'] > 20)]\ndf[df['full_text'].str.contains(\"programming\")]\nimport random\ndef calculateWins(retweets):\n    win = retweets * random.randint(3, 5)",
-        "detail": "ejer_pandas",
-        "documentation": {}
-    },
-    {
-        "label": "df[\"ganancias\"]",
-        "kind": 5,
-        "importPath": "ejer_pandas",
-        "description": "ejer_pandas",
-        "peekOfCode": "df[\"ganancias\"] = df[\"retweets\"].apply(calculateWins)\ndf.fillna(0).head()\ndef population(row):\n    return row[\"followees\"] / row[\"followers\"]\ndf[\"popularidad\"] = df.apply(population, axis=1)\ndf.fillna(0).head()\ndf = df.drop(columns=[\"full_text\"])\ndf.fillna(0).head()\ndf = df.drop(columns=[\"user\"])\ndf.fillna(0)",
-        "detail": "ejer_pandas",
-        "documentation": {}
-    },
-    {
-        "label": "df[\"popularidad\"]",
-        "kind": 5,
-        "importPath": "ejer_pandas",
-        "description": "ejer_pandas",
-        "peekOfCode": "df[\"popularidad\"] = df.apply(population, axis=1)\ndf.fillna(0).head()\ndf = df.drop(columns=[\"full_text\"])\ndf.fillna(0).head()\ndf = df.drop(columns=[\"user\"])\ndf.fillna(0)\ndf.groupby(\"country\").mean()\nresult = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",",
-        "detail": "ejer_pandas",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "ejer_pandas",
-        "description": "ejer_pandas",
-        "peekOfCode": "df = df.drop(columns=[\"full_text\"])\ndf.fillna(0).head()\ndf = df.drop(columns=[\"user\"])\ndf.fillna(0)\ndf.groupby(\"country\").mean()\nresult = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",\n    \"retweets\": \"max\",\n    \"favorites\": \"mean\"",
-        "detail": "ejer_pandas",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "ejer_pandas",
-        "description": "ejer_pandas",
-        "peekOfCode": "df = df.drop(columns=[\"user\"])\ndf.fillna(0)\ndf.groupby(\"country\").mean()\nresult = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",\n    \"retweets\": \"max\",\n    \"favorites\": \"mean\"\n})\nresult.to_csv(\"../../NIVEL0/result.csv\")",
-        "detail": "ejer_pandas",
-        "documentation": {}
-    },
-    {
-        "label": "result",
-        "kind": 5,
-        "importPath": "ejer_pandas",
-        "description": "ejer_pandas",
-        "peekOfCode": "result = df.groupby(\"country\").agg({\n    \"followers\": \"sum\",\n    \"followees\": \"sum\",\n    \"retweets\": \"max\",\n    \"favorites\": \"mean\"\n})\nresult.to_csv(\"../../NIVEL0/result.csv\")",
-        "detail": "ejer_pandas",
-        "documentation": {}
-    },
-    {
-        "label": "df1",
-        "kind": 5,
-        "importPath": "ejer_pandasII",
-        "description": "ejer_pandasII",
-        "peekOfCode": "df1 = pd.read_csv(\"../../NIVEL0/dataset_2a.csv\", index_col=\"id\")\ndf2 = pd.read_csv(\"../../NIVEL0/dataset_2b.csv\", index_col=\"user\")\ndf3 = pd.read_csv(\"../../NIVEL0/dataset_2c.csv\", index_col=\"ciudad\")\ndf1\ndf2\ndf3\ndf_usuarios = df1.merge(df2, on=\"user\", how=\"left\")\ndf_usuarios\ndf_complete = df_usuarios.merge(df3, on=\"ciudad\", how=\"left\")\ndf_complete",
-        "detail": "ejer_pandasII",
-        "documentation": {}
-    },
-    {
-        "label": "df2",
-        "kind": 5,
-        "importPath": "ejer_pandasII",
-        "description": "ejer_pandasII",
-        "peekOfCode": "df2 = pd.read_csv(\"../../NIVEL0/dataset_2b.csv\", index_col=\"user\")\ndf3 = pd.read_csv(\"../../NIVEL0/dataset_2c.csv\", index_col=\"ciudad\")\ndf1\ndf2\ndf3\ndf_usuarios = df1.merge(df2, on=\"user\", how=\"left\")\ndf_usuarios\ndf_complete = df_usuarios.merge(df3, on=\"ciudad\", how=\"left\")\ndf_complete\ndf_complete['fecha'] = pd.to_datetime(df_complete['fecha_publicado'], format=\"%d/%m/%Y\")",
-        "detail": "ejer_pandasII",
-        "documentation": {}
-    },
-    {
-        "label": "df3",
-        "kind": 5,
-        "importPath": "ejer_pandasII",
-        "description": "ejer_pandasII",
-        "peekOfCode": "df3 = pd.read_csv(\"../../NIVEL0/dataset_2c.csv\", index_col=\"ciudad\")\ndf1\ndf2\ndf3\ndf_usuarios = df1.merge(df2, on=\"user\", how=\"left\")\ndf_usuarios\ndf_complete = df_usuarios.merge(df3, on=\"ciudad\", how=\"left\")\ndf_complete\ndf_complete['fecha'] = pd.to_datetime(df_complete['fecha_publicado'], format=\"%d/%m/%Y\")\ndf_complete",
-        "detail": "ejer_pandasII",
-        "documentation": {}
-    },
-    {
-        "label": "df_usuarios",
-        "kind": 5,
-        "importPath": "ejer_pandasII",
-        "description": "ejer_pandasII",
-        "peekOfCode": "df_usuarios = df1.merge(df2, on=\"user\", how=\"left\")\ndf_usuarios\ndf_complete = df_usuarios.merge(df3, on=\"ciudad\", how=\"left\")\ndf_complete\ndf_complete['fecha'] = pd.to_datetime(df_complete['fecha_publicado'], format=\"%d/%m/%Y\")\ndf_complete\ndf_complete['dia_semana'] = df_complete['fecha'].apply(lambda x: x.strftime('%A'))\ndf_complete\ndf_complete['mes'] = df_complete['fecha_publicado'].apply(lambda x: x[3:])\ndf_complete",
-        "detail": "ejer_pandasII",
-        "documentation": {}
-    },
-    {
-        "label": "df_complete",
-        "kind": 5,
-        "importPath": "ejer_pandasII",
-        "description": "ejer_pandasII",
-        "peekOfCode": "df_complete = df_usuarios.merge(df3, on=\"ciudad\", how=\"left\")\ndf_complete\ndf_complete['fecha'] = pd.to_datetime(df_complete['fecha_publicado'], format=\"%d/%m/%Y\")\ndf_complete\ndf_complete['dia_semana'] = df_complete['fecha'].apply(lambda x: x.strftime('%A'))\ndf_complete\ndf_complete['mes'] = df_complete['fecha_publicado'].apply(lambda x: x[3:])\ndf_complete",
-        "detail": "ejer_pandasII",
-        "documentation": {}
-    },
-    {
-        "label": "df_complete['fecha']",
-        "kind": 5,
-        "importPath": "ejer_pandasII",
-        "description": "ejer_pandasII",
-        "peekOfCode": "df_complete['fecha'] = pd.to_datetime(df_complete['fecha_publicado'], format=\"%d/%m/%Y\")\ndf_complete\ndf_complete['dia_semana'] = df_complete['fecha'].apply(lambda x: x.strftime('%A'))\ndf_complete\ndf_complete['mes'] = df_complete['fecha_publicado'].apply(lambda x: x[3:])\ndf_complete",
-        "detail": "ejer_pandasII",
-        "documentation": {}
-    },
-    {
-        "label": "df_complete['dia_semana']",
-        "kind": 5,
-        "importPath": "ejer_pandasII",
-        "description": "ejer_pandasII",
-        "peekOfCode": "df_complete['dia_semana'] = df_complete['fecha'].apply(lambda x: x.strftime('%A'))\ndf_complete\ndf_complete['mes'] = df_complete['fecha_publicado'].apply(lambda x: x[3:])\ndf_complete",
-        "detail": "ejer_pandasII",
-        "documentation": {}
-    },
-    {
-        "label": "df_complete['mes']",
-        "kind": 5,
-        "importPath": "ejer_pandasII",
-        "description": "ejer_pandasII",
-        "peekOfCode": "df_complete['mes'] = df_complete['fecha_publicado'].apply(lambda x: x[3:])\ndf_complete",
-        "detail": "ejer_pandasII",
-        "documentation": {}
-    },
-    {
-        "label": "df1",
-        "kind": 5,
-        "importPath": "ejer_pandasIII",
-        "description": "ejer_pandasIII",
-        "peekOfCode": "df1 = pd.read_csv(\"../../NIVEL0/dataset_2a.csv\", index_col=\"id\")\ndf2 = pd.read_csv(\"../../NIVEL0/dataset_2b.csv\", index_col=\"user\")\ndf3 = pd.read_csv(\"../../NIVEL0/dataset_2c.csv\", index_col=\"ciudad\")\ndf1\ndf2\ndf3\ndf_usuarios = df1.merge(df2, on=\"user\", how=\"left\")\ndf_usuarios\ndf_complete = df_usuarios.merge(df3, on=\"ciudad\", how=\"left\")\ndf_complete",
-        "detail": "ejer_pandasIII",
-        "documentation": {}
-    },
-    {
-        "label": "df2",
-        "kind": 5,
-        "importPath": "ejer_pandasIII",
-        "description": "ejer_pandasIII",
-        "peekOfCode": "df2 = pd.read_csv(\"../../NIVEL0/dataset_2b.csv\", index_col=\"user\")\ndf3 = pd.read_csv(\"../../NIVEL0/dataset_2c.csv\", index_col=\"ciudad\")\ndf1\ndf2\ndf3\ndf_usuarios = df1.merge(df2, on=\"user\", how=\"left\")\ndf_usuarios\ndf_complete = df_usuarios.merge(df3, on=\"ciudad\", how=\"left\")\ndf_complete\ndf_complete['fecha'] = pd.to_datetime(df_complete['fecha_publicado'], format=\"%d/%m/%Y\")",
-        "detail": "ejer_pandasIII",
-        "documentation": {}
-    },
-    {
-        "label": "df3",
-        "kind": 5,
-        "importPath": "ejer_pandasIII",
-        "description": "ejer_pandasIII",
-        "peekOfCode": "df3 = pd.read_csv(\"../../NIVEL0/dataset_2c.csv\", index_col=\"ciudad\")\ndf1\ndf2\ndf3\ndf_usuarios = df1.merge(df2, on=\"user\", how=\"left\")\ndf_usuarios\ndf_complete = df_usuarios.merge(df3, on=\"ciudad\", how=\"left\")\ndf_complete\ndf_complete['fecha'] = pd.to_datetime(df_complete['fecha_publicado'], format=\"%d/%m/%Y\")\ndf_complete['mes'] = df_complete['fecha_publicado'].apply(lambda x: x[3:])",
-        "detail": "ejer_pandasIII",
-        "documentation": {}
-    },
-    {
-        "label": "df_usuarios",
-        "kind": 5,
-        "importPath": "ejer_pandasIII",
-        "description": "ejer_pandasIII",
-        "peekOfCode": "df_usuarios = df1.merge(df2, on=\"user\", how=\"left\")\ndf_usuarios\ndf_complete = df_usuarios.merge(df3, on=\"ciudad\", how=\"left\")\ndf_complete\ndf_complete['fecha'] = pd.to_datetime(df_complete['fecha_publicado'], format=\"%d/%m/%Y\")\ndf_complete['mes'] = df_complete['fecha_publicado'].apply(lambda x: x[3:])\ndf_complete\ndf_complete.groupby('mes').agg({'user': 'count'})\ngrouped = df_complete.groupby(['mes', 'ciudad']).agg({'user': 'count'})\nungrouped = grouped.reset_index(1)",
-        "detail": "ejer_pandasIII",
-        "documentation": {}
-    },
-    {
-        "label": "df_complete",
-        "kind": 5,
-        "importPath": "ejer_pandasIII",
-        "description": "ejer_pandasIII",
-        "peekOfCode": "df_complete = df_usuarios.merge(df3, on=\"ciudad\", how=\"left\")\ndf_complete\ndf_complete['fecha'] = pd.to_datetime(df_complete['fecha_publicado'], format=\"%d/%m/%Y\")\ndf_complete['mes'] = df_complete['fecha_publicado'].apply(lambda x: x[3:])\ndf_complete\ndf_complete.groupby('mes').agg({'user': 'count'})\ngrouped = df_complete.groupby(['mes', 'ciudad']).agg({'user': 'count'})\nungrouped = grouped.reset_index(1)\npivot = ungrouped.pivot(columns='ciudad', values='user')\n# EXISTE UNA FUNCIÓN pivot.droplevel(0, axis=columns) QUE ELIMINA LOS NIVELES DE COLUMNAS QUE NO SEAN NECESARIOS",
-        "detail": "ejer_pandasIII",
-        "documentation": {}
-    },
-    {
-        "label": "df_complete['fecha']",
-        "kind": 5,
-        "importPath": "ejer_pandasIII",
-        "description": "ejer_pandasIII",
-        "peekOfCode": "df_complete['fecha'] = pd.to_datetime(df_complete['fecha_publicado'], format=\"%d/%m/%Y\")\ndf_complete['mes'] = df_complete['fecha_publicado'].apply(lambda x: x[3:])\ndf_complete\ndf_complete.groupby('mes').agg({'user': 'count'})\ngrouped = df_complete.groupby(['mes', 'ciudad']).agg({'user': 'count'})\nungrouped = grouped.reset_index(1)\npivot = ungrouped.pivot(columns='ciudad', values='user')\n# EXISTE UNA FUNCIÓN pivot.droplevel(0, axis=columns) QUE ELIMINA LOS NIVELES DE COLUMNAS QUE NO SEAN NECESARIOS\npivot[['GUAYAQUIL']]\npivot = pivot.fillna(0)",
-        "detail": "ejer_pandasIII",
-        "documentation": {}
-    },
-    {
-        "label": "df_complete['mes']",
-        "kind": 5,
-        "importPath": "ejer_pandasIII",
-        "description": "ejer_pandasIII",
-        "peekOfCode": "df_complete['mes'] = df_complete['fecha_publicado'].apply(lambda x: x[3:])\ndf_complete\ndf_complete.groupby('mes').agg({'user': 'count'})\ngrouped = df_complete.groupby(['mes', 'ciudad']).agg({'user': 'count'})\nungrouped = grouped.reset_index(1)\npivot = ungrouped.pivot(columns='ciudad', values='user')\n# EXISTE UNA FUNCIÓN pivot.droplevel(0, axis=columns) QUE ELIMINA LOS NIVELES DE COLUMNAS QUE NO SEAN NECESARIOS\npivot[['GUAYAQUIL']]\npivot = pivot.fillna(0)\npivot.head()",
-        "detail": "ejer_pandasIII",
-        "documentation": {}
-    },
-    {
-        "label": "grouped",
-        "kind": 5,
-        "importPath": "ejer_pandasIII",
-        "description": "ejer_pandasIII",
-        "peekOfCode": "grouped = df_complete.groupby(['mes', 'ciudad']).agg({'user': 'count'})\nungrouped = grouped.reset_index(1)\npivot = ungrouped.pivot(columns='ciudad', values='user')\n# EXISTE UNA FUNCIÓN pivot.droplevel(0, axis=columns) QUE ELIMINA LOS NIVELES DE COLUMNAS QUE NO SEAN NECESARIOS\npivot[['GUAYAQUIL']]\npivot = pivot.fillna(0)\npivot.head()\npivot = pivot.transpose()\npivot.head()",
-        "detail": "ejer_pandasIII",
-        "documentation": {}
-    },
-    {
-        "label": "ungrouped",
-        "kind": 5,
-        "importPath": "ejer_pandasIII",
-        "description": "ejer_pandasIII",
-        "peekOfCode": "ungrouped = grouped.reset_index(1)\npivot = ungrouped.pivot(columns='ciudad', values='user')\n# EXISTE UNA FUNCIÓN pivot.droplevel(0, axis=columns) QUE ELIMINA LOS NIVELES DE COLUMNAS QUE NO SEAN NECESARIOS\npivot[['GUAYAQUIL']]\npivot = pivot.fillna(0)\npivot.head()\npivot = pivot.transpose()\npivot.head()",
-        "detail": "ejer_pandasIII",
-        "documentation": {}
-    },
-    {
-        "label": "pivot",
-        "kind": 5,
-        "importPath": "ejer_pandasIII",
-        "description": "ejer_pandasIII",
-        "peekOfCode": "pivot = ungrouped.pivot(columns='ciudad', values='user')\n# EXISTE UNA FUNCIÓN pivot.droplevel(0, axis=columns) QUE ELIMINA LOS NIVELES DE COLUMNAS QUE NO SEAN NECESARIOS\npivot[['GUAYAQUIL']]\npivot = pivot.fillna(0)\npivot.head()\npivot = pivot.transpose()\npivot.head()",
-        "detail": "ejer_pandasIII",
-        "documentation": {}
-    },
-    {
-        "label": "pivot",
-        "kind": 5,
-        "importPath": "ejer_pandasIII",
-        "description": "ejer_pandasIII",
-        "peekOfCode": "pivot = pivot.fillna(0)\npivot.head()\npivot = pivot.transpose()\npivot.head()",
-        "detail": "ejer_pandasIII",
-        "documentation": {}
-    },
-    {
-        "label": "pivot",
-        "kind": 5,
-        "importPath": "ejer_pandasIII",
-        "description": "ejer_pandasIII",
-        "peekOfCode": "pivot = pivot.transpose()\npivot.head()",
-        "detail": "ejer_pandasIII",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "graf_barras",
-        "description": "graf_barras",
-        "peekOfCode": "df = pd.read_csv(\"../../data/titanic.csv\")\npassengers = df.groupby(\"Sex\").agg({\"PassengerId\": \"count\"})\nimport seaborn as sns\nsns.barplot(passengers, x=\"Sex\", y=\"PassengerId\")\nimport matplotlib.pyplot as plt\nplt.bar(passengers.index, passengers[\"PassengerId\"])",
-        "detail": "graf_barras",
-        "documentation": {}
-    },
-    {
-        "label": "passengers",
-        "kind": 5,
-        "importPath": "graf_barras",
-        "description": "graf_barras",
-        "peekOfCode": "passengers = df.groupby(\"Sex\").agg({\"PassengerId\": \"count\"})\nimport seaborn as sns\nsns.barplot(passengers, x=\"Sex\", y=\"PassengerId\")\nimport matplotlib.pyplot as plt\nplt.bar(passengers.index, passengers[\"PassengerId\"])",
-        "detail": "graf_barras",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "histio_graf",
-        "description": "histio_graf",
-        "peekOfCode": "df = pd.read_csv(\"../../data/titanic.csv\")\ndf = df.dropna(subset=[\"Age\"], axis=\"index\")  # remove rows with missing Age data\ndf\ndf.hist(\n    column=\"Age\",\n    by='Sex',\n    bins=15\n)\nimport seaborn as sns\nsns.histplot(",
-        "detail": "histio_graf",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "histio_graf",
-        "description": "histio_graf",
-        "peekOfCode": "df = df.dropna(subset=[\"Age\"], axis=\"index\")  # remove rows with missing Age data\ndf\ndf.hist(\n    column=\"Age\",\n    by='Sex',\n    bins=15\n)\nimport seaborn as sns\nsns.histplot(\n    df,",
-        "detail": "histio_graf",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "line_graf",
-        "description": "line_graf",
-        "peekOfCode": "df = pd.read_csv(\"../../data/tienda_ventas.csv\", index_col='id')\ndf\ndf['mes'] = df['date'].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month\nsell_by_month.plot.line(\n    y='sales',",
-        "detail": "line_graf",
-        "documentation": {}
-    },
-    {
-        "label": "df['mes']",
-        "kind": 5,
-        "importPath": "line_graf",
-        "description": "line_graf",
-        "peekOfCode": "df['mes'] = df['date'].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month\nsell_by_month.plot.line(\n    y='sales',\n    style='.-',\n    linestyle='dotted'",
-        "detail": "line_graf",
-        "documentation": {}
-    },
-    {
-        "label": "sell_by_month",
-        "kind": 5,
-        "importPath": "line_graf",
-        "description": "line_graf",
-        "peekOfCode": "sell_by_month = df.groupby('mes').agg({\n    'sales': 'sum'\n})\nsell_by_month\nsell_by_month.plot.line(\n    y='sales',\n    style='.-',\n    linestyle='dotted'\n)\nimport plotly.express as px",
-        "detail": "line_graf",
-        "documentation": {}
-    },
-    {
-        "label": "fig",
-        "kind": 5,
-        "importPath": "line_graf",
-        "description": "line_graf",
-        "peekOfCode": "fig = px.line(\n    sell_by_month,\n    x=sell_by_month.index.values,\n    y='sales'\n)\nfig.show()",
-        "detail": "line_graf",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "multiline",
-        "description": "multiline",
-        "peekOfCode": "df = pd.read_csv(\"../../data/tienda_ventas.csv\", index_col=\"id\")\ndf\ndf[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby(\"mes\").agg({\"sales\": \"sum\"})\nsell_by_month\ndf[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))",
-        "detail": "multiline",
-        "documentation": {}
-    },
-    {
-        "label": "df[\"mes\"]",
-        "kind": 5,
-        "importPath": "multiline",
-        "description": "multiline",
-        "peekOfCode": "df[\"mes\"] = df[\"date\"].apply(lambda x: x[:7])\ndf\nsell_by_month = df.groupby(\"mes\").agg({\"sales\": \"sum\"})\nsell_by_month\ndf[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015",
-        "detail": "multiline",
-        "documentation": {}
-    },
-    {
-        "label": "sell_by_month",
-        "kind": 5,
-        "importPath": "multiline",
-        "description": "multiline",
-        "peekOfCode": "sell_by_month = df.groupby(\"mes\").agg({\"sales\": \"sum\"})\nsell_by_month\ndf[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped",
-        "detail": "multiline",
+        "importPath": "section 8.animate_geo_graf",
+        "description": "section 8.animate_geo_graf",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/terremotos_mundo.csv\")\ndf\ndf[\"year\"] = df[\"Date\"].apply(lambda x: x[-4:])\ndf\nfig = px.density_mapbox(\n    df,\n    lat=\"Latitude\",\n    lon=\"Longitude\",\n    z=\"Magnitude\",\n    mapbox_style=\"open-street-map\",",
+        "detail": "section 8.animate_geo_graf",
         "documentation": {}
     },
     {
         "label": "df[\"year\"]",
         "kind": 5,
-        "importPath": "multiline",
-        "description": "multiline",
-        "peekOfCode": "df[\"year\"] = df[\"date\"].apply(lambda x: x[0:4])\ndf\ndf_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")",
-        "detail": "multiline",
-        "documentation": {}
-    },
-    {
-        "label": "df_2015",
-        "kind": 5,
-        "importPath": "multiline",
-        "description": "multiline",
-        "peekOfCode": "df_2015 = df[\n    (df[\"year\"] == \"2015\") & (df[\"family\"].isin([\"SEAFOOD\", \"MEATS\", \"DAIRY\"]))\n]\ndf_2015\ndf_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line(subplots=True)",
-        "detail": "multiline",
-        "documentation": {}
-    },
-    {
-        "label": "df_2015_grouped",
-        "kind": 5,
-        "importPath": "multiline",
-        "description": "multiline",
-        "peekOfCode": "df_2015_grouped = df_2015.groupby([\"mes\", \"family\"]).agg({\"sales\": \"sum\"})\ndf_2015_grouped\ndf_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line(subplots=True)",
-        "detail": "multiline",
-        "documentation": {}
-    },
-    {
-        "label": "df_2015_pivot",
-        "kind": 5,
-        "importPath": "multiline",
-        "description": "multiline",
-        "peekOfCode": "df_2015_pivot = df_2015_grouped.reset_index()\ndf_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line(subplots=True)",
-        "detail": "multiline",
-        "documentation": {}
-    },
-    {
-        "label": "df_2015_pivot",
-        "kind": 5,
-        "importPath": "multiline",
-        "description": "multiline",
-        "peekOfCode": "df_2015_pivot = df_2015_pivot.pivot(index=\"mes\", columns=\"family\", values=\"sales\")\ndf_2015_pivot.plot.line(subplots=True)",
-        "detail": "multiline",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "pie_graf",
-        "description": "pie_graf",
-        "peekOfCode": "df = pd.read_csv(\"../../data/titanic.csv\")\npassengers = df.groupby(\"Sex\").agg({\"PassengerId\": \"count\"})\npassengers\npassengers.plot.pie(\n    y=\"PassengerId\",\n    startangle=90,\n    autopct=\"%1.1f%%\",  # Format the percentages to show one decimal\n)\nimport plotly.express as px\npassengers_index = passengers.reset_index()",
-        "detail": "pie_graf",
-        "documentation": {}
-    },
-    {
-        "label": "passengers",
-        "kind": 5,
-        "importPath": "pie_graf",
-        "description": "pie_graf",
-        "peekOfCode": "passengers = df.groupby(\"Sex\").agg({\"PassengerId\": \"count\"})\npassengers\npassengers.plot.pie(\n    y=\"PassengerId\",\n    startangle=90,\n    autopct=\"%1.1f%%\",  # Format the percentages to show one decimal\n)\nimport plotly.express as px\npassengers_index = passengers.reset_index()\npassengers_index",
-        "detail": "pie_graf",
-        "documentation": {}
-    },
-    {
-        "label": "passengers_index",
-        "kind": 5,
-        "importPath": "pie_graf",
-        "description": "pie_graf",
-        "peekOfCode": "passengers_index = passengers.reset_index()\npassengers_index\nfig = px.pie(\n    passengers_index,\n    values=\"PassengerId\",\n    names=\"Sex\",\n    title=\"Passengers per Sex\",\n    hole=0.3\n)\nfig.show()",
-        "detail": "pie_graf",
+        "importPath": "section 8.animate_geo_graf",
+        "description": "section 8.animate_geo_graf",
+        "peekOfCode": "df[\"year\"] = df[\"Date\"].apply(lambda x: x[-4:])\ndf\nfig = px.density_mapbox(\n    df,\n    lat=\"Latitude\",\n    lon=\"Longitude\",\n    z=\"Magnitude\",\n    mapbox_style=\"open-street-map\",\n    color_continuous_scale=px.colors.sequential.Inferno,\n    zoom=0,",
+        "detail": "section 8.animate_geo_graf",
         "documentation": {}
     },
     {
         "label": "fig",
         "kind": 5,
-        "importPath": "pie_graf",
-        "description": "pie_graf",
-        "peekOfCode": "fig = px.pie(\n    passengers_index,\n    values=\"PassengerId\",\n    names=\"Sex\",\n    title=\"Passengers per Sex\",\n    hole=0.3\n)\nfig.show()",
-        "detail": "pie_graf",
+        "importPath": "section 8.animate_geo_graf",
+        "description": "section 8.animate_geo_graf",
+        "peekOfCode": "fig = px.density_mapbox(\n    df,\n    lat=\"Latitude\",\n    lon=\"Longitude\",\n    z=\"Magnitude\",\n    mapbox_style=\"open-street-map\",\n    color_continuous_scale=px.colors.sequential.Inferno,\n    zoom=0,\n    radius=5,\n    opacity=0.8,",
+        "detail": "section 8.animate_geo_graf",
+        "documentation": {}
+    },
+    {
+        "label": "names",
+        "kind": 5,
+        "importPath": "section 8.choropleth",
+        "description": "section 8.choropleth",
+        "peekOfCode": "names = []\ntweets = []\npopulation = []\nfor feature in data[\"features\"]:\n    names.append(feature[\"properties\"][\"NOMBRE\"])\n    tweets.append(feature[\"properties\"][\"TWEETS\"])\n    population.append(feature[\"properties\"][\"POBLACION\"])\ndf = pd.DataFrame({\"name\": names, \"tweets\": tweets, \"population\": population})\ndf\nfig = px.choropleth(",
+        "detail": "section 8.choropleth",
+        "documentation": {}
+    },
+    {
+        "label": "tweets",
+        "kind": 5,
+        "importPath": "section 8.choropleth",
+        "description": "section 8.choropleth",
+        "peekOfCode": "tweets = []\npopulation = []\nfor feature in data[\"features\"]:\n    names.append(feature[\"properties\"][\"NOMBRE\"])\n    tweets.append(feature[\"properties\"][\"TWEETS\"])\n    population.append(feature[\"properties\"][\"POBLACION\"])\ndf = pd.DataFrame({\"name\": names, \"tweets\": tweets, \"population\": population})\ndf\nfig = px.choropleth(\n    df,",
+        "detail": "section 8.choropleth",
+        "documentation": {}
+    },
+    {
+        "label": "population",
+        "kind": 5,
+        "importPath": "section 8.choropleth",
+        "description": "section 8.choropleth",
+        "peekOfCode": "population = []\nfor feature in data[\"features\"]:\n    names.append(feature[\"properties\"][\"NOMBRE\"])\n    tweets.append(feature[\"properties\"][\"TWEETS\"])\n    population.append(feature[\"properties\"][\"POBLACION\"])\ndf = pd.DataFrame({\"name\": names, \"tweets\": tweets, \"population\": population})\ndf\nfig = px.choropleth(\n    df,\n    geojson=data,",
+        "detail": "section 8.choropleth",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 8.choropleth",
+        "description": "section 8.choropleth",
+        "peekOfCode": "df = pd.DataFrame({\"name\": names, \"tweets\": tweets, \"population\": population})\ndf\nfig = px.choropleth(\n    df,\n    geojson=data,\n    locations=\"name\",\n    featureidkey=\"properties.NOMBRE\",\n    color=\"tweets\",\n    color_continuous_scale=px.colors.sequential.Blues,\n)",
+        "detail": "section 8.choropleth",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 8.choropleth",
+        "description": "section 8.choropleth",
+        "peekOfCode": "fig = px.choropleth(\n    df,\n    geojson=data,\n    locations=\"name\",\n    featureidkey=\"properties.NOMBRE\",\n    color=\"tweets\",\n    color_continuous_scale=px.colors.sequential.Blues,\n)\nfig.update_layout(margin={\"r\": 0, \"t\": 0, \"l\": 0, \"b\": 0})\nfig.update_geos(fitbounds=\"locations\")",
+        "detail": "section 8.choropleth",
+        "documentation": {}
+    },
+    {
+        "label": "fig2",
+        "kind": 5,
+        "importPath": "section 8.choropleth",
+        "description": "section 8.choropleth",
+        "peekOfCode": "fig2 = px.choropleth_mapbox(\n    df,\n    geojson=data,\n    locations=\"name\",\n    featureidkey=\"properties.NOMBRE\",\n    color=\"tweets\",\n    color_continuous_scale=px.colors.sequential.Blues,\n    mapbox_style=\"carto-positron\",\n    zoom=5,\n    center={\"lat\": 8.0, \"lon\": -66.0},",
+        "detail": "section 8.choropleth",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 8.heatmap_geo_graf",
+        "description": "section 8.heatmap_geo_graf",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/terremotos_mundo.csv\")\ndf\ndf[\"year\"] = df[\"Date\"].apply(lambda x: x[-4:])\ndf\nfig = px.density_mapbox(\n    df,\n    lat=\"Latitude\",\n    lon=\"Longitude\",\n    z=\"Magnitude\",\n    mapbox_style=\"open-street-map\",",
+        "detail": "section 8.heatmap_geo_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df[\"year\"]",
+        "kind": 5,
+        "importPath": "section 8.heatmap_geo_graf",
+        "description": "section 8.heatmap_geo_graf",
+        "peekOfCode": "df[\"year\"] = df[\"Date\"].apply(lambda x: x[-4:])\ndf\nfig = px.density_mapbox(\n    df,\n    lat=\"Latitude\",\n    lon=\"Longitude\",\n    z=\"Magnitude\",\n    mapbox_style=\"open-street-map\",\n    color_continuous_scale=px.colors.sequential.Inferno,\n    zoom=0,",
+        "detail": "section 8.heatmap_geo_graf",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 8.heatmap_geo_graf",
+        "description": "section 8.heatmap_geo_graf",
+        "peekOfCode": "fig = px.density_mapbox(\n    df,\n    lat=\"Latitude\",\n    lon=\"Longitude\",\n    z=\"Magnitude\",\n    mapbox_style=\"open-street-map\",\n    color_continuous_scale=px.colors.sequential.Inferno,\n    zoom=0,\n    radius=5,\n    opacity=0.8,",
+        "detail": "section 8.heatmap_geo_graf",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "section 8.points_bubbles_map_graf",
+        "description": "section 8.points_bubbles_map_graf",
+        "peekOfCode": "data = pd.read_csv(\"../../../data/madrid_metro/estaciones.csv\")\ndata\ndata_grouped = data.groupby(\"DENOMINACION\").agg(\n    {\n        \"latitude\": \"first\",\n        \"longitude\": \"first\",\n        \"ENCUESTADOMICILIARIA\": \"sum\",\n        \"GRADOACCESIBILIDAD\": \"first\",\n    }\n)",
+        "detail": "section 8.points_bubbles_map_graf",
+        "documentation": {}
+    },
+    {
+        "label": "data_grouped",
+        "kind": 5,
+        "importPath": "section 8.points_bubbles_map_graf",
+        "description": "section 8.points_bubbles_map_graf",
+        "peekOfCode": "data_grouped = data.groupby(\"DENOMINACION\").agg(\n    {\n        \"latitude\": \"first\",\n        \"longitude\": \"first\",\n        \"ENCUESTADOMICILIARIA\": \"sum\",\n        \"GRADOACCESIBILIDAD\": \"first\",\n    }\n)\ndata_grouped\nimport plotly.express as px",
+        "detail": "section 8.points_bubbles_map_graf",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 8.points_bubbles_map_graf",
+        "description": "section 8.points_bubbles_map_graf",
+        "peekOfCode": "fig = px.scatter_mapbox(\n    data_grouped,\n    lat=\"latitude\",\n    lon=\"longitude\",\n    mapbox_style=\"carto-positron\",\n    zoom=10,\n    hover_name=data_grouped.index.values,\n    color=\"GRADOACCESIBILIDAD\",\n    size=\"ENCUESTADOMICILIARIA\",\n    size_max=20",
+        "detail": "section 8.points_bubbles_map_graf",
+        "documentation": {}
+    },
+    {
+        "label": "nodes",
+        "kind": 5,
+        "importPath": "section 9.chords",
+        "description": "section 9.chords",
+        "peekOfCode": "nodes = pd.read_csv(\"../../../data/grafo_interaccion/nodes.csv\")\nnodes\nedges = pd.read_csv(\"../../../data/grafo_interaccion/edges.csv\")\nedges\nhv.Chord(edges)\nnodos = hv.Dataset(nodes, \"id\")\nchord = hv.Chord((edges, nodos))\nchord.opts(\n    opts.Chord(\n        labels='label',",
+        "detail": "section 9.chords",
+        "documentation": {}
+    },
+    {
+        "label": "edges",
+        "kind": 5,
+        "importPath": "section 9.chords",
+        "description": "section 9.chords",
+        "peekOfCode": "edges = pd.read_csv(\"../../../data/grafo_interaccion/edges.csv\")\nedges\nhv.Chord(edges)\nnodos = hv.Dataset(nodes, \"id\")\nchord = hv.Chord((edges, nodos))\nchord.opts(\n    opts.Chord(\n        labels='label',\n        edge_color=dim('src').str(),  # 'src' es el origen de la conexión\n        node_color=dim('label').str(),  # 'label' es el nombre del nodo",
+        "detail": "section 9.chords",
+        "documentation": {}
+    },
+    {
+        "label": "nodos",
+        "kind": 5,
+        "importPath": "section 9.chords",
+        "description": "section 9.chords",
+        "peekOfCode": "nodos = hv.Dataset(nodes, \"id\")\nchord = hv.Chord((edges, nodos))\nchord.opts(\n    opts.Chord(\n        labels='label',\n        edge_color=dim('src').str(),  # 'src' es el origen de la conexión\n        node_color=dim('label').str(),  # 'label' es el nombre del nodo\n        cmap='Category20',\n        edge_cmap='Category20',\n    )",
+        "detail": "section 9.chords",
+        "documentation": {}
+    },
+    {
+        "label": "chord",
+        "kind": 5,
+        "importPath": "section 9.chords",
+        "description": "section 9.chords",
+        "peekOfCode": "chord = hv.Chord((edges, nodos))\nchord.opts(\n    opts.Chord(\n        labels='label',\n        edge_color=dim('src').str(),  # 'src' es el origen de la conexión\n        node_color=dim('label').str(),  # 'label' es el nombre del nodo\n        cmap='Category20',\n        edge_cmap='Category20',\n    )\n)",
+        "detail": "section 9.chords",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 9.connections_map",
+        "description": "section 9.connections_map",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/viajes_surfistas.csv\")\ndf\nnodes1 = df[[\"homecountry\", \"homelat\", \"homelon\"]]\nnodes1.columns = [\"label\", \"lat\", \"lon\"]\nnodes1_agg = nodes1.groupby([\"lat\", \"lon\"]).first().reset_index()\nnodes1_agg\nnodes2 = df[[\"travelcountry\", \"travellat\", \"travellon\"]]\nnodes2.columns = [\"label\", \"lat\", \"lon\"]\nnodes2_agg = nodes2.groupby([\"lat\", \"lon\"]).first().reset_index()\nnodes2_agg",
+        "detail": "section 9.connections_map",
+        "documentation": {}
+    },
+    {
+        "label": "nodes1",
+        "kind": 5,
+        "importPath": "section 9.connections_map",
+        "description": "section 9.connections_map",
+        "peekOfCode": "nodes1 = df[[\"homecountry\", \"homelat\", \"homelon\"]]\nnodes1.columns = [\"label\", \"lat\", \"lon\"]\nnodes1_agg = nodes1.groupby([\"lat\", \"lon\"]).first().reset_index()\nnodes1_agg\nnodes2 = df[[\"travelcountry\", \"travellat\", \"travellon\"]]\nnodes2.columns = [\"label\", \"lat\", \"lon\"]\nnodes2_agg = nodes2.groupby([\"lat\", \"lon\"]).first().reset_index()\nnodes2_agg\nnodes = pd.concat([nodes1_agg, nodes2_agg])\nnodes = nodes.groupby([\"lat\", \"lon\"]).first().reset_index()",
+        "detail": "section 9.connections_map",
+        "documentation": {}
+    },
+    {
+        "label": "nodes1.columns",
+        "kind": 5,
+        "importPath": "section 9.connections_map",
+        "description": "section 9.connections_map",
+        "peekOfCode": "nodes1.columns = [\"label\", \"lat\", \"lon\"]\nnodes1_agg = nodes1.groupby([\"lat\", \"lon\"]).first().reset_index()\nnodes1_agg\nnodes2 = df[[\"travelcountry\", \"travellat\", \"travellon\"]]\nnodes2.columns = [\"label\", \"lat\", \"lon\"]\nnodes2_agg = nodes2.groupby([\"lat\", \"lon\"]).first().reset_index()\nnodes2_agg\nnodes = pd.concat([nodes1_agg, nodes2_agg])\nnodes = nodes.groupby([\"lat\", \"lon\"]).first().reset_index()\nnodes",
+        "detail": "section 9.connections_map",
+        "documentation": {}
+    },
+    {
+        "label": "nodes1_agg",
+        "kind": 5,
+        "importPath": "section 9.connections_map",
+        "description": "section 9.connections_map",
+        "peekOfCode": "nodes1_agg = nodes1.groupby([\"lat\", \"lon\"]).first().reset_index()\nnodes1_agg\nnodes2 = df[[\"travelcountry\", \"travellat\", \"travellon\"]]\nnodes2.columns = [\"label\", \"lat\", \"lon\"]\nnodes2_agg = nodes2.groupby([\"lat\", \"lon\"]).first().reset_index()\nnodes2_agg\nnodes = pd.concat([nodes1_agg, nodes2_agg])\nnodes = nodes.groupby([\"lat\", \"lon\"]).first().reset_index()\nnodes\nfig = px.scatter_mapbox(",
+        "detail": "section 9.connections_map",
+        "documentation": {}
+    },
+    {
+        "label": "nodes2",
+        "kind": 5,
+        "importPath": "section 9.connections_map",
+        "description": "section 9.connections_map",
+        "peekOfCode": "nodes2 = df[[\"travelcountry\", \"travellat\", \"travellon\"]]\nnodes2.columns = [\"label\", \"lat\", \"lon\"]\nnodes2_agg = nodes2.groupby([\"lat\", \"lon\"]).first().reset_index()\nnodes2_agg\nnodes = pd.concat([nodes1_agg, nodes2_agg])\nnodes = nodes.groupby([\"lat\", \"lon\"]).first().reset_index()\nnodes\nfig = px.scatter_mapbox(\n    nodes,\n    lat=\"lat\",",
+        "detail": "section 9.connections_map",
+        "documentation": {}
+    },
+    {
+        "label": "nodes2.columns",
+        "kind": 5,
+        "importPath": "section 9.connections_map",
+        "description": "section 9.connections_map",
+        "peekOfCode": "nodes2.columns = [\"label\", \"lat\", \"lon\"]\nnodes2_agg = nodes2.groupby([\"lat\", \"lon\"]).first().reset_index()\nnodes2_agg\nnodes = pd.concat([nodes1_agg, nodes2_agg])\nnodes = nodes.groupby([\"lat\", \"lon\"]).first().reset_index()\nnodes\nfig = px.scatter_mapbox(\n    nodes,\n    lat=\"lat\",\n    lon=\"lon\",",
+        "detail": "section 9.connections_map",
+        "documentation": {}
+    },
+    {
+        "label": "nodes2_agg",
+        "kind": 5,
+        "importPath": "section 9.connections_map",
+        "description": "section 9.connections_map",
+        "peekOfCode": "nodes2_agg = nodes2.groupby([\"lat\", \"lon\"]).first().reset_index()\nnodes2_agg\nnodes = pd.concat([nodes1_agg, nodes2_agg])\nnodes = nodes.groupby([\"lat\", \"lon\"]).first().reset_index()\nnodes\nfig = px.scatter_mapbox(\n    nodes,\n    lat=\"lat\",\n    lon=\"lon\",\n    mapbox_style=\"carto-positron\",",
+        "detail": "section 9.connections_map",
+        "documentation": {}
+    },
+    {
+        "label": "nodes",
+        "kind": 5,
+        "importPath": "section 9.connections_map",
+        "description": "section 9.connections_map",
+        "peekOfCode": "nodes = pd.concat([nodes1_agg, nodes2_agg])\nnodes = nodes.groupby([\"lat\", \"lon\"]).first().reset_index()\nnodes\nfig = px.scatter_mapbox(\n    nodes,\n    lat=\"lat\",\n    lon=\"lon\",\n    mapbox_style=\"carto-positron\",\n    zoom=1,\n    color=\"label\",",
+        "detail": "section 9.connections_map",
+        "documentation": {}
+    },
+    {
+        "label": "nodes",
+        "kind": 5,
+        "importPath": "section 9.connections_map",
+        "description": "section 9.connections_map",
+        "peekOfCode": "nodes = nodes.groupby([\"lat\", \"lon\"]).first().reset_index()\nnodes\nfig = px.scatter_mapbox(\n    nodes,\n    lat=\"lat\",\n    lon=\"lon\",\n    mapbox_style=\"carto-positron\",\n    zoom=1,\n    color=\"label\",\n)",
+        "detail": "section 9.connections_map",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 9.connections_map",
+        "description": "section 9.connections_map",
+        "peekOfCode": "fig = px.scatter_mapbox(\n    nodes,\n    lat=\"lat\",\n    lon=\"lon\",\n    mapbox_style=\"carto-positron\",\n    zoom=1,\n    color=\"label\",\n)\nfig.update_traces(marker=dict(size=4))\nfig.update_layout(margin={\"r\": 0, \"t\": 0, \"l\": 0, \"b\": 0})",
+        "detail": "section 9.connections_map",
+        "documentation": {}
+    },
+    {
+        "label": "lats",
+        "kind": 5,
+        "importPath": "section 9.connections_map",
+        "description": "section 9.connections_map",
+        "peekOfCode": "lats = np.empty(len(df) * 2)\nlats[::2] = df['homelat']\nlats[1::2] = df['travellat']\nlats[2::3] = None\nlons = np.empty(len(df) * 2)\nlons[::2] = df['homelon']\nlons[1::2] = df['travellon']\nlons[2::3] = None\nimport plotly.graph_objects as go\nfig = go.Figure()",
+        "detail": "section 9.connections_map",
+        "documentation": {}
+    },
+    {
+        "label": "lats[::2]",
+        "kind": 5,
+        "importPath": "section 9.connections_map",
+        "description": "section 9.connections_map",
+        "peekOfCode": "lats[::2] = df['homelat']\nlats[1::2] = df['travellat']\nlats[2::3] = None\nlons = np.empty(len(df) * 2)\nlons[::2] = df['homelon']\nlons[1::2] = df['travellon']\nlons[2::3] = None\nimport plotly.graph_objects as go\nfig = go.Figure()\nfig.add_trace(",
+        "detail": "section 9.connections_map",
+        "documentation": {}
+    },
+    {
+        "label": "lats[1::2]",
+        "kind": 5,
+        "importPath": "section 9.connections_map",
+        "description": "section 9.connections_map",
+        "peekOfCode": "lats[1::2] = df['travellat']\nlats[2::3] = None\nlons = np.empty(len(df) * 2)\nlons[::2] = df['homelon']\nlons[1::2] = df['travellon']\nlons[2::3] = None\nimport plotly.graph_objects as go\nfig = go.Figure()\nfig.add_trace(\n    go.Scattermapbox(",
+        "detail": "section 9.connections_map",
+        "documentation": {}
+    },
+    {
+        "label": "lats[2::3]",
+        "kind": 5,
+        "importPath": "section 9.connections_map",
+        "description": "section 9.connections_map",
+        "peekOfCode": "lats[2::3] = None\nlons = np.empty(len(df) * 2)\nlons[::2] = df['homelon']\nlons[1::2] = df['travellon']\nlons[2::3] = None\nimport plotly.graph_objects as go\nfig = go.Figure()\nfig.add_trace(\n    go.Scattermapbox(\n        mode=\"markers+lines\",",
+        "detail": "section 9.connections_map",
+        "documentation": {}
+    },
+    {
+        "label": "lons",
+        "kind": 5,
+        "importPath": "section 9.connections_map",
+        "description": "section 9.connections_map",
+        "peekOfCode": "lons = np.empty(len(df) * 2)\nlons[::2] = df['homelon']\nlons[1::2] = df['travellon']\nlons[2::3] = None\nimport plotly.graph_objects as go\nfig = go.Figure()\nfig.add_trace(\n    go.Scattermapbox(\n        mode=\"markers+lines\",\n        lat=lats,",
+        "detail": "section 9.connections_map",
+        "documentation": {}
+    },
+    {
+        "label": "lons[::2]",
+        "kind": 5,
+        "importPath": "section 9.connections_map",
+        "description": "section 9.connections_map",
+        "peekOfCode": "lons[::2] = df['homelon']\nlons[1::2] = df['travellon']\nlons[2::3] = None\nimport plotly.graph_objects as go\nfig = go.Figure()\nfig.add_trace(\n    go.Scattermapbox(\n        mode=\"markers+lines\",\n        lat=lats,\n        lon=lons,",
+        "detail": "section 9.connections_map",
+        "documentation": {}
+    },
+    {
+        "label": "lons[1::2]",
+        "kind": 5,
+        "importPath": "section 9.connections_map",
+        "description": "section 9.connections_map",
+        "peekOfCode": "lons[1::2] = df['travellon']\nlons[2::3] = None\nimport plotly.graph_objects as go\nfig = go.Figure()\nfig.add_trace(\n    go.Scattermapbox(\n        mode=\"markers+lines\",\n        lat=lats,\n        lon=lons,\n        marker={\"size\": 5},",
+        "detail": "section 9.connections_map",
+        "documentation": {}
+    },
+    {
+        "label": "lons[2::3]",
+        "kind": 5,
+        "importPath": "section 9.connections_map",
+        "description": "section 9.connections_map",
+        "peekOfCode": "lons[2::3] = None\nimport plotly.graph_objects as go\nfig = go.Figure()\nfig.add_trace(\n    go.Scattermapbox(\n        mode=\"markers+lines\",\n        lat=lats,\n        lon=lons,\n        marker={\"size\": 5},\n        line={\"width\": 1},",
+        "detail": "section 9.connections_map",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 9.connections_map",
+        "description": "section 9.connections_map",
+        "peekOfCode": "fig = go.Figure()\nfig.add_trace(\n    go.Scattermapbox(\n        mode=\"markers+lines\",\n        lat=lats,\n        lon=lons,\n        marker={\"size\": 5},\n        line={\"width\": 1},\n        opacity=0.05,\n    )",
+        "detail": "section 9.connections_map",
+        "documentation": {}
+    },
+    {
+        "label": "nodos",
+        "kind": 5,
+        "importPath": "section 9.grafo",
+        "description": "section 9.grafo",
+        "peekOfCode": "nodos = pd.read_csv(\"../../../data/grafo_interaccion/nodes.csv\")\nnodos\nejes = pd.read_csv(\"../../../data/grafo_interaccion/edges.csv\")\nejes\nG = nx.from_pandas_edgelist(ejes, source=\"src\", target=\"dst\", edge_attr=\"weight\")\nplt.rcParams[\"figure.figsize\"] = (15, 8)\nnx.draw(G)\nnx.draw_networkx(G)\nnx.draw_random(G)\n# También se le denomina \"Diagrama de Cuerdas sin Lazos\"",
+        "detail": "section 9.grafo",
+        "documentation": {}
+    },
+    {
+        "label": "ejes",
+        "kind": 5,
+        "importPath": "section 9.grafo",
+        "description": "section 9.grafo",
+        "peekOfCode": "ejes = pd.read_csv(\"../../../data/grafo_interaccion/edges.csv\")\nejes\nG = nx.from_pandas_edgelist(ejes, source=\"src\", target=\"dst\", edge_attr=\"weight\")\nplt.rcParams[\"figure.figsize\"] = (15, 8)\nnx.draw(G)\nnx.draw_networkx(G)\nnx.draw_random(G)\n# También se le denomina \"Diagrama de Cuerdas sin Lazos\"\nnx.draw_circular(G)\nnx.draw_planar(G)",
+        "detail": "section 9.grafo",
+        "documentation": {}
+    },
+    {
+        "label": "G",
+        "kind": 5,
+        "importPath": "section 9.grafo",
+        "description": "section 9.grafo",
+        "peekOfCode": "G = nx.from_pandas_edgelist(ejes, source=\"src\", target=\"dst\", edge_attr=\"weight\")\nplt.rcParams[\"figure.figsize\"] = (15, 8)\nnx.draw(G)\nnx.draw_networkx(G)\nnx.draw_random(G)\n# También se le denomina \"Diagrama de Cuerdas sin Lazos\"\nnx.draw_circular(G)\nnx.draw_planar(G)\nnx.draw_spring(G)\n# https://networkx.org/documentation/stable/reference/generated/networkx.drawing.nx_pylab.draw_networkx.html",
+        "detail": "section 9.grafo",
+        "documentation": {}
+    },
+    {
+        "label": "plt.rcParams[\"figure.figsize\"]",
+        "kind": 5,
+        "importPath": "section 9.grafo",
+        "description": "section 9.grafo",
+        "peekOfCode": "plt.rcParams[\"figure.figsize\"] = (15, 8)\nnx.draw(G)\nnx.draw_networkx(G)\nnx.draw_random(G)\n# También se le denomina \"Diagrama de Cuerdas sin Lazos\"\nnx.draw_circular(G)\nnx.draw_planar(G)\nnx.draw_spring(G)\n# https://networkx.org/documentation/stable/reference/generated/networkx.drawing.nx_pylab.draw_networkx.html\nnx.draw_spring(",
+        "detail": "section 9.grafo",
+        "documentation": {}
+    },
+    {
+        "label": "nodos2",
+        "kind": 5,
+        "importPath": "section 9.grafo",
+        "description": "section 9.grafo",
+        "peekOfCode": "nodos2 = pd.read_csv('../../../data/grafo_interaccion_gephi/nodes.csv')\nejes2 = pd.read_csv('../../../data/grafo_interaccion_gephi/edges.csv')\nG2 = nx.from_pandas_edgelist(\n    ejes2,\n    source='Source',\n    target='Target',\n    edge_attr='weight'\n)\nplt.rcParams[\"figure.figsize\"] = (25, 16)\nnx.draw(G2)",
+        "detail": "section 9.grafo",
+        "documentation": {}
+    },
+    {
+        "label": "ejes2",
+        "kind": 5,
+        "importPath": "section 9.grafo",
+        "description": "section 9.grafo",
+        "peekOfCode": "ejes2 = pd.read_csv('../../../data/grafo_interaccion_gephi/edges.csv')\nG2 = nx.from_pandas_edgelist(\n    ejes2,\n    source='Source',\n    target='Target',\n    edge_attr='weight'\n)\nplt.rcParams[\"figure.figsize\"] = (25, 16)\nnx.draw(G2)",
+        "detail": "section 9.grafo",
+        "documentation": {}
+    },
+    {
+        "label": "G2",
+        "kind": 5,
+        "importPath": "section 9.grafo",
+        "description": "section 9.grafo",
+        "peekOfCode": "G2 = nx.from_pandas_edgelist(\n    ejes2,\n    source='Source',\n    target='Target',\n    edge_attr='weight'\n)\nplt.rcParams[\"figure.figsize\"] = (25, 16)\nnx.draw(G2)",
+        "detail": "section 9.grafo",
+        "documentation": {}
+    },
+    {
+        "label": "plt.rcParams[\"figure.figsize\"]",
+        "kind": 5,
+        "importPath": "section 9.grafo",
+        "description": "section 9.grafo",
+        "peekOfCode": "plt.rcParams[\"figure.figsize\"] = (25, 16)\nnx.draw(G2)",
+        "detail": "section 9.grafo",
         "documentation": {}
     },
     {
@@ -2378,24 +2915,6 @@
         "description": "sentiments",
         "peekOfCode": "z = \"Tuve una experiencia natural\"\ndef analyze_sentiment(sentiment: SentimentAnalysisSpanish, text):\n    try:\n        sentiment.sentiment(text)\n    except Exception as e:\n        print(\"Error:\", e)\nanalyze_sentiment(sentiment, x)\nanalyze_sentiment(sentiment, y)\nanalyze_sentiment(sentiment, z)",
         "detail": "sentiments",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "violines_graf",
-        "description": "violines_graf",
-        "peekOfCode": "df = pd.read_csv(\"../../data/titanic.csv\")\ndf = df.dropna(subset=[\"Age\"], axis=\"index\")  # remove rows with missing Age data\ndf\nimport seaborn as sns\nsns.violinplot(\n    data=df,\n    x=\"Sex\",\n    y=\"Age\",\n    inner=\"quartiles\"\n)",
-        "detail": "violines_graf",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "violines_graf",
-        "description": "violines_graf",
-        "peekOfCode": "df = df.dropna(subset=[\"Age\"], axis=\"index\")  # remove rows with missing Age data\ndf\nimport seaborn as sns\nsns.violinplot(\n    data=df,\n    x=\"Sex\",\n    y=\"Age\",\n    inner=\"quartiles\"\n)\nplt.show()",
-        "detail": "violines_graf",
         "documentation": {}
     }
 ]
