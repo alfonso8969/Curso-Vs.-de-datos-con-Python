@@ -15,7 +15,7 @@ nodos = hv.Dataset(nodes, "id")
 chord = hv.Chord((edges, nodos))
 chord.opts(
     opts.Chord(
-        labels='label',
+        # labels='label',
         edge_color=dim('src').str(),  # 'src' es el origen de la conexión
         node_color=dim('label').str(),  # 'label' es el nombre del nodo
         cmap='Category20',

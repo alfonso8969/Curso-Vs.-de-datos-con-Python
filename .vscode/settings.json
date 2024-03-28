@@ -6,7 +6,10 @@
         "--ignore=E402"
     ],
     "cSpell.words": [
+        "arange",
+        "autofmt",
         "autopct",
+        "axhline",
         "barplot",
         "boxplot",
         "droplevel",
@@ -14,6 +17,7 @@
         "figsize",
         "fillna",
         "iloc",
+        "imshow",
         "labelcolor",
         "lineplot",
         "linestyle",
@@ -25,12 +29,19 @@
         "plotly",
         "scatterplot",
         "skyblue",
+        "stackplot",
         "startangle",
+        "textinfo",
+        "treemap",
         "twinx",
         "violinplot",
         "whitegrid",
+        "wordcloud",
+        "xdate",
         "xlabel",
-        "ylabel"
+        "xticks",
+        "ylabel",
+        "zlabel"
     ],
     "python.analysis.autoImportCompletions": true,
     "python.analysis.typeCheckingMode": "basic"

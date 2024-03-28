@@ -35,11 +35,27 @@
         "documentation": {}
     },
     {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
         "label": "matplotlib",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "matplotlib",
         "description": "matplotlib",
+        "detail": "matplotlib",
+        "documentation": {}
+    },
+    {
+        "label": "pyplot",
+        "importPath": "matplotlib",
+        "description": "matplotlib",
+        "isExtraImport": true,
         "detail": "matplotlib",
         "documentation": {}
     },
@@ -73,6 +89,55 @@
         "description": "sklearn.model_selection",
         "isExtraImport": true,
         "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "plotly.express",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly.express",
+        "description": "plotly.express",
+        "detail": "plotly.express",
+        "documentation": {}
+    },
+    {
+        "label": "venn2",
+        "importPath": "matplotlib_venn",
+        "description": "matplotlib_venn",
+        "isExtraImport": true,
+        "detail": "matplotlib_venn",
+        "documentation": {}
+    },
+    {
+        "label": "venn3",
+        "importPath": "matplotlib_venn",
+        "description": "matplotlib_venn",
+        "isExtraImport": true,
+        "detail": "matplotlib_venn",
+        "documentation": {}
+    },
+    {
+        "label": "venn3_unweighted",
+        "importPath": "matplotlib_venn",
+        "description": "matplotlib_venn",
+        "isExtraImport": true,
+        "detail": "matplotlib_venn",
+        "documentation": {}
+    },
+    {
+        "label": "WordCloud",
+        "importPath": "wordcloud",
+        "description": "wordcloud",
+        "isExtraImport": true,
+        "detail": "wordcloud",
+        "documentation": {}
+    },
+    {
+        "label": "ImageColorGenerator",
+        "importPath": "wordcloud",
+        "description": "wordcloud",
+        "isExtraImport": true,
+        "detail": "wordcloud",
         "documentation": {}
     },
     {
@@ -115,15 +180,6 @@
         "description": "random",
         "isExtraImport": true,
         "detail": "random",
-        "documentation": {}
-    },
-    {
-        "label": "plotly.express",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "plotly.express",
-        "description": "plotly.express",
-        "detail": "plotly.express",
         "documentation": {}
     },
     {
@@ -476,6 +532,438 @@
         "description": "ejer_class.sklearn_test",
         "peekOfCode": "predicted = clf.predict(X_test)\n_, axes = plt.subplots(nrows=1, ncols=4, figsize=(10, 3))\nfor ax, image, prediction in zip(axes, X_test, predicted):\n    ax.set_axis_off()\n    image = image.reshape(8, 8)\n    ax.imshow(image, cmap=plt.cm.gray_r, interpolation=\"nearest\")\n    ax.set_title(f\"Prediction: {prediction}\")",
         "detail": "ejer_class.sklearn_test",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 10.sunburst",
+        "description": "section 10.sunburst",
+        "peekOfCode": "df = pd.read_csv('../../../data/paises_vida.csv', index_col=0)\ndf = df.dropna()\ndf = df[df['year'] == 2007]\ndf\nfig = px.sunburst(\n    df,\n    path=[px.Constant('World'), 'continent', 'country'],\n    values='pop',\n    color='lifeExp',\n    color_continuous_scale='RdBu',",
+        "detail": "section 10.sunburst",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 10.sunburst",
+        "description": "section 10.sunburst",
+        "peekOfCode": "df = df.dropna()\ndf = df[df['year'] == 2007]\ndf\nfig = px.sunburst(\n    df,\n    path=[px.Constant('World'), 'continent', 'country'],\n    values='pop',\n    color='lifeExp',\n    color_continuous_scale='RdBu',\n)",
+        "detail": "section 10.sunburst",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 10.sunburst",
+        "description": "section 10.sunburst",
+        "peekOfCode": "df = df[df['year'] == 2007]\ndf\nfig = px.sunburst(\n    df,\n    path=[px.Constant('World'), 'continent', 'country'],\n    values='pop',\n    color='lifeExp',\n    color_continuous_scale='RdBu',\n)\nfig.update_layout(margin={\"r\": 0, \"t\": 0, \"l\": 0, \"b\": 0})",
+        "detail": "section 10.sunburst",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 10.sunburst",
+        "description": "section 10.sunburst",
+        "peekOfCode": "fig = px.sunburst(\n    df,\n    path=[px.Constant('World'), 'continent', 'country'],\n    values='pop',\n    color='lifeExp',\n    color_continuous_scale='RdBu',\n)\nfig.update_layout(margin={\"r\": 0, \"t\": 0, \"l\": 0, \"b\": 0})\nfig.show()\ndf2 = pd.read_csv('../../../data/marcas_mensajes.csv')",
+        "detail": "section 10.sunburst",
+        "documentation": {}
+    },
+    {
+        "label": "df2",
+        "kind": 5,
+        "importPath": "section 10.sunburst",
+        "description": "section 10.sunburst",
+        "peekOfCode": "df2 = pd.read_csv('../../../data/marcas_mensajes.csv')\ndf2\nfig2 = px.sunburst(\n    df2,\n    path=[px.Constant('All'), 'tipo', 'marca'],\n    values='n_mensajes',\n)\nfig2.update_layout(margin={\"r\": 0, \"t\": 0, \"l\": 0, \"b\": 0})\n# fig2.data[0].textinfo = 'label+text+value'\nfig2.show()",
+        "detail": "section 10.sunburst",
+        "documentation": {}
+    },
+    {
+        "label": "fig2",
+        "kind": 5,
+        "importPath": "section 10.sunburst",
+        "description": "section 10.sunburst",
+        "peekOfCode": "fig2 = px.sunburst(\n    df2,\n    path=[px.Constant('All'), 'tipo', 'marca'],\n    values='n_mensajes',\n)\nfig2.update_layout(margin={\"r\": 0, \"t\": 0, \"l\": 0, \"b\": 0})\n# fig2.data[0].textinfo = 'label+text+value'\nfig2.show()",
+        "detail": "section 10.sunburst",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 10.treemap",
+        "description": "section 10.treemap",
+        "peekOfCode": "df = pd.read_csv('../../../data/paises_vida.csv', index_col=0)\ndf = df.dropna()\ndf = df[df['year'] == 2007]\ndf\nfig = px.treemap(\n    df,\n    path=[px.Constant('World'), 'continent', 'country'],\n    values='pop',\n    color='lifeExp',\n    color_continuous_scale='RdBu',",
+        "detail": "section 10.treemap",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 10.treemap",
+        "description": "section 10.treemap",
+        "peekOfCode": "df = df.dropna()\ndf = df[df['year'] == 2007]\ndf\nfig = px.treemap(\n    df,\n    path=[px.Constant('World'), 'continent', 'country'],\n    values='pop',\n    color='lifeExp',\n    color_continuous_scale='RdBu',\n)",
+        "detail": "section 10.treemap",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 10.treemap",
+        "description": "section 10.treemap",
+        "peekOfCode": "df = df[df['year'] == 2007]\ndf\nfig = px.treemap(\n    df,\n    path=[px.Constant('World'), 'continent', 'country'],\n    values='pop',\n    color='lifeExp',\n    color_continuous_scale='RdBu',\n)\nfig.update_layout(margin={\"r\": 0, \"t\": 0, \"l\": 0, \"b\": 0})",
+        "detail": "section 10.treemap",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 10.treemap",
+        "description": "section 10.treemap",
+        "peekOfCode": "fig = px.treemap(\n    df,\n    path=[px.Constant('World'), 'continent', 'country'],\n    values='pop',\n    color='lifeExp',\n    color_continuous_scale='RdBu',\n)\nfig.update_layout(margin={\"r\": 0, \"t\": 0, \"l\": 0, \"b\": 0})\nfig.show()\ndf2 = pd.read_csv('../../../data/marcas_mensajes.csv')",
+        "detail": "section 10.treemap",
+        "documentation": {}
+    },
+    {
+        "label": "df2",
+        "kind": 5,
+        "importPath": "section 10.treemap",
+        "description": "section 10.treemap",
+        "peekOfCode": "df2 = pd.read_csv('../../../data/marcas_mensajes.csv')\ndf2\nfig2 = px.treemap(\n    df2,\n    path=[px.Constant('All'), 'tipo', 'marca'],\n    values='n_mensajes',\n)\nfig2.update_layout(margin={\"r\": 0, \"t\": 0, \"l\": 0, \"b\": 0})\nfig2.data[0].textinfo = 'label+text+value'\nfig2.show()",
+        "detail": "section 10.treemap",
+        "documentation": {}
+    },
+    {
+        "label": "fig2",
+        "kind": 5,
+        "importPath": "section 10.treemap",
+        "description": "section 10.treemap",
+        "peekOfCode": "fig2 = px.treemap(\n    df2,\n    path=[px.Constant('All'), 'tipo', 'marca'],\n    values='n_mensajes',\n)\nfig2.update_layout(margin={\"r\": 0, \"t\": 0, \"l\": 0, \"b\": 0})\nfig2.data[0].textinfo = 'label+text+value'\nfig2.show()",
+        "detail": "section 10.treemap",
+        "documentation": {}
+    },
+    {
+        "label": "fig2.data[0].textinfo",
+        "kind": 5,
+        "importPath": "section 10.treemap",
+        "description": "section 10.treemap",
+        "peekOfCode": "fig2.data[0].textinfo = 'label+text+value'\nfig2.show()",
+        "detail": "section 10.treemap",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 11.scatter_3d",
+        "description": "section 11.scatter_3d",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/penguins.csv\")\ndf = df.dropna()\nfig = plt.figure(figsize=(15, 10))\nax = plt.axes(projection=\"3d\")\n# Scatter plot\nax.scatter(\n    df[\"culmen_length_mm\"],\n    df[\"culmen_depth_mm\"],\n    df[\"flipper_length_mm\"],\n    c=\"green\",",
+        "detail": "section 11.scatter_3d",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 11.scatter_3d",
+        "description": "section 11.scatter_3d",
+        "peekOfCode": "df = df.dropna()\nfig = plt.figure(figsize=(15, 10))\nax = plt.axes(projection=\"3d\")\n# Scatter plot\nax.scatter(\n    df[\"culmen_length_mm\"],\n    df[\"culmen_depth_mm\"],\n    df[\"flipper_length_mm\"],\n    c=\"green\",\n    s=50,",
+        "detail": "section 11.scatter_3d",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 11.scatter_3d",
+        "description": "section 11.scatter_3d",
+        "peekOfCode": "fig = plt.figure(figsize=(15, 10))\nax = plt.axes(projection=\"3d\")\n# Scatter plot\nax.scatter(\n    df[\"culmen_length_mm\"],\n    df[\"culmen_depth_mm\"],\n    df[\"flipper_length_mm\"],\n    c=\"green\",\n    s=50,\n)",
+        "detail": "section 11.scatter_3d",
+        "documentation": {}
+    },
+    {
+        "label": "ax",
+        "kind": 5,
+        "importPath": "section 11.scatter_3d",
+        "description": "section 11.scatter_3d",
+        "peekOfCode": "ax = plt.axes(projection=\"3d\")\n# Scatter plot\nax.scatter(\n    df[\"culmen_length_mm\"],\n    df[\"culmen_depth_mm\"],\n    df[\"flipper_length_mm\"],\n    c=\"green\",\n    s=50,\n)\nax.set_xlabel(\"Culmen Length (mm)\")",
+        "detail": "section 11.scatter_3d",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 11.scatter_3d",
+        "description": "section 11.scatter_3d",
+        "peekOfCode": "fig = px.scatter_3d(\n    df,\n    x=\"culmen_length_mm\",\n    y=\"culmen_depth_mm\",\n    z=\"flipper_length_mm\",\n    color=\"species\",\n    symbol=\"species\",\n    size_max=10,\n    opacity=0.7,\n    width=800,",
+        "detail": "section 11.scatter_3d",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 11.serie_tiempo",
+        "description": "section 11.serie_tiempo",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/tienda_ventas.csv\")\ndf\ndf_days = df[[\"date\", \"sales\"]]\ndf_days = df_days.groupby(\"date\").sum()\ndf_days\ndf_days.plot.line(\n    y=\"sales\", xlabel=\"Date\", ylabel=\"Sales\", title=\"Sales per day\", figsize=(10, 6)\n)\nfig = px.line(df_days, x=df_days.index.values, y=\"sales\", title=\"Sales per day\")\nfig.show()",
+        "detail": "section 11.serie_tiempo",
+        "documentation": {}
+    },
+    {
+        "label": "df_days",
+        "kind": 5,
+        "importPath": "section 11.serie_tiempo",
+        "description": "section 11.serie_tiempo",
+        "peekOfCode": "df_days = df[[\"date\", \"sales\"]]\ndf_days = df_days.groupby(\"date\").sum()\ndf_days\ndf_days.plot.line(\n    y=\"sales\", xlabel=\"Date\", ylabel=\"Sales\", title=\"Sales per day\", figsize=(10, 6)\n)\nfig = px.line(df_days, x=df_days.index.values, y=\"sales\", title=\"Sales per day\")\nfig.show()\ndf2 = pd.read_csv(\"../../../data/marcas_mensajes_twitter.csv\")\ndf2",
+        "detail": "section 11.serie_tiempo",
+        "documentation": {}
+    },
+    {
+        "label": "df_days",
+        "kind": 5,
+        "importPath": "section 11.serie_tiempo",
+        "description": "section 11.serie_tiempo",
+        "peekOfCode": "df_days = df_days.groupby(\"date\").sum()\ndf_days\ndf_days.plot.line(\n    y=\"sales\", xlabel=\"Date\", ylabel=\"Sales\", title=\"Sales per day\", figsize=(10, 6)\n)\nfig = px.line(df_days, x=df_days.index.values, y=\"sales\", title=\"Sales per day\")\nfig.show()\ndf2 = pd.read_csv(\"../../../data/marcas_mensajes_twitter.csv\")\ndf2\ndf2[\"fecha_parseada\"] = pd.to_datetime(",
+        "detail": "section 11.serie_tiempo",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 11.serie_tiempo",
+        "description": "section 11.serie_tiempo",
+        "peekOfCode": "fig = px.line(df_days, x=df_days.index.values, y=\"sales\", title=\"Sales per day\")\nfig.show()\ndf2 = pd.read_csv(\"../../../data/marcas_mensajes_twitter.csv\")\ndf2\ndf2[\"fecha_parseada\"] = pd.to_datetime(\n    df2[\"created_at\"], format=\"%a %b %d %H:%M:%S %z %Y\"\n)\ndf2\ndf2 = df2.sort_values(\"fecha_parseada\")\ndf2[\"periodo\"] = df2[\"fecha_parseada\"].apply(lambda x: x.strftime(\"%Y-%m-%d\"))",
+        "detail": "section 11.serie_tiempo",
+        "documentation": {}
+    },
+    {
+        "label": "df2",
+        "kind": 5,
+        "importPath": "section 11.serie_tiempo",
+        "description": "section 11.serie_tiempo",
+        "peekOfCode": "df2 = pd.read_csv(\"../../../data/marcas_mensajes_twitter.csv\")\ndf2\ndf2[\"fecha_parseada\"] = pd.to_datetime(\n    df2[\"created_at\"], format=\"%a %b %d %H:%M:%S %z %Y\"\n)\ndf2\ndf2 = df2.sort_values(\"fecha_parseada\")\ndf2[\"periodo\"] = df2[\"fecha_parseada\"].apply(lambda x: x.strftime(\"%Y-%m-%d\"))\ndf2\ndf2_agrupado = df2[[\"periodo\", \"idx\"]].groupby(\"periodo\").count()",
+        "detail": "section 11.serie_tiempo",
+        "documentation": {}
+    },
+    {
+        "label": "df2[\"fecha_parseada\"]",
+        "kind": 5,
+        "importPath": "section 11.serie_tiempo",
+        "description": "section 11.serie_tiempo",
+        "peekOfCode": "df2[\"fecha_parseada\"] = pd.to_datetime(\n    df2[\"created_at\"], format=\"%a %b %d %H:%M:%S %z %Y\"\n)\ndf2\ndf2 = df2.sort_values(\"fecha_parseada\")\ndf2[\"periodo\"] = df2[\"fecha_parseada\"].apply(lambda x: x.strftime(\"%Y-%m-%d\"))\ndf2\ndf2_agrupado = df2[[\"periodo\", \"idx\"]].groupby(\"periodo\").count()\ndf2_agrupado = df2_agrupado.reset_index()\ndf2_agrupado",
+        "detail": "section 11.serie_tiempo",
+        "documentation": {}
+    },
+    {
+        "label": "df2",
+        "kind": 5,
+        "importPath": "section 11.serie_tiempo",
+        "description": "section 11.serie_tiempo",
+        "peekOfCode": "df2 = df2.sort_values(\"fecha_parseada\")\ndf2[\"periodo\"] = df2[\"fecha_parseada\"].apply(lambda x: x.strftime(\"%Y-%m-%d\"))\ndf2\ndf2_agrupado = df2[[\"periodo\", \"idx\"]].groupby(\"periodo\").count()\ndf2_agrupado = df2_agrupado.reset_index()\ndf2_agrupado\n# Gráfico de Lineas con Plotly\n# https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.line.html\nfig = px.line(df2_agrupado, x=\"periodo\", y=\"idx\", title=\"Mensajes por dia\")\nfig.show()",
+        "detail": "section 11.serie_tiempo",
+        "documentation": {}
+    },
+    {
+        "label": "df2[\"periodo\"]",
+        "kind": 5,
+        "importPath": "section 11.serie_tiempo",
+        "description": "section 11.serie_tiempo",
+        "peekOfCode": "df2[\"periodo\"] = df2[\"fecha_parseada\"].apply(lambda x: x.strftime(\"%Y-%m-%d\"))\ndf2\ndf2_agrupado = df2[[\"periodo\", \"idx\"]].groupby(\"periodo\").count()\ndf2_agrupado = df2_agrupado.reset_index()\ndf2_agrupado\n# Gráfico de Lineas con Plotly\n# https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.line.html\nfig = px.line(df2_agrupado, x=\"periodo\", y=\"idx\", title=\"Mensajes por dia\")\nfig.show()",
+        "detail": "section 11.serie_tiempo",
+        "documentation": {}
+    },
+    {
+        "label": "df2_agrupado",
+        "kind": 5,
+        "importPath": "section 11.serie_tiempo",
+        "description": "section 11.serie_tiempo",
+        "peekOfCode": "df2_agrupado = df2[[\"periodo\", \"idx\"]].groupby(\"periodo\").count()\ndf2_agrupado = df2_agrupado.reset_index()\ndf2_agrupado\n# Gráfico de Lineas con Plotly\n# https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.line.html\nfig = px.line(df2_agrupado, x=\"periodo\", y=\"idx\", title=\"Mensajes por dia\")\nfig.show()",
+        "detail": "section 11.serie_tiempo",
+        "documentation": {}
+    },
+    {
+        "label": "df2_agrupado",
+        "kind": 5,
+        "importPath": "section 11.serie_tiempo",
+        "description": "section 11.serie_tiempo",
+        "peekOfCode": "df2_agrupado = df2_agrupado.reset_index()\ndf2_agrupado\n# Gráfico de Lineas con Plotly\n# https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.line.html\nfig = px.line(df2_agrupado, x=\"periodo\", y=\"idx\", title=\"Mensajes por dia\")\nfig.show()",
+        "detail": "section 11.serie_tiempo",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "section 11.serie_tiempo",
+        "description": "section 11.serie_tiempo",
+        "peekOfCode": "fig = px.line(df2_agrupado, x=\"periodo\", y=\"idx\", title=\"Mensajes por dia\")\nfig.show()",
+        "detail": "section 11.serie_tiempo",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 11.stream_graf",
+        "description": "section 11.stream_graf",
+        "peekOfCode": "df = pd.read_csv('../../../data/covid_data.csv')\ndf\ngrouped = df[['date', 'continent', 'new_cases']].groupby(['date', 'continent']).sum()\ngrouped = grouped.unstack(1)\ngrouped = grouped.fillna(0)  # Fill missing values with zero\ngrouped = grouped.droplevel(0, axis=1)  # Drop the new_cases column level # type: ignore\ngrouped\ncontinents = df['continent'].dropna().unique()\nvalues = np.array([grouped[continent] for continent in continents])\nfig, ax = plt.subplots()",
+        "detail": "section 11.stream_graf",
+        "documentation": {}
+    },
+    {
+        "label": "grouped",
+        "kind": 5,
+        "importPath": "section 11.stream_graf",
+        "description": "section 11.stream_graf",
+        "peekOfCode": "grouped = df[['date', 'continent', 'new_cases']].groupby(['date', 'continent']).sum()\ngrouped = grouped.unstack(1)\ngrouped = grouped.fillna(0)  # Fill missing values with zero\ngrouped = grouped.droplevel(0, axis=1)  # Drop the new_cases column level # type: ignore\ngrouped\ncontinents = df['continent'].dropna().unique()\nvalues = np.array([grouped[continent] for continent in continents])\nfig, ax = plt.subplots()\nfig.set_size_inches(15, 10)\nax.stackplot(",
+        "detail": "section 11.stream_graf",
+        "documentation": {}
+    },
+    {
+        "label": "grouped",
+        "kind": 5,
+        "importPath": "section 11.stream_graf",
+        "description": "section 11.stream_graf",
+        "peekOfCode": "grouped = grouped.unstack(1)\ngrouped = grouped.fillna(0)  # Fill missing values with zero\ngrouped = grouped.droplevel(0, axis=1)  # Drop the new_cases column level # type: ignore\ngrouped\ncontinents = df['continent'].dropna().unique()\nvalues = np.array([grouped[continent] for continent in continents])\nfig, ax = plt.subplots()\nfig.set_size_inches(15, 10)\nax.stackplot(\n    grouped.index.values,",
+        "detail": "section 11.stream_graf",
+        "documentation": {}
+    },
+    {
+        "label": "grouped",
+        "kind": 5,
+        "importPath": "section 11.stream_graf",
+        "description": "section 11.stream_graf",
+        "peekOfCode": "grouped = grouped.fillna(0)  # Fill missing values with zero\ngrouped = grouped.droplevel(0, axis=1)  # Drop the new_cases column level # type: ignore\ngrouped\ncontinents = df['continent'].dropna().unique()\nvalues = np.array([grouped[continent] for continent in continents])\nfig, ax = plt.subplots()\nfig.set_size_inches(15, 10)\nax.stackplot(\n    grouped.index.values,\n    values,",
+        "detail": "section 11.stream_graf",
+        "documentation": {}
+    },
+    {
+        "label": "grouped",
+        "kind": 5,
+        "importPath": "section 11.stream_graf",
+        "description": "section 11.stream_graf",
+        "peekOfCode": "grouped = grouped.droplevel(0, axis=1)  # Drop the new_cases column level # type: ignore\ngrouped\ncontinents = df['continent'].dropna().unique()\nvalues = np.array([grouped[continent] for continent in continents])\nfig, ax = plt.subplots()\nfig.set_size_inches(15, 10)\nax.stackplot(\n    grouped.index.values,\n    values,\n    baseline='wiggle',",
+        "detail": "section 11.stream_graf",
+        "documentation": {}
+    },
+    {
+        "label": "continents",
+        "kind": 5,
+        "importPath": "section 11.stream_graf",
+        "description": "section 11.stream_graf",
+        "peekOfCode": "continents = df['continent'].dropna().unique()\nvalues = np.array([grouped[continent] for continent in continents])\nfig, ax = plt.subplots()\nfig.set_size_inches(15, 10)\nax.stackplot(\n    grouped.index.values,\n    values,\n    baseline='wiggle',\n    labels=continents,\n    colors=plt.cm.viridis(np.linspace(0, 1, len(continents)))",
+        "detail": "section 11.stream_graf",
+        "documentation": {}
+    },
+    {
+        "label": "values",
+        "kind": 5,
+        "importPath": "section 11.stream_graf",
+        "description": "section 11.stream_graf",
+        "peekOfCode": "values = np.array([grouped[continent] for continent in continents])\nfig, ax = plt.subplots()\nfig.set_size_inches(15, 10)\nax.stackplot(\n    grouped.index.values,\n    values,\n    baseline='wiggle',\n    labels=continents,\n    colors=plt.cm.viridis(np.linspace(0, 1, len(continents)))\n)",
+        "detail": "section 11.stream_graf",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 11.venn_diagram",
+        "description": "section 11.venn_diagram",
+        "peekOfCode": "df = pd.read_csv('../../../data/animales_caracteristicas.csv')\ndf\nrespira = set(df[df['respira'] == 1]['animal'])\npiernas = set(df[df['piernas'] == 1]['animal'])\nnada = set(df[df['nada'] == 1]['animal'])\n# Aquí se pueden ver las intersecciones de los conjuntos de animales que respiran,\n# que tienen piernas y que nadan.\n# Aquí se pueden ver las intersecciones de los conjuntos de animales que respiran, \n# que tienen piernas y que nadan.\n# La intersección de los conjuntos de animales que respiran y que tienen piernas es el conjunto de animales",
+        "detail": "section 11.venn_diagram",
+        "documentation": {}
+    },
+    {
+        "label": "respira",
+        "kind": 5,
+        "importPath": "section 11.venn_diagram",
+        "description": "section 11.venn_diagram",
+        "peekOfCode": "respira = set(df[df['respira'] == 1]['animal'])\npiernas = set(df[df['piernas'] == 1]['animal'])\nnada = set(df[df['nada'] == 1]['animal'])\n# Aquí se pueden ver las intersecciones de los conjuntos de animales que respiran,\n# que tienen piernas y que nadan.\n# Aquí se pueden ver las intersecciones de los conjuntos de animales que respiran, \n# que tienen piernas y que nadan.\n# La intersección de los conjuntos de animales que respiran y que tienen piernas es el conjunto de animales\n# que respiran y tienen piernas.\n# Venn diagrama con etiquetas de animales que respiran, tienen piernas y nadan.",
+        "detail": "section 11.venn_diagram",
+        "documentation": {}
+    },
+    {
+        "label": "piernas",
+        "kind": 5,
+        "importPath": "section 11.venn_diagram",
+        "description": "section 11.venn_diagram",
+        "peekOfCode": "piernas = set(df[df['piernas'] == 1]['animal'])\nnada = set(df[df['nada'] == 1]['animal'])\n# Aquí se pueden ver las intersecciones de los conjuntos de animales que respiran,\n# que tienen piernas y que nadan.\n# Aquí se pueden ver las intersecciones de los conjuntos de animales que respiran, \n# que tienen piernas y que nadan.\n# La intersección de los conjuntos de animales que respiran y que tienen piernas es el conjunto de animales\n# que respiran y tienen piernas.\n# Venn diagrama con etiquetas de animales que respiran, tienen piernas y nadan.\nvenn3([respira, piernas, nada], ('Respira aire', 'Tiene piernas', 'Puede Nadar'))",
+        "detail": "section 11.venn_diagram",
+        "documentation": {}
+    },
+    {
+        "label": "nada",
+        "kind": 5,
+        "importPath": "section 11.venn_diagram",
+        "description": "section 11.venn_diagram",
+        "peekOfCode": "nada = set(df[df['nada'] == 1]['animal'])\n# Aquí se pueden ver las intersecciones de los conjuntos de animales que respiran,\n# que tienen piernas y que nadan.\n# Aquí se pueden ver las intersecciones de los conjuntos de animales que respiran, \n# que tienen piernas y que nadan.\n# La intersección de los conjuntos de animales que respiran y que tienen piernas es el conjunto de animales\n# que respiran y tienen piernas.\n# Venn diagrama con etiquetas de animales que respiran, tienen piernas y nadan.\nvenn3([respira, piernas, nada], ('Respira aire', 'Tiene piernas', 'Puede Nadar'))\nplt.rcParams[\"figure.figsize\"] = (15, 15)",
+        "detail": "section 11.venn_diagram",
+        "documentation": {}
+    },
+    {
+        "label": "plt.rcParams[\"figure.figsize\"]",
+        "kind": 5,
+        "importPath": "section 11.venn_diagram",
+        "description": "section 11.venn_diagram",
+        "peekOfCode": "plt.rcParams[\"figure.figsize\"] = (15, 15)\nplt.title('Animales que respiran, tienen piernas y nadan')\nplt.show()\nvenn3_unweighted(\n    [\n        set(respira),\n        set(piernas),\n        set(nada)\n    ],\n    set_labels=('Respira Aire', 'Tiene Piernas', 'Puede Nadar')",
+        "detail": "section 11.venn_diagram",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "section 11.workcloud",
+        "description": "section 11.workcloud",
+        "peekOfCode": "df = pd.read_csv(\"../../../data/marcas_mensajes_twitter.csv\")\ndf\ntext = \" \".join(df[\"tokenized\"])\nwc = WordCloud(\n    width=1000,\n    height=700,\n    margin=0,\n    background_color='white'   \n).generate(text)\nplt.imshow(wc)",
+        "detail": "section 11.workcloud",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "kind": 5,
+        "importPath": "section 11.workcloud",
+        "description": "section 11.workcloud",
+        "peekOfCode": "text = \" \".join(df[\"tokenized\"])\nwc = WordCloud(\n    width=1000,\n    height=700,\n    margin=0,\n    background_color='white'   \n).generate(text)\nplt.imshow(wc)\nplt.axis(\"off\")\nfrom PIL import Image",
+        "detail": "section 11.workcloud",
+        "documentation": {}
+    },
+    {
+        "label": "wc",
+        "kind": 5,
+        "importPath": "section 11.workcloud",
+        "description": "section 11.workcloud",
+        "peekOfCode": "wc = WordCloud(\n    width=1000,\n    height=700,\n    margin=0,\n    background_color='white'   \n).generate(text)\nplt.imshow(wc)\nplt.axis(\"off\")\nfrom PIL import Image\nimport numpy as np",
+        "detail": "section 11.workcloud",
+        "documentation": {}
+    },
+    {
+        "label": "tw_color",
+        "kind": 5,
+        "importPath": "section 11.workcloud",
+        "description": "section 11.workcloud",
+        "peekOfCode": "tw_color = np.array(Image.open(\"../../../data/nuevo-logotipo-twitter-x-sombra/twitter.jpeg\"))\ntw_mask = tw_color.copy()\ntw_mask[tw_mask.sum(axis=2) == 0] = 255\n# We create a mask to make this image in the shape of a twitter bird logo\nwc = WordCloud(\n    width=1000,\n    height=700,\n    margin=0,\n    background_color='black',\n    mask=tw_mask",
+        "detail": "section 11.workcloud",
+        "documentation": {}
+    },
+    {
+        "label": "tw_mask",
+        "kind": 5,
+        "importPath": "section 11.workcloud",
+        "description": "section 11.workcloud",
+        "peekOfCode": "tw_mask = tw_color.copy()\ntw_mask[tw_mask.sum(axis=2) == 0] = 255\n# We create a mask to make this image in the shape of a twitter bird logo\nwc = WordCloud(\n    width=1000,\n    height=700,\n    margin=0,\n    background_color='black',\n    mask=tw_mask\n).generate(text)",
+        "detail": "section 11.workcloud",
+        "documentation": {}
+    },
+    {
+        "label": "wc",
+        "kind": 5,
+        "importPath": "section 11.workcloud",
+        "description": "section 11.workcloud",
+        "peekOfCode": "wc = WordCloud(\n    width=1000,\n    height=700,\n    margin=0,\n    background_color='black',\n    mask=tw_mask\n).generate(text)\nimage_colors = ImageColorGenerator(tw_color)\nwc.recolor(color_func=image_colors)\nplt.figure(figsize=(10, 10))  # Arbitrary figure size",
+        "detail": "section 11.workcloud",
+        "documentation": {}
+    },
+    {
+        "label": "image_colors",
+        "kind": 5,
+        "importPath": "section 11.workcloud",
+        "description": "section 11.workcloud",
+        "peekOfCode": "image_colors = ImageColorGenerator(tw_color)\nwc.recolor(color_func=image_colors)\nplt.figure(figsize=(10, 10))  # Arbitrary figure size\nplt.imshow(wc)\nplt.axis(\"off\")\nplt.savefig('wordcloud_twitter.png', dpi=300)",
+        "detail": "section 11.workcloud",
         "documentation": {}
     },
     {
@@ -2409,7 +2897,7 @@
         "kind": 5,
         "importPath": "section 9.chords",
         "description": "section 9.chords",
-        "peekOfCode": "nodes = pd.read_csv(\"../../../data/grafo_interaccion/nodes.csv\")\nnodes\nedges = pd.read_csv(\"../../../data/grafo_interaccion/edges.csv\")\nedges\nhv.Chord(edges)\nnodos = hv.Dataset(nodes, \"id\")\nchord = hv.Chord((edges, nodos))\nchord.opts(\n    opts.Chord(\n        labels='label',",
+        "peekOfCode": "nodes = pd.read_csv(\"../../../data/grafo_interaccion/nodes.csv\")\nnodes\nedges = pd.read_csv(\"../../../data/grafo_interaccion/edges.csv\")\nedges\nhv.Chord(edges)\nnodos = hv.Dataset(nodes, \"id\")\nchord = hv.Chord((edges, nodos))\nchord.opts(\n    opts.Chord(\n        # labels='label',",
         "detail": "section 9.chords",
         "documentation": {}
     },
@@ -2418,7 +2906,7 @@
         "kind": 5,
         "importPath": "section 9.chords",
         "description": "section 9.chords",
-        "peekOfCode": "edges = pd.read_csv(\"../../../data/grafo_interaccion/edges.csv\")\nedges\nhv.Chord(edges)\nnodos = hv.Dataset(nodes, \"id\")\nchord = hv.Chord((edges, nodos))\nchord.opts(\n    opts.Chord(\n        labels='label',\n        edge_color=dim('src').str(),  # 'src' es el origen de la conexión\n        node_color=dim('label').str(),  # 'label' es el nombre del nodo",
+        "peekOfCode": "edges = pd.read_csv(\"../../../data/grafo_interaccion/edges.csv\")\nedges\nhv.Chord(edges)\nnodos = hv.Dataset(nodes, \"id\")\nchord = hv.Chord((edges, nodos))\nchord.opts(\n    opts.Chord(\n        # labels='label',\n        edge_color=dim('src').str(),  # 'src' es el origen de la conexión\n        node_color=dim('label').str(),  # 'label' es el nombre del nodo",
         "detail": "section 9.chords",
         "documentation": {}
     },
@@ -2427,7 +2915,7 @@
         "kind": 5,
         "importPath": "section 9.chords",
         "description": "section 9.chords",
-        "peekOfCode": "nodos = hv.Dataset(nodes, \"id\")\nchord = hv.Chord((edges, nodos))\nchord.opts(\n    opts.Chord(\n        labels='label',\n        edge_color=dim('src').str(),  # 'src' es el origen de la conexión\n        node_color=dim('label').str(),  # 'label' es el nombre del nodo\n        cmap='Category20',\n        edge_cmap='Category20',\n    )",
+        "peekOfCode": "nodos = hv.Dataset(nodes, \"id\")\nchord = hv.Chord((edges, nodos))\nchord.opts(\n    opts.Chord(\n        # labels='label',\n        edge_color=dim('src').str(),  # 'src' es el origen de la conexión\n        node_color=dim('label').str(),  # 'label' es el nombre del nodo\n        cmap='Category20',\n        edge_cmap='Category20',\n    )",
         "detail": "section 9.chords",
         "documentation": {}
     },
@@ -2436,7 +2924,7 @@
         "kind": 5,
         "importPath": "section 9.chords",
         "description": "section 9.chords",
-        "peekOfCode": "chord = hv.Chord((edges, nodos))\nchord.opts(\n    opts.Chord(\n        labels='label',\n        edge_color=dim('src').str(),  # 'src' es el origen de la conexión\n        node_color=dim('label').str(),  # 'label' es el nombre del nodo\n        cmap='Category20',\n        edge_cmap='Category20',\n    )\n)",
+        "peekOfCode": "chord = hv.Chord((edges, nodos))\nchord.opts(\n    opts.Chord(\n        # labels='label',\n        edge_color=dim('src').str(),  # 'src' es el origen de la conexión\n        node_color=dim('label').str(),  # 'label' es el nombre del nodo\n        cmap='Category20',\n        edge_cmap='Category20',\n    )\n)",
         "detail": "section 9.chords",
         "documentation": {}
     },

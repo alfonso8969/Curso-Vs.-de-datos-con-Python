@@ -6,4 +6,5 @@
         "src/typestubs"
       ],
       "reportCallIssue": "none",
+      "reportAttributeAccessIssue": "none"
 }
